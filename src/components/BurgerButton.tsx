@@ -12,8 +12,8 @@ const BurgerButton: React.FC<BurgerButtonProps> = ({
 }) => {
   return (
     <div
-      className={`font-bold laptop:hidden z-50 text-2xl md:text-4xl bg-yellow-700 bg-opacity-70 text-white rounded-full p-2 md:p-3 fixed top-1 right-4`}
-    >
+      className={`font-bold laptop:hidden z-50 text-3xl md:text-4xl bg-opacity-70 text-white flex space-x-3 justify-center m-auto text-center items-center rounded-full p-2 md:p-3 fixed top-1 right-4`}
+    > <p className='text-yellow-700 text-sm'>MENU</p>
       {sidebarVisible ? (
         <FaTimes onClick={toggleSidebar} />
       ) : (

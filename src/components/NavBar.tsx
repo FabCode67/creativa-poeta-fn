@@ -12,7 +12,7 @@ function NavBar() {
   const location = useLocation();
 
   return (
-    <div className="navbar mt-0 bg-black fixed w-full mb-[94rem] shadow-sm laptop:shadow-yellow-700">
+    <div className="navbar mt-0 z-50 bg-black fixed w-full mb-[94rem] shadow-sm laptop:shadow-yellow-700">
       <div className="container laptop:mx-auto xs:mx-2 flex justify-between">
         <nav className="flex flex-col laptop:flex-row justify-between w-full">
           <div className="logo flex-center flex items-center">

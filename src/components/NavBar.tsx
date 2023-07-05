@@ -2,8 +2,12 @@ import poeta from "../assets/poeta.jpeg";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
+import LocalizationSwicher from "./Localization";
+import { useTranslation } from "react-i18next";
+
 
 function NavBar() {
+  const { t } = useTranslation();
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
@@ -39,9 +43,8 @@ function NavBar() {
                 location.hash === "#home" ? "bg-yellow-700" : ""
               }`}
             >
-              Home
+              {t("home")}
             </a>
-
             <a
               href="#about"
               onClick={toggleSidebar}
@@ -49,7 +52,7 @@ function NavBar() {
                 location.hash === "#about" ? "bg-yellow-700" : ""
               }`}
             >
-              About
+              {t("about")}
             </a>
 
             <a
@@ -59,7 +62,7 @@ function NavBar() {
                 location.hash === "#services" ? "bg-yellow-700" : ""
               }`}
             >
-              Services
+              {t("services")}
             </a>
 
             <a
@@ -69,7 +72,11 @@ function NavBar() {
                 location.hash === "#contact" ? "bg-yellow-700" : ""
               }`}
             >
-              Contacts
+              {t("contact")}
+            </a>
+            <a 
+            className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
+            > <LocalizationSwicher />
             </a>
           </div>
         </nav>

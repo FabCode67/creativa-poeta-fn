@@ -6,4 +6,32 @@
     background-image: url('https://media.giphy.com/media/3ov9jQWd5qhiUSPDri/giphy.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
+
+
+@keyframes bounce {
+    0% {
+      transform: translateY(5);
+    }
+    50% {
+      transform: translateY(70px);
+    }
+    100% {
+      transform: translateY(6);
+    }
+  }
+  
+  .animate-bounce{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  .animate-pulse{
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+  }

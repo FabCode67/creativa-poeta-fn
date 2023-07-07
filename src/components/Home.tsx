@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineTwitter } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import ScrollDownButton from "./ScrollDownButton";
@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2">
+    <section id="home" className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"> {/* Added relative positioning */}
       <div className="mt-[6%]">
         <div className="flex justify-between">
           <div className="flex flex-col laptop:w-[70%] tablet:w-[70%] w-full justify-start laptop:m-0 items-start">
@@ -25,9 +25,9 @@ const Home = () => {
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('start_a_project')}</button>
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('more_about_us')}</button>
             </div>
-            <div className="laptop:hidden block mt-16 float-left">
+            {/* <div className="laptop:hidden block mt-16 float-left">
               <ScrollDownButton />
-              </div>
+              </div> */}
           </div>
           <div className="laptop:block tablet:block hidden">
             <div className="flex flex-col space-y-5 animate-pulse hover:animate-none py-20">
@@ -72,10 +72,17 @@ const Home = () => {
                 <HiOutlineMail />
               </div>
             </div>
-            <ScrollDownButton />           
+            {/* <ScrollDownButton />            */}
           </div>
         </div>
       </div>
+      <div className="very-buttom h-[13%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-yellow-700">
+  <div className="buttons h-full flex cursor-pointer items-start space-x-1">
+    <button className="font-bold w-5 text-md text-yellow-700"><AiOutlineDown /></button>
+    <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
+  </div>
+</div>
+
     </section>
   );
 };

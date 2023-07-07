@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { AiFillCaretDown, AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import ScrollDownButton from "./ScrollDownButton";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {

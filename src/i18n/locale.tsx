@@ -18,6 +18,7 @@ const translationEn = {
     happy_clients: 'Happy Clients',
     complited_projects: 'Complited Projects',
     our_services: 'Our Services',
+    read_more: 'Read More',
 
 };
 
@@ -38,6 +39,7 @@ const translationFr = {
     happy_clients: 'Clients heureux',
     completed_projects: 'Projets terminés',
     our_services: 'Nos services',
+    read_more: 'Lire la suite',
 }
 
 

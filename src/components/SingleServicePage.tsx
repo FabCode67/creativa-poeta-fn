@@ -1,11 +1,14 @@
 import { Link, useParams } from "react-router-dom";
 import blogData from "../data/blog";
-import NavBar from "./NavBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import MoreNavBar from "./MoreNavBar";
 
 const SingleServicePage = () => {
   const { id } = useParams();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
   const parsedId = parseInt(id as string);
   const blog = blogData.find((blog) => blog.id === parsedId);
   const [searchQuery, setSearchQuery] = useState("");
@@ -21,8 +24,10 @@ const SingleServicePage = () => {
 
   return (
     <div className="App w-full flex flex-col snap-x scroll-smooth bg-black">
-      <NavBar />
-      <div className="flex flex-col laptop:flex-row desktop:flex-row basis-full laptop:space-x-14 desktop:space-x-14 laptop:px-7 desktop:px-7 px-2 h-fit mt-[10%]">
+      <div className="navnv-container w-full ml-6 right-2 left flex justify-end">
+      <MoreNavBar />
+      </div>
+      <div className="flex flex-col laptop:flex-row desktop:flex-row basis-full laptop:space-x-14 desktop:space-x-14 laptop:px-7 desktop:px-7 px-2 h-fit mt-[3%]">
         <div className="bg-slate-200 p-4 h-fit pt-3 laptop:basis-[70%] desktop:basis-[70%] basis-[100%]">
           <img
             src={blog?.image}

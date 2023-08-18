@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
 import LocalizationSwicher from "./Localization";
 import { useTranslation } from "react-i18next";
-import { FaTimes } from "react-icons/fa";
+import {  FaTimes } from "react-icons/fa";
 
 
-function NavBar() {
+function MoreNavBar() {
   const { t } = useTranslation();
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const toggleSidebar = () => {
@@ -40,50 +40,44 @@ function NavBar() {
       <FaTimes onClick={toggleSidebar} />
       </div>
     </div>
-              <a
-                href="#home"
+              <Link to="/#home"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#home" ? "bg-yellow-700" : ""}`}
               >
                 {t("home")}
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link to="/#about"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#about" ? "bg-yellow-700" : ""}`}
               >
                 {t("about")}
-              </a>
+              </Link>
 
-              <a
-                href="#services"
+              <Link to="/#services"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#services" ? "bg-yellow-700" : ""}`}
               >
                 {t("services")}
-              </a>
-              <a
-                href="#parteners"
+              </Link>
+              <Link to="/#parteners"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#parteners" ? "bg-yellow-700" : ""}`}
               >
                 {t("Parteners")}
-              </a>
-              <a
-                href="#faq"
+              </Link>
+              <Link to="/#faq"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#faq" ? "bg-yellow-700" : ""}`}
               >
                 {t("FAQ")}
-              </a>
+              </Link>
 
-              <a
-                href="#contact"
+              <Link to="/#contact"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#contact" ? "bg-yellow-700" : ""}`}
               >
                 {t("contact")}
-              </a>
+              </Link>
               <a
                 className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
               > <LocalizationSwicher />
@@ -95,4 +89,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default MoreNavBar;

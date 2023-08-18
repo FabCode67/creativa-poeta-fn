@@ -1,4 +1,3 @@
-import poeta from "../assets/poeta.jpeg";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";

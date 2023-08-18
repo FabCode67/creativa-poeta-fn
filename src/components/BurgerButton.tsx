@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import LocalizationSwicher from './Localization';
+import { FaTimes } from 'react-icons/fa';
 import { LiaBarsSolid } from 'react-icons/lia';
 interface BurgerButtonProps {
   sidebarVisible: boolean;

@@ -1,29 +1,28 @@
 // About.tsx
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AiOutlineDown } from "react-icons/ai";
-interface AnimatedNumberProps {
-  value: number;
-}
+// interface AnimatedNumberProps {
+//   value: number;
+// }
 
-const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ value }) => {
-  const [count, setCount] = useState(0);
+// const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ value }) => {
+//   const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (count < value) {
-        setCount((prevCount) => {
-          const nextCount = prevCount + 1;
-          return nextCount > value ? value : nextCount;
-        });
-      }
-    }, 10);
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       if (count < value) {
+//         setCount((prevCount) => {
+//           const nextCount = prevCount + 1;
+//           return nextCount > value ? value : nextCount;
+//         });
+//       }
+//     }, 10);
 
-    return () => clearInterval(interval);
-  }, [value]);
+//     return () => clearInterval(interval);
+//   }, [value]);
 
-  return <p className="text-white font-extrabold text-6xl">{count}</p>;
-};
+//   return <p className="text-white font-extrabold text-6xl">{count}</p>;
+// };
 
 const About = () => {
   const { t } = useTranslation();

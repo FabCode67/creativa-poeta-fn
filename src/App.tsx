@@ -4,16 +4,20 @@ import Footer from "./components/Footer"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import Services from "./components/Services"
+import Faq from "./components/Faq"
+import Parteners from "./components/Parteners"
 function  App() {
   return (
     <div className="App w-full flex flex-col snap-x scroll-smooth">
-      <div className="bg-slate-900 w-full">
+      <div className="w-full ml-6 right-2 left flex justify-end">
         <NavBar />
       </div>
       <div className="w-full flex flex-col scroll-smooth snap-x">
         <Home />
         <About />
         <Services />
+        <Parteners />
+        <Faq />
         <Contact />
         <Footer />
       </div>

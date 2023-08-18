@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 .homesec{
-    background-image: url('https://media.giphy.com/media/3ov9jQWd5qhiUSPDri/giphy.gif');
+    background-image: url('./assets/flags/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -21,7 +23,13 @@
       transform: translateY(6);
     }
   }
-  
+  /* .creative-design1{
+    font-style: ;
+    font-size: 3rem;
+  }
+  .creative-design2{
+    font-size: 4rem;
+  } */
   .animate-bounce{
     animation-name: bounce;
     animation-duration: 4s;
@@ -35,3 +43,28 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: 2;
   }
+
+  .faq{
+    background-image: url('./assets/flags/image4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .parteners {
+    position: relative;
+    overflow: hidden;
+    /* Add any other styles you need */
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  

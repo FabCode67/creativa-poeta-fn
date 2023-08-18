@@ -1,6 +1,7 @@
 // About.tsx
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { AiOutlineDown } from "react-icons/ai";
 interface AnimatedNumberProps {
   value: number;
 }
@@ -47,25 +48,38 @@ const About = () => {
         </div>
         <div className="grid animate-bounce p-4 gap-4 laptop:px-[6%] laptop:grid-cols-4 tablet:grid-cols-2 px-20 grid-cols-1">
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 border-b-2 laptop:border-b-0 px-5">
-          <AnimatedNumber value={127} />
+          {/* <AnimatedNumber value={127} /> */}
+          <p className="text-white font-extrabold text-6xl">WIP</p>
           <p className="text-black font-bold text-2xl">{t('awards_received')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 laptop:border-b-0 border-b-2 px-5">
-          <AnimatedNumber value={1202} />
+          {/* <AnimatedNumber value={1202} /> */}
+          <p className="text-white font-extrabold text-6xl">WIP</p>
+
           <p className="text-black font-bold text-2xl">{t('cups_of_coffee')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 border-b-2 tablet:border-b-0 border-r-0 px-5">
-          <AnimatedNumber value={201} />
+          {/* <AnimatedNumber value={201} /> */}
+          <p className="text-white font-extrabold text-6xl">WIP</p>
+
           <p className="text-black font-bold text-2xl">{t('happy_clients')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center">
-          <AnimatedNumber value={270} />
+          {/* <AnimatedNumber value={270} /> */}
+          <p className="text-white font-extrabold text-6xl">WIP</p>
+
           <p className="text-black font-bold text-2xl">{('completed-projects')}</p>
         </div>
       </div>
       </div>
       <div className="very-top laptop:h-[13%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-neutral-100">
       </div>
+      <div className="very-buttom laptop:h-[13%] desktop:h-[13%] h-[5%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-white">
+  <div className="buttons h-full flex cursor-pointer items-start mt-7 space-x-1">
+    <button className="font-bold w-5 text-md text-white"><AiOutlineDown /></button>
+    <button className="text-white text-xs font-bold"><a href="#contact">SCROLL DOWN</a></button>
+  </div>
+</div>
     </section>
   );
 };

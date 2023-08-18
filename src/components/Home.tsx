@@ -63,13 +63,13 @@ const Home = () => {
         backgroundAttachment: "fixed",
       }} >
     <div className="logo top-0 left-0 absolute pl-4 pt-4">
-      <h1 className="text-white text-2xl py-2 font-bold flex space-x-0 laptop:hidden">
+      {/* <h1 className="text-white text-2xl py-2 font-bold flex space-x-0 laptop:hidden">
         <a href="#home">Creativa Poeta</a>
-      </h1>
+      </h1> */}
       <img
         src={poeta}
         alt="Logo"
-        className="laptop:h-[5rem] laptop:block hidden laptop:w-[5rem] w-[3rem] h-[3rem]"
+        className="laptop:h-[5rem]  laptop:w-[5rem] w-[3rem] h-[3rem]"
       />
     </div>
       <div className="">

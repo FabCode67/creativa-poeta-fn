@@ -85,13 +85,9 @@ const Home = () => {
       }} >
             
 
-    <div className="logo top-0 left-0 absolute pl-4 pt-4">
+    <div className="logo top-5 border-top text-white text-xl border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
  
-      <img
-        src={poeta}
-        alt="Logo"
-        className="laptop:h-[5rem]  laptop:w-[5rem] w-[3rem] h-[3rem]"
-      />
+      Creativa Poeta
     </div>
       <div className="">
         <div className="flex justify-between">
@@ -118,7 +114,7 @@ const Home = () => {
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('start_a_project')}</button>
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('more_about_us')}</button>
             </div>
-  <BackgroundCircles backgrounds={backgrounds} currentIndex={currentIndex} />
+            <BackgroundCircles backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
 
           </div>
           <div className="laptop:block tablet:block hidden">

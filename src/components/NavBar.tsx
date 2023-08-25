@@ -3,7 +3,8 @@ import { useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
 import LocalizationSwicher from "./Localization";
 import { useTranslation } from "react-i18next";
-import { FaTimes } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 
 function NavBar() {
@@ -16,11 +17,11 @@ function NavBar() {
   const location = useLocation();
 
   return (
-    <><div className="flex-center flex flex-col m-auto float-right">
+    <><div className="flex-center flex flex-col m-auto  float-right">
       <BurgerButton
         sidebarVisible={sidebarVisible}
         toggleSidebar={toggleSidebar} />
-    </div><div className=" mx-auto z-50 fixed w-[55%] laptop:w-[15%] desktop:w-[15%] float-right justify-end  bg-black  shadow-sm ">
+    </div><div className=" mx-auto z-50 fixed w-[55%] laptop:w-[20%] desktop:w-[20%] float-right justify-end  bg-black  shadow-sm ">
         <div className="container flex justify-between">
           <nav className="flex flex-col  justify-between w-full">
             {/* <div className="logo flex-center flex items-center">
@@ -32,7 +33,7 @@ function NavBar() {
 
 
             <div
-              className={`flex flex-col justify-end p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
+              className={`flex flex-col  min-h-screen h-fit justify-start p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
             >
                           <div className="flex text-yellow-300 justify-between">
       <p>Navigation</p>
@@ -88,6 +89,25 @@ function NavBar() {
                 className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
               > <LocalizationSwicher />
               </a>
+              <p className="text-white pt-12">Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+              <div className="flex space-x-4 justify-center bottom-0 text-xl pb-4 absolute">
+                <a href="#facebook" className="text-white">
+                  <FaFacebook />
+                </a>
+                <a href="#twitter" className="text-white">
+                  <FaTwitter />
+                </a>
+                <a href="#instagram" className="text-white">
+                  <FaInstagram />
+                </a>
+                <a href="#linkedin" className="text-white">
+                  <FaLinkedin />
+                </a>
+                <a href="#mail" className="text-white">
+                  <HiOutlineMail />
+                </a>
+
+                </div>
             </div>
           </nav>
         </div>

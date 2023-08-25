@@ -68,3 +68,13 @@
     z-index: -1;
   }
   
+  /* Add this to your CSS file */
+.sidebar {
+  /* Other styles for your sidebar */
+  opacity: 0; /* Start with opacity 0 to make it invisible */
+  transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+}
+
+.sidebar.visible {
+  opacity: 1; /* When the sidebar is visible, set opacity to 1 */
+}

@@ -7,7 +7,7 @@ interface BackgroundCirclesProps {
 
 const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({ backgrounds, currentIndex }) => {
   return (
-    <div className="circles-container absolute bottom-28 left-28 transform -translate-x-1/2 flex space-x-2">
+    <div className="circles-container absolute laptop:bottom-28 desktop:bottom-28 bottom-16 left-16  laptop:left-28 desktop:left-28 transform -translate-x-1/2 flex space-x-2">
       {backgrounds.map((_background, index) => (
         <div
           key={index}

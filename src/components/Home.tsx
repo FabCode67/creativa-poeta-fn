@@ -7,7 +7,7 @@ import poeta from "../assets/poeta.jpeg";
 import image1 from '../assets/flags/image1.jpg'
 import image2 from '../assets/flags/image2.jpg'
 import image3 from '../assets/flags/image3.jpg'
-
+import BackgroundCircles from "./BackgroundCircles";
 
 
 const backgrounds = [
@@ -39,6 +39,9 @@ const Home = () => {
   const { t } = useTranslation();
   const [hoveredIcon, setHoveredIcon] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showTitle, setShowTitle] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+
   const handleIconHover = (iconName:string) => {
     setHoveredIcon(iconName);
   };
@@ -49,6 +52,22 @@ const Home = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const titleTimeout = setTimeout(() => {
+      setShowTitle(true);
+    }, 900); 
+  
+    const descriptionTimeout = setTimeout(() => {
+      setShowDescription(true);
+    }, 10000); 
+  
+    return () => {
+      clearTimeout(titleTimeout);
+      clearTimeout(descriptionTimeout);
+    };
+  }, [currentIndex]); 
+  
 
   const currentBackground = backgrounds[currentIndex];
   return (
@@ -61,11 +80,13 @@ const Home = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
+        transition: "background-image 0.5s ease-in-out",
+
       }} >
+            
+
     <div className="logo top-0 left-0 absolute pl-4 pt-4">
-      {/* <h1 className="text-white text-2xl py-2 font-bold flex space-x-0 laptop:hidden">
-        <a href="#home">Creativa Poeta</a>
-      </h1> */}
+ 
       <img
         src={poeta}
         alt="Logo"
@@ -76,10 +97,20 @@ const Home = () => {
         <div className="flex justify-between">
           <div className="flex flex-col laptop:w-[70%] tablet:w-[70%] w-full justify-start laptop:m-0 items-start">
             <div className="space-y-3 laptop:space-y-0 ">
-              <h1 className="text-2xl font-bold text-yellow-500 mx-0 animate-fade-in animate-bounce">{currentBackground.content.title}</h1>
-              <p className={` animate-bounce leading-tight laptop:text-left tablet:text-left text-center font-semibold text-white animate-slide-up ${
-    currentBackground.content.title === 'CREATIVE MODERN DESIGN' ? "laptop:text-5xl text-3xl" : "laptop:text-7xl text-4xl"
-  }`}>
+            <h1
+  className={`text-2xl font-bold text-yellow-500 mx-0 animate-fade-in animate-bounce ${
+    showTitle ? "visible2" : ""
+  }`}
+>
+  {currentBackground.content.title}
+</h1>
+<p
+  className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center font-semibold text-white animate-slide-up ${
+    currentBackground.content.title === "CREATIVE MODERN DESIGN"
+      ? "laptop:text-5xl text-3xl"
+      : "laptop:text-7xl text-4xl"
+  } ${showDescription ? "visible2" : ""}`}
+>
   {currentBackground.content.description}
 </p>
             </div>
@@ -87,9 +118,8 @@ const Home = () => {
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('start_a_project')}</button>
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('more_about_us')}</button>
             </div>
-            {/* <div className="laptop:hidden block mt-16 float-left">
-              <ScrollDownButton />
-              </div> */}
+  <BackgroundCircles backgrounds={backgrounds} currentIndex={currentIndex} />
+
           </div>
           <div className="laptop:block tablet:block hidden">
             <div className="flex flex-col space-y-5 animate-pulse hover:animate-none py-20">
@@ -144,7 +174,6 @@ const Home = () => {
     <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
   </div>
 </div>
-
     </section>
   );
 };

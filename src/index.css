@@ -2,13 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "Academy";
+  src: url("../assets/fonts/academy.ttf") format("truetype");
+}
+
+
+body {
+  font-family: 'Academy Engraved LET', cursive; 
+}
+
 .homesec{
     background-image: url('./assets/flags/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: "background-image 0.5s ease-in-out";
 }
 
 
@@ -68,13 +79,23 @@
     z-index: -1;
   }
   
-  /* Add this to your CSS file */
 .sidebar {
-  /* Other styles for your sidebar */
-  opacity: 0; /* Start with opacity 0 to make it invisible */
-  transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+  transition: transform 0.9s ease-in-out;
+  transform: translateX(+100%);
 }
 
 .sidebar.visible {
-  opacity: 1; /* When the sidebar is visible, set opacity to 1 */
+  transform: translateX(0);
+}
+
+.sidebar-closing {
+  transition: transform 0.9s ease-in-out;
+  transform: translateX(100%);
+}
+
+
+.visible2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
 }

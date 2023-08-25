@@ -10,37 +10,44 @@ import { HiOutlineMail } from "react-icons/hi";
 function NavBar() {
   const { t } = useTranslation();
   const [sidebarVisible, setSidebarVisible] = useState(false);
+
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
+  };
+
+  const closeSidebar = () => {
+    // Apply the closing class
+    setSidebarVisible(false);
+
+    // Reset sidebar visibility after the transition
+    setTimeout(() => {
+      setSidebarVisible(true);
+    }, 900); // Set the same duration as your transition
   };
 
   const location = useLocation();
 
   return (
-    <><div className="flex-center flex flex-col m-auto  float-right">
-      <BurgerButton
-        sidebarVisible={sidebarVisible}
-        toggleSidebar={toggleSidebar} />
-    </div><div className=" mx-auto z-50 fixed w-[55%] laptop:w-[20%] desktop:w-[20%] float-right justify-end  bg-black  shadow-sm ">
+    <>
+      <div className="flex-center flex flex-col m-auto float-right">
+        <BurgerButton
+          sidebarVisible={sidebarVisible}
+          toggleSidebar={toggleSidebar}
+        />
+      </div>
+      <div className={`mx-auto z-50 fixed w-[55%] laptop:w-[20%] desktop:w-[20%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}>
+
         <div className="container flex justify-between">
           <nav className="flex flex-col  justify-between w-full">
-            {/* <div className="logo flex-center flex items-center">
-      <h1 className="text-white text-2xl py-2 font-bold flex space-x-0 laptop:hidden">
-        <a href="#home">Creativa Poeta</a>
-      </h1>
-      <img src={poeta} alt="Logo" className="laptop:h-[5rem] laptop:block hidden laptop:w-[5rem] w-[3rem] h-[3rem]" />
-    </div> */}
-
-
             <div
-              className={`flex flex-col  min-h-screen h-fit justify-start p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
+              className={`navbar flex flex-col  min-h-screen h-fit justify-start p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
             >
-                          <div className="flex text-yellow-300 justify-between">
-      <p>Navigation</p>
-      <div className=" flex m-auto justify-center text-center text-white items-center">
-      <FaTimes onClick={toggleSidebar} />
-      </div>
-    </div>
+              <div className="flex text-yellow-300 justify-between">
+                <p>Navigation</p>
+                <div className=" flex m-auto justify-center text-center text-white items-center">
+                  <FaTimes onClick={toggleSidebar} />
+                </div>
+              </div>
               <a
                 href="#home"
                 onClick={toggleSidebar}
@@ -107,7 +114,7 @@ function NavBar() {
                   <HiOutlineMail />
                 </a>
 
-                </div>
+              </div>
             </div>
           </nav>
         </div>

@@ -15,15 +15,6 @@ function NavBar() {
     setSidebarVisible(!sidebarVisible);
   };
 
-  const closeSidebar = () => {
-    // Apply the closing class
-    setSidebarVisible(false);
-
-    // Reset sidebar visibility after the transition
-    setTimeout(() => {
-      setSidebarVisible(true);
-    }, 900); // Set the same duration as your transition
-  };
 
   const location = useLocation();
 

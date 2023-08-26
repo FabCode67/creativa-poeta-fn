@@ -104,20 +104,21 @@ const Home = () => {
   const currentBackground = backgrounds[currentIndex];
   return (
     <section
-  id="home"
-  onTouchStart={handleTouchStart}
-  onTouchMove={handleTouchMove}
-  onTouchEnd={handleTouchEnd}
-  className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"
-  style={{
-    backgroundImage: currentBackground.image ? `url(${currentBackground.image})` : 'none',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed",
-    transition: "background 0.9s ease-in-out",
-  }}
->
+    id="home"
+    onTouchStart={handleTouchStart}
+    onTouchMove={handleTouchMove}
+    onTouchEnd={handleTouchEnd}
+    className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"
+    style={{
+      backgroundImage: currentBackground.image ? `url(${currentBackground.image})` : 'none',
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundAttachment: "fixed",
+      transition: "background 0.9s ease-in-out",
+      animation: "slideAnimation 0.9s ease-in-out", // Add this line for slide animation
+    }}
+  >
 {currentBackground.video && (
     <video
       autoPlay
@@ -137,7 +138,7 @@ const Home = () => {
       <source src={currentBackground.video} type="video/mp4" />
     </video>
   )}
-      <div className="logo top-5 border-top text-white laptop:text-4xl desktop:text-4xl text-3xl  border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
+      <div className="logo laptop:top-5 desktop:top-5 tablet:top-4 md:top-4 top-5 border-top text-white laptop:text-4xl desktop:text-4xl text-2xl  border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute laptop:p-1 desktop:p-1">
 
         Creativa Poeta
       </div>

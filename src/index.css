@@ -99,11 +99,15 @@ body{
   animation: slideBackground 30s linear infinite;
 }
 
-@keyframes slideBackground {
+.homesec{
+  animation: "slideAnimation 0.9s ease-in-out", 
+
+}
+@keyframes slideAnimation {
   0% {
-    background-position: 0% 50%;
+    transform: translateX(-100000%);
   }
   100% {
-    background-position: 100% 50%;
+    transform: translateX(0%);
   }
 }

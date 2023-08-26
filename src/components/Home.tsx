@@ -3,7 +3,6 @@ import { AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
-import poeta from "../assets/poeta.jpeg";
 import image1 from '../assets/flags/image1.jpg'
 import image2 from '../assets/flags/image2.jpg'
 import image3 from '../assets/flags/image3.jpg'

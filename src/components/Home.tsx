@@ -7,7 +7,7 @@ import image1 from '../assets/flags/image1.jpg'
 import image2 from '../assets/flags/image2.jpg'
 import image3 from '../assets/flags/image3.jpg'
 import BackgroundCircles from "./BackgroundCircles";
-import SlideLeft from "./SlideLEft";
+import SlideLeft from "./SlideLeft";
 import SlideRight from "./SlideRight";
 
 

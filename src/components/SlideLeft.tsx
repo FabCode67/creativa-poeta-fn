@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import {AiFillRightSquare } from 'react-icons/ai'
+import { FaChevronRight } from 'react-icons/fa';
 
 interface rightSlide {
     backgrounds: { image: string; content: { title: string; description: string } }[];
@@ -13,7 +13,7 @@ const SlideLeft: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurrent
   return (
     <div className="circles-container absolute bottom-1/2 left-6  transform -translate-x-1/2 ">
            <button onClick={() => setCurrentIndex((currentIndex - 1 + backgrounds.length) % backgrounds.length)}>
-          <AiFillRightSquare className="transform rotate-180 text-yellow-600 text-3xl" />
+           <FaChevronRight className="transform hover:bg-slate-900 hover:text-white rotate-180 text-yellow-600 text-4xl" />
         </button>
 </div>
   )

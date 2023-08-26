@@ -9,7 +9,7 @@ interface rightSlide {
     setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const SlideRight: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurrentIndex }) => {
+const SlideLeft: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurrentIndex }) => {
   return (
     <div className="circles-container absolute bottom-1/2 left-6  transform -translate-x-1/2 ">
            <button onClick={() => setCurrentIndex((currentIndex - 1 + backgrounds.length) % backgrounds.length)}>
@@ -19,4 +19,4 @@ const SlideRight: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurren
   )
 }
 
-export default SlideRight
+export default SlideLeft

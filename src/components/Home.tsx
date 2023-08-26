@@ -7,7 +7,7 @@ import image1 from '../assets/flags/image1.jpg'
 import image2 from '../assets/flags/image2.jpg'
 import image3 from '../assets/flags/image3.jpg'
 import BackgroundCircles from "./BackgroundCircles";
-import SlideLEft from "./SlideLEft";
+import SlideLeft from "./SlideLEft";
 import SlideRight from "./SlideRight";
 
 
@@ -144,7 +144,7 @@ const Home = () => {
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('start_a_project')}</button>
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('more_about_us')}</button>
             </div>
-            <SlideLEft backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+            <SlideLeft backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
             <SlideRight backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
             <BackgroundCircles backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
 

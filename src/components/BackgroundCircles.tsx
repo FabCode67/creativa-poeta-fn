@@ -1,10 +1,9 @@
 import React from "react";
 
 interface BackgroundCirclesProps {
-  backgrounds: { image: string; content: { title: string; description: string } }[];
+  backgrounds: { image?: string, video?: string; content: { title: string; description: string } }[];
   currentIndex: number;
   setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
-
 }
 
 const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({ backgrounds, currentIndex }) => {

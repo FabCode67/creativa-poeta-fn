@@ -4,9 +4,9 @@ import React from 'react'
 import { FaChevronRight } from 'react-icons/fa';
 
 interface rightSlide {
-    backgrounds: { image: string; content: { title: string; description: string } }[];
-    currentIndex: number;
-    setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
+  backgrounds: { image?: string, video?: string; content: { title: string; description: string } }[];
+  currentIndex: number;
+  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
 const SlideLeft: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurrentIndex }) => {

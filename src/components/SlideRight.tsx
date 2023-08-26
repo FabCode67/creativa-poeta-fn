@@ -2,11 +2,10 @@ import React from 'react'
 import { FaChevronLeft } from 'react-icons/fa';
 
 interface rightSlide {
-    backgrounds: { image: string; content: { title: string; description: string } }[];
-    currentIndex: number;
-    setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
+  backgrounds: { image?: string, video?: string; content: { title: string; description: string } }[];
+  currentIndex: number;
+  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
 }
-
 const SlideRight: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurrentIndex }) => {
   return (
     <div className="circles-container absolute bottom-1/2 right-0 transform -translate-x-1/2">

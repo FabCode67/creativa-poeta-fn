@@ -9,6 +9,8 @@ import image3 from '../assets/flags/image3.jpg'
 import BackgroundCircles from "./BackgroundCircles";
 import SlideLeft from "./SlideLeft";
 import SlideRight from "./SlideRight";
+import vid from '../assets/vid.mp4'; // Adjust the file path
+
 
 
 const backgrounds = [
@@ -27,13 +29,14 @@ const backgrounds = [
     },
   },
   {
-    image: image3,
+    video: vid, 
     content: {
       title: "CREATIVE MODERN DESIGN",
       description: "Une créativité sans limites qui donne vie à vos idées, une approche qui intègre les dernières technologies, un design esthétique et fonctionnel qui reflète votre identité unique.",
     },
   },
 ];
+
 
 
 const Home = () => {
@@ -101,21 +104,39 @@ const Home = () => {
   const currentBackground = backgrounds[currentIndex];
   return (
     <section
-      id="home"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"
+  id="home"
+  onTouchStart={handleTouchStart}
+  onTouchMove={handleTouchMove}
+  onTouchEnd={handleTouchEnd}
+  className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"
+  style={{
+    backgroundImage: currentBackground.image ? `url(${currentBackground.image})` : 'none',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    transition: "background 0.9s ease-in-out",
+  }}
+>
+{currentBackground.video && (
+    <video
+      autoPlay
+      loop
+      muted
+      className="video-background"
       style={{
-        backgroundImage: `url(${currentBackground.image})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        transition: "background-image 0.9s ease-in-out",
-      }} >
-
-
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: -1,
+        objectFit: "cover",
+      }}
+    >
+      <source src={currentBackground.video} type="video/mp4" />
+    </video>
+  )}
       <div className="logo top-5 border-top text-white laptop:text-4xl desktop:text-4xl text-3xl  border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
 
         Creativa Poeta

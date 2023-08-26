@@ -112,7 +112,7 @@ const Home = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        transition: "background-image 0.5s ease-in-out",
+        transition: "background-image 0.9s ease-in-out",
       }} >
 
 

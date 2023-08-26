@@ -71,19 +71,19 @@ const Home = () => {
     };
   }, [currentIndex]);
 
-  const handleTouchStart = (e: React.TouchEvent) => { // Specify the event type
+  const handleTouchStart = (e: React.TouchEvent) => { 
     const touch = e.touches[0];
     setTouchStartX(touch.clientX);
   };
 
-  const handleTouchMove = (e: React.TouchEvent) => { // Specify the event type
+  const handleTouchMove = (e: React.TouchEvent) => { 
     if (!touchStartX) return;
 
     const touch = e.touches[0];
     const touchEndX = touch.clientX;
 
     const deltaX = touchEndX - touchStartX;
-    const sensitivity = 50; // Adjust this value based on your preference
+    const sensitivity = 50; 
 
     if (deltaX > sensitivity) {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + backgrounds.length) % backgrounds.length);
@@ -126,15 +126,15 @@ const Home = () => {
             
             <div className="space-y-3 laptop:space-y-0 ">
               <h1
-                className={`text-2xl font-bold text-yellow-500 mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-6xl desktop:text-6xl tablet:text-5xl md:text-5xl text-4xl font-bold text-yellow-500 mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title}
               </h1>
               <p
                 className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"
-                    ? "laptop:text-5xl text-3xl"
-                    : "laptop:text-7xl text-4xl"
+                    ? "laptop:text-3xl text-2xl"
+                    : "laptop:text-4xl text-3xl"
                   } ${showDescription ? "visible2" : ""}`}
               >
                 {currentBackground.content.description}

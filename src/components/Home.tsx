@@ -42,6 +42,8 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showTitle, setShowTitle] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
+  // const [touchStartX, setTouchStartX] = useState(null); // Add this line
+  const [touchStartX, setTouchStartX] = useState<number | null>(null); // Adjust the state type
 
   const handleIconHover = (iconName: string) => {
     setHoveredIcon(iconName);
@@ -69,11 +71,40 @@ const Home = () => {
     };
   }, [currentIndex]);
 
+  const handleTouchStart = (e: React.TouchEvent) => { // Specify the event type
+    const touch = e.touches[0];
+    setTouchStartX(touch.clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => { // Specify the event type
+    if (!touchStartX) return;
+
+    const touch = e.touches[0];
+    const touchEndX = touch.clientX;
+
+    const deltaX = touchEndX - touchStartX;
+    const sensitivity = 50; // Adjust this value based on your preference
+
+    if (deltaX > sensitivity) {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + backgrounds.length) % backgrounds.length);
+      setTouchStartX(null);
+    } else if (deltaX < -sensitivity) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
+      setTouchStartX(null);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setTouchStartX(null);
+  };
 
   const currentBackground = backgrounds[currentIndex];
   return (
     <section
       id="home"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
       className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"
       style={{
         backgroundImage: `url(${currentBackground.image})`,

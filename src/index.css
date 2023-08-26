@@ -18,15 +18,6 @@ body{
 }
 
 
-/* .homesec{
-    background-image: url('./assets/flags/image2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    transition: "background-image 0.5s ease-in-out";
-} */
-
 
 @keyframes bounce {
     0% {

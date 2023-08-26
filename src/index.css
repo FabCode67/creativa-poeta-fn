@@ -8,19 +8,24 @@
   src: url("../assets/fonts/academy.ttf") format("truetype");
 }
 
-
-body {
+.log{
   font-family: 'Academy Engraved LET', cursive; 
 }
 
-.homesec{
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+/* .homesec{
     background-image: url('./assets/flags/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     transition: "background-image 0.5s ease-in-out";
-}
+} */
 
 
 @keyframes bounce {
@@ -98,4 +103,16 @@ body {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+.slide-animation {
+  animation: slideBackground 30s linear infinite;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

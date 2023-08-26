@@ -7,6 +7,8 @@ import image1 from '../assets/flags/image1.jpg'
 import image2 from '../assets/flags/image2.jpg'
 import image3 from '../assets/flags/image3.jpg'
 import BackgroundCircles from "./BackgroundCircles";
+import SlideLEft from "./SlideLEft";
+import SlideRight from "./SlideRight";
 
 
 const backgrounds = [
@@ -41,13 +43,13 @@ const Home = () => {
   const [showTitle, setShowTitle] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
 
-  const handleIconHover = (iconName:string) => {
+  const handleIconHover = (iconName: string) => {
     setHoveredIcon(iconName);
   };
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
-    }, 4000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -55,18 +57,18 @@ const Home = () => {
   useEffect(() => {
     const titleTimeout = setTimeout(() => {
       setShowTitle(true);
-    }, 900); 
-  
+    }, 900);
+
     const descriptionTimeout = setTimeout(() => {
       setShowDescription(true);
-    }, 10000); 
-  
+    }, 10000);
+
     return () => {
       clearTimeout(titleTimeout);
       clearTimeout(descriptionTimeout);
     };
-  }, [currentIndex]); 
-  
+  }, [currentIndex]);
+
 
   const currentBackground = backgrounds[currentIndex];
   return (
@@ -80,45 +82,45 @@ const Home = () => {
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
         transition: "background-image 0.5s ease-in-out",
-
       }} >
-            
 
-    <div className="logo top-5 border-top text-white text-xl border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
- 
-      Creativa Poeta
-    </div>
+
+      <div className="logo top-5 border-top text-white text-xl border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
+
+        Creativa Poeta
+      </div>
       <div className="">
         <div className="flex justify-between">
           <div className="flex flex-col laptop:w-[70%] tablet:w-[70%] w-full justify-start laptop:m-0 items-start">
+            
             <div className="space-y-3 laptop:space-y-0 ">
-            <h1
-  className={`text-2xl font-bold text-yellow-500 mx-0 animate-fade-in animate-bounce ${
-    showTitle ? "visible2" : ""
-  }`}
->
-  {currentBackground.content.title}
-</h1>
-<p
-  className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center font-semibold text-white animate-slide-up ${
-    currentBackground.content.title === "CREATIVE MODERN DESIGN"
-      ? "laptop:text-5xl text-3xl"
-      : "laptop:text-7xl text-4xl"
-  } ${showDescription ? "visible2" : ""}`}
->
-  {currentBackground.content.description}
-</p>
+              <h1
+                className={`text-2xl font-bold text-yellow-500 mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                  }`}
+              >
+                {currentBackground.content.title}
+              </h1>
+              <p
+                className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"
+                    ? "laptop:text-5xl text-3xl"
+                    : "laptop:text-7xl text-4xl"
+                  } ${showDescription ? "visible2" : ""}`}
+              >
+                {currentBackground.content.description}
+              </p>
             </div>
             <div className="flex animate-bounce laptop:flex-row tablet:flex-row flex-col laptop:space-x-5 tablet:space-x-5 mt-12 mx-auto laptop:mx-0 w-full space-y-4 laptop:space-y-0 tablet:space-y-0">
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('start_a_project')}</button>
               <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('more_about_us')}</button>
             </div>
+            <SlideLEft backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+            <SlideRight backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
             <BackgroundCircles backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
 
           </div>
           <div className="laptop:block tablet:block hidden">
             <div className="flex flex-col space-y-5 animate-pulse hover:animate-none py-20">
-            <div
+              <div
                 className={`group rounded-full h-[3rem] w-[3rem] border-4 text-white text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Twitter" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Twitter")}
                 onMouseLeave={() => handleIconHover("")}
@@ -159,16 +161,15 @@ const Home = () => {
                 <HiOutlineMail />
               </div>
             </div>
-            {/* <ScrollDownButton />            */}
           </div>
         </div>
       </div>
       <div className="very-buttom h-[13%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-yellow-700">
-  <div className="buttons h-full flex cursor-pointer items-start space-x-1">
-    <button className="font-bold w-5 text-md text-yellow-700"><AiOutlineDown /></button>
-    <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
-  </div>
-</div>
+        <div className="buttons h-full flex cursor-pointer items-start space-x-1">
+          <button className="font-bold w-5 text-md text-yellow-700"><AiOutlineDown /></button>
+          <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
+        </div>
+      </div>
     </section>
   );
 };

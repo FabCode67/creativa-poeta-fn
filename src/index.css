@@ -111,3 +111,35 @@ body{
     transform: translateX(0%);
   }
 }
+
+
+/* Add these classes to your existing CSS or create a new CSS file */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.9s ease-in-out forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.9s ease-in-out forwards;
+}

@@ -47,6 +47,7 @@ const Home = () => {
   const [showDescription, setShowDescription] = useState(false);
   // const [touchStartX, setTouchStartX] = useState(null); // Add this line
   const [touchStartX, setTouchStartX] = useState<number | null>(null); // Adjust the state type
+  const prevIndex = (currentIndex - 1 + backgrounds.length) % backgrounds.length;
 
   const handleIconHover = (iconName: string) => {
     setHoveredIcon(iconName);
@@ -78,6 +79,7 @@ const Home = () => {
     const touch = e.touches[0];
     setTouchStartX(touch.clientX);
   };
+  
 
   const handleTouchMove = (e: React.TouchEvent) => { 
     if (!touchStartX) return;
@@ -108,10 +110,11 @@ const Home = () => {
     onTouchStart={handleTouchStart}
     onTouchMove={handleTouchMove}
     onTouchEnd={handleTouchEnd}
-    className="homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative"
+    className={`homesec h-fit min-h-screen laptop:m-0 tablet:m-0 tablet:-0 flex flex-col laptop:p-[10rem] tablet:p-[8rem] laptop:pr-[4rem] tablet:pr-[4rem] laptop:justify-normal laptop:text-left text-center tablet:text-center items-center my-auto justify-center px-2 relative ${currentIndex === prevIndex ? "slide-in" : "slide-out"}`}
     style={{
-      backgroundImage: currentBackground.image ? `url(${currentBackground.image})` : 'none',
-      backgroundRepeat: "no-repeat",
+      backgroundImage: currentBackground.image
+      ? `url(${currentBackground.image})`
+      : "none",      backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed",

@@ -5,7 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 import image1 from '../assets/flags/image1.jpg'
 import image2 from '../assets/flags/image2.jpg'
-import image3 from '../assets/flags/image3.jpg'
+// import image3 from '../assets/flags/image3.jpg'
 import BackgroundCircles from "./BackgroundCircles";
 import SlideLeft from "./SlideLeft";
 import SlideRight from "./SlideRight";

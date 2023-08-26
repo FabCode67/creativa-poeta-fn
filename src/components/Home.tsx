@@ -116,7 +116,7 @@ const Home = () => {
       }} >
 
 
-      <div className="logo top-5 border-top text-white text-xl border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
+      <div className="logo top-5 border-top text-white laptop:text-4xl desktop:text-4xl text-3xl  border-t-4 border-l-yellow-500 border-t-yellow-500 border-l-4 left-3 absolute p-1">
 
         Creativa Poeta
       </div>
@@ -152,7 +152,7 @@ const Home = () => {
           <div className="laptop:block tablet:block hidden">
             <div className="flex flex-col space-y-5 animate-pulse hover:animate-none py-20">
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-white text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Twitter" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Twitter" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Twitter")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -160,7 +160,7 @@ const Home = () => {
                 <AiOutlineTwitter />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-white text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Facebook" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Facebook" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Facebook")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -168,7 +168,7 @@ const Home = () => {
                 <FaFacebookF />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-white text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Instagram" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Instagram" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Instagram")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -176,7 +176,7 @@ const Home = () => {
                 <FaInstagram />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-white text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "LinkedIn" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "LinkedIn" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("LinkedIn")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -184,7 +184,7 @@ const Home = () => {
                 <FaLinkedinIn />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-white text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Mail" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Mail" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Mail")}
                 onMouseLeave={() => handleIconHover("")}
               >

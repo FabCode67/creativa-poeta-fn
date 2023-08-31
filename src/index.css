@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Ysabeau+Infant:wght@300&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @font-face {
   font-family: "Academy";
   src: url("../assets/fonts/academy.ttf") format("truetype");
 }
 
 .logo{
-  font-family: 'Ysabeau Infant', sans-serif;
-}
+  font-family: 'Monoton', cursive;}
 
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -143,4 +141,36 @@ body{
 
 .slide-out {
   animation: slideOut 0.9s ease-in-out forwards;
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes backOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes backOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }

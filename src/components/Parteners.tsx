@@ -41,8 +41,8 @@ const Parteners = () => {
       </div>
       <div className="very-top laptop:h-[13%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-neutral-100">
       </div>
-      <div className="very-buttom h-[13%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-white">
-  <div className="buttons h-full flex cursor-pointer items-start mt-7 space-x-1">
+      <div className="very-buttom h-[7%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-white">
+  <div className="buttons h-full flex cursor-pointer items-start mt-0 space-x-1">
     <button className="font-bold w-5 text-md text-white"><AiOutlineDown /></button>
     <button className="text-white text-xs font-bold"><a href="#faq">SCROLL DOWN</a></button>
   </div>

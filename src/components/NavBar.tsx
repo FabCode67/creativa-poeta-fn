@@ -33,7 +33,7 @@ function NavBar() {
             <div
               className={`navbar flex flex-col  min-h-screen h-fit justify-start p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
             >
-              <div className="flex text-[#FFE533] justify-between">
+              <div className="flex text-[#EEBA2B] justify-between">
                 <p>Navigation</p>
                 <div className=" flex m-auto justify-center text-center text-white items-center">
                   <FaTimes onClick={toggleSidebar} />
@@ -42,14 +42,14 @@ function NavBar() {
               <a
                 href="#home"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#home" ? "bg-[#FFE533]" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#EEBA2B] ${location.hash === "#home" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("home")}
               </a>
               <a
                 href="#about"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#about" ? "bg-[#FFE533]" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#EEBA2B] ${location.hash === "#about" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("about")}
               </a>
@@ -57,21 +57,21 @@ function NavBar() {
               <a
                 href="#services"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#services" ? "bg-[#FFE533]" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#EEBA2B] ${location.hash === "#services" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("services")}
               </a>
               <a
                 href="#parteners"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#parteners" ? "bg-[#FFE533]" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("Parteners")}
               </a>
               <a
                 href="#faq"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#faq" ? "bg-[#FFE533]" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#EEBA2B] ${location.hash === "#faq" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("FAQ")}
               </a>
@@ -79,7 +79,7 @@ function NavBar() {
               <a
                 href="#contact"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#contact" ? "bg-[#FFE533]" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#EEBA2B] ${location.hash === "#contact" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("contact")}
               </a>

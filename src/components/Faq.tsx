@@ -21,7 +21,7 @@ const Faq = () => {
         >
           {faqData.map((faq) => (
           <Link
-            className="bg-[#FFE533] px-4 py-2 h-[35rem]" to={`/faq/${faq.id}`} key={""}>
+            className="bg-[#EEBA2B] px-4 py-2 h-[35rem]" to={`/faq/${faq.id}`} key={""}>
             {/* <img
               src={faq.image}
               alt="test"
@@ -38,7 +38,7 @@ const Faq = () => {
         </div>
      
       </div>
-      <div className="laptop:h-[10%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-[#FFE533]">
+      <div className="laptop:h-[10%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-[#EEBA2B]">
       </div>
 
       <div className="very-buttom laptop:h-[13%] desktop:h-[13%] h-[5%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-white">

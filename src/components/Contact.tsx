@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
           </div>
           </div>
-          <div className="laptop:h-[10%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-[#FFE533]">
+          <div className="laptop:h-[10%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-[#EEBA2B]">
       </div>
       </section>
     );

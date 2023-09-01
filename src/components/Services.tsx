@@ -13,7 +13,7 @@ const Services = () => {
     <section id='services' className='justify-center mb-4 h-fit min-h-screen mt-0 flex flex-col bg-white items-center relative'>
       
       <div className="mt-[3%] laptop:px-40 px-2">
-        <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#FFE533]">
+        <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#EEBA2B]">
           {t('our_services')}
         </h1>
         <div
@@ -32,7 +32,7 @@ const Services = () => {
             <p className="mt-1 line-clamp-6">
               {blog.description}
             </p>
-            <button className="bg-[#FFE533] bottom-0 relative hover:bg-yellow-500 text-white w-full font-bold py-3 px-4 rounded mt-4">
+            <button className="bg-[#EEBA2B] bottom-0 relative hover:bg-yellow-500 text-white w-full font-bold py-3 px-4 rounded mt-4">
               {t('read_more')}
             </button>
           </Link>
@@ -42,9 +42,9 @@ const Services = () => {
       </div>
       <div className="laptop:h-[8%] tablet:h-[13%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-yellow-800">
       </div>
-      <div className="very-buttom h-[5%] laptop:block desktop:block hidden laptop:w-[5%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#FFE533]">
+      <div className="very-buttom h-[5%] laptop:block desktop:block hidden laptop:w-[5%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#EEBA2B]">
   <div className="buttons h-full flex cursor-pointer items-start space-x-1">
-    <button className="font-bold w-5 text-md text-[#FFE533]"><AiOutlineDown /></button>
+    <button className="font-bold w-5 text-md text-[#EEBA2B]"><AiOutlineDown /></button>
     <button className="text-black text-xs font-bold"><a href="#parteners">DOWN</a></button>
   </div>
 </div>

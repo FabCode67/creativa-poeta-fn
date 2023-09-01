@@ -152,7 +152,7 @@ const Home = () => {
             
             <div className="space-y-3 laptop:space-y-0 ">
               <h1
-                className={`laptop:text-6xl desktop:text-6xl tablet:text-5xl md:text-5xl text-3xl font-bold laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-yellow-500 mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-6xl desktop:text-6xl tablet:text-5xl md:text-5xl text-3xl font-bold laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title}
@@ -182,7 +182,7 @@ const Home = () => {
                 onMouseEnter={() => handleIconHover("Twitter")}
                 onMouseLeave={() => handleIconHover("")}
               >
-                <span className={`absolute right-36 text-yellow-700 ${hoveredIcon === "Twitter" ? "block" : "hidden"}`}>Twitter</span>
+                <span className={`absolute right-36 text-[#FFFF00] ${hoveredIcon === "Twitter" ? "block" : "hidden"}`}>Twitter</span>
                 <AiOutlineTwitter />
               </div>
               <div
@@ -190,7 +190,7 @@ const Home = () => {
                 onMouseEnter={() => handleIconHover("Facebook")}
                 onMouseLeave={() => handleIconHover("")}
               >
-                <span className={`absolute right-36 text-yellow-700 ${hoveredIcon === "Facebook" ? "block" : "hidden"}`}>Facebook</span>
+                <span className={`absolute right-36 text-[#FFFF00] ${hoveredIcon === "Facebook" ? "block" : "hidden"}`}>Facebook</span>
                 <FaFacebookF />
               </div>
               <div
@@ -198,7 +198,7 @@ const Home = () => {
                 onMouseEnter={() => handleIconHover("Instagram")}
                 onMouseLeave={() => handleIconHover("")}
               >
-                <span className={`absolute right-36 text-yellow-700 ${hoveredIcon === "Instagram" ? "block" : "hidden"}`}>Instagram</span>
+                <span className={`absolute right-36 text-[#FFFF00] ${hoveredIcon === "Instagram" ? "block" : "hidden"}`}>Instagram</span>
                 <FaInstagram />
               </div>
               <div
@@ -206,7 +206,7 @@ const Home = () => {
                 onMouseEnter={() => handleIconHover("LinkedIn")}
                 onMouseLeave={() => handleIconHover("")}
               >
-                <span className={`absolute right-36 text-yellow-700 ${hoveredIcon === "LinkedIn" ? "block" : "hidden"}`}>LinkedIn</span>
+                <span className={`absolute right-36 text-[#FFFF00] ${hoveredIcon === "LinkedIn" ? "block" : "hidden"}`}>LinkedIn</span>
                 <FaLinkedinIn />
               </div>
               <div
@@ -214,7 +214,7 @@ const Home = () => {
                 onMouseEnter={() => handleIconHover("Mail")}
                 onMouseLeave={() => handleIconHover("")}
               >
-                <span className={`absolute right-36 text-yellow-700 ${hoveredIcon === "Mail" ? "block" : "hidden"}`}>Mail</span>
+                <span className={`absolute right-36 text-[#FFFF00] ${hoveredIcon === "Mail" ? "block" : "hidden"}`}>Mail</span>
                 <HiOutlineMail />
               </div>
             </div>
@@ -223,7 +223,7 @@ const Home = () => {
       </div>
       <div className="very-buttom h-[13%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-yellow-700">
         <div className="buttons h-full flex cursor-pointer items-start space-x-1">
-          <button className="font-bold w-5 text-md text-yellow-700"><AiOutlineDown /></button>
+          <button className="font-bold w-5 text-md text-[#FFFF00]"><AiOutlineDown /></button>
           <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
         </div>
       </div>

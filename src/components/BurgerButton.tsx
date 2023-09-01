@@ -12,12 +12,12 @@ const BurgerButton: React.FC<BurgerButtonProps> = ({
 }) => {
   return (
     <div
-      className={`font-bold z-30 text-3xl md:text-4xl bg-black text-white flex space-x-3 justify-center m-auto text-center items-center rounded-md p-1 md:p-1 fixed top-5 right-4`}
+      className={`font-bold z-30 text-3xl md:text-4xl bg-slate-800  text-white flex space-x-3 justify-center m-auto text-center items-center rounded-md p-1 md:p-1 fixed top-5 right-4`}
     > 
      {/* <p className='text-yellow-700 text-sm'>
       <LocalizationSwicher />
      </p> */}
-    <p className='text-yellow-700 text-xl font-thin'>MENU</p>
+    <p className='menu text-yellow-700 text-lg font-bold'>MENU</p>
       {sidebarVisible ? (
         <FaTimes onClick={toggleSidebar} />
       ) : (

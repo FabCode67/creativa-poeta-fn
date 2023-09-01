@@ -8,7 +8,7 @@
   src: url("../assets/fonts/academy.ttf") format("truetype");
 }
 
-.logo{
+.logo , .menu{
   font-family: 'Monoton', cursive;}
 
 body{

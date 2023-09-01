@@ -143,7 +143,7 @@ const Home = () => {
       <source src={currentBackground.video} type="video/mp4" />
     </video>
   )}
-      <div className="logo laptop:top-5 desktop:top-5 tablet:top-4 md:top-4 top-5  text-white laptop:text-4xl desktop:text-4xl text-2xl  left-3 absolute laptop:p-1 desktop:p-1">
+      <div className="logo laptop:top-5 desktop:top-5 tablet:top-4 md:top-4 top-6  text-white laptop:text-4xl desktop:text-4xl text-xl  left-3 absolute laptop:p-1 desktop:p-1">
         Creativa Poeta
       </div>
       <div className="">
@@ -152,13 +152,13 @@ const Home = () => {
             
             <div className="space-y-3 laptop:space-y-0 ">
               <h1
-                className={`laptop:text-6xl desktop:text-6xl tablet:text-5xl md:text-5xl text-3xl font-bold px-7 text-yellow-500 mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-6xl desktop:text-6xl tablet:text-5xl md:text-5xl text-3xl font-bold laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-yellow-500 mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title}
               </h1>
               <p
-                className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center px-7 font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"
+                className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"
                     ? "laptop:text-3xl text-xl"
                     : "laptop:text-4xl text-2xl"
                   } ${showDescription ? "visible2" : ""}`}

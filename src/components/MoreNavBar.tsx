@@ -34,7 +34,7 @@ function MoreNavBar() {
             <div
               className={`flex flex-col justify-end p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
             >
-                          <div className="flex text-yellow-300 justify-between">
+                          <div className="flex text-[#FFE533] justify-between">
       <p>Navigation</p>
       <div className=" flex m-auto justify-center text-center text-white items-center">
       <FaTimes onClick={toggleSidebar} />
@@ -42,39 +42,39 @@ function MoreNavBar() {
     </div>
               <Link to="/#home"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#home" ? "bg-yellow-700" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#home" ? "bg-[#FFE533]" : ""}`}
               >
                 {t("home")}
               </Link>
               <Link to="/#about"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#about" ? "bg-yellow-700" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#about" ? "bg-[#FFE533]" : ""}`}
               >
                 {t("about")}
               </Link>
 
               <Link to="/#services"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#services" ? "bg-yellow-700" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#services" ? "bg-[#FFE533]" : ""}`}
               >
                 {t("services")}
               </Link>
               <Link to="/#parteners"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#parteners" ? "bg-yellow-700" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#parteners" ? "bg-[#FFE533]" : ""}`}
               >
                 {t("Parteners")}
               </Link>
               <Link to="/#faq"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#faq" ? "bg-yellow-700" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#faq" ? "bg-[#FFE533]" : ""}`}
               >
                 {t("FAQ")}
               </Link>
 
               <Link to="/#contact"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 hover:text-yellow-700 ${location.hash === "#contact" ? "bg-yellow-700" : ""}`}
+                className={` overflow-y-auto rounded text-red-200 hover:text-[#FFE533] ${location.hash === "#contact" ? "bg-[#FFE533]" : ""}`}
               >
                 {t("contact")}
               </Link>

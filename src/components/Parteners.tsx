@@ -22,7 +22,7 @@ const Parteners = () => {
         <div className="flex justify-center flex-col laptop:space-y-10 space-y-5 laptop:w-[50%] w-[90%] tablet:w-[70%] mx-auto">
           <div className="flex justify-center flex-col laptop:space-y-5 space-x-3">
             <div className="flex justify-center">
-              <h1 className="laptop:text-2xl text-md font-bold text-yellow-700 mx-0 animate-fade-in  animate-bounce">{t('OUR CLIENTS')}</h1>
+              <h1 className="laptop:text-2xl text-md font-bold text-[#FFE533] mx-0 animate-fade-in  animate-bounce">{t('OUR CLIENTS')}</h1>
             </div>
             <div className="fle w-[full]">
               <h1 className="laptop:text-3xl leading-relaxed tablet:text-3xl text-2xl font-bold text-white  animate-fade-in animate-bounce underline-offset-6">{t('CREATIVA POETA has been honored to partner up with these clients')}</h1>
@@ -31,7 +31,7 @@ const Parteners = () => {
           <div className="flex justify-center mx-auto h-px bg-white animate-bounce w-full">
           </div>
         </div>
-        <div className="flex justify-between text-center text-9xl laptop:px-40 px-4 text-yellow-700">
+        <div className="flex justify-between text-center text-9xl laptop:px-40 px-4 text-[#FFE533]">
             <AiFillApple />
             <BiLogoReact />
             <SiVirtualbox />

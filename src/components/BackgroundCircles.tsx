@@ -13,7 +13,7 @@ const BackgroundCircles: React.FC<BackgroundCirclesProps> = ({ backgrounds, curr
         {backgrounds.map((_background, index) => (
           <div
             key={index}
-            className={`w-3 h-3 rounded-full ${currentIndex === index ? "bg-yellow-500" : "bg-gray-300"
+            className={`w-3 h-3 rounded-full ${currentIndex === index ? "bg-[#FFE533]" : "bg-gray-300"
               }`}
           ></div>
         ))}

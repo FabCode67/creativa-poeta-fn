@@ -3,7 +3,7 @@ import { AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
-import image1 from '../assets/flags/image1.jpg'
+import image8 from '../assets/flags/image8.jpg'
 import image2 from '../assets/flags/image2.jpg'
 // import image3 from '../assets/flags/image3.jpg'
 import BackgroundCircles from "./BackgroundCircles";
@@ -15,7 +15,7 @@ import vid from '../assets/vid.mp4'; // Adjust the file path
 
 const backgrounds = [
   {
-    image: image1,
+    image: image8,
     content: {
       title: "TRANSFORMEZ VOS IDEES EN RÉALITÉ",
       description: "Des solutions sur mesure qui captivent votre public et vous démarquent de la concurrence",
@@ -104,6 +104,9 @@ const Home = () => {
   };
 
   const currentBackground = backgrounds[currentIndex];
+
+
+  
   return (
 <section
   id="home"

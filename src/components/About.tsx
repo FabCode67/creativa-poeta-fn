@@ -28,7 +28,7 @@ const About = () => {
   const { t } = useTranslation();
   
   return (
-    <section id="about" className="bg-yellow-700 h-fit min-h-screen  flex flex-col justify-center items-center text-center relative"> {/* Added relative positioning */}
+    <section id="about" className="bg-[#EEBA2B] h-fit min-h-screen  flex flex-col justify-center items-center text-center relative"> {/* Added relative positioning */}
       <div className="laptop:mt-[6%] tablet:mt-[6%] laptop:space-y-10 space-y-5 mt-[7rem]">
         <div className="flex justify-center flex-col laptop:space-y-10 space-y-5 laptop:w-[50%] w-[90%] tablet:w-[70%] mx-auto">
           <div className="flex justify-center flex-col laptop:space-y-5 space-x-3">

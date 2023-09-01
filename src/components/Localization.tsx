@@ -26,10 +26,10 @@ const LocalizationSwicher = () => {
   };
 
   return (
-    <div className="relative z-50 text-yellow-700 hover:text-white">
+    <div className="relative z-50 text-[#FFE533] hover:text-white">
       <button
         type="button"
-        className="flex items-center h-auto laptop:py-2 md:h-fit md:px-1 md:py-0 border border-yellow-700 rounded-full cursor-pointer"
+        className="flex items-center h-auto laptop:py-2 md:h-fit md:px-1 md:py-0 border border-[#FFE533] rounded-full cursor-pointer"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
         <Image
@@ -56,12 +56,12 @@ const LocalizationSwicher = () => {
         </svg>
       </button>
       {isDropdownOpen && (
-        <ul className="absolute text-base w-max top-full left-0 right-0 bg-white border border-yellow-700 rounded-b-md shadow-md z-[9999] ">
+        <ul className="absolute text-base w-max top-full left-0 right-0 bg-white border border-[#FFE533] rounded-b-md shadow-md z-[9999] ">
           {languages.map((lan) => (
             <button
               type="button"
               key={lan.code}
-              className="flex items-center w-full px-3 py-2 text-base cursor-pointer hover:bg-yellow-700"
+              className="flex items-center w-full px-3 py-2 text-base cursor-pointer hover:bg-[#FFE533]"
               onClick={() => handleLanguageSelect(lan)}
             >
               <Image className="h-5 w-6 mr-2" alt="Language flag" src={lan.flag} width={''} />

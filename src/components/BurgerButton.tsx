@@ -17,7 +17,7 @@ const BurgerButton: React.FC<BurgerButtonProps> = ({
      {/* <p className='text-yellow-700 text-sm'>
       <LocalizationSwicher />
      </p> */}
-    <p className='menu text-yellow-700 text-base font-thin'>MENU</p>
+    <p className='menu text-yellow-500 text-base font-thin'>MENU</p>
       {sidebarVisible ? (
         <FaTimes onClick={toggleSidebar} />
       ) : (

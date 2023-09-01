@@ -21,7 +21,7 @@ import { AiOutlineDown } from "react-icons/ai";
 //     return () => clearInterval(interval);
 //   }, [value]);
 
-//   return <p className="text-white font-extrabold text-6xl">{count}</p>;
+//   return <p className="text-slate-800 font-extrabold text-6xl">{count}</p>;
 // };
 
 const About = () => {
@@ -36,36 +36,36 @@ const About = () => {
               <h1 className="laptop:text-2xl text-md font-bold text-black mx-0 animate-fade-in  animate-bounce">{t('hello_there')}</h1>
             </div>
             <div className="flex justify-center">
-              <h1 className="laptop:text-5xl tablet:text-3xl text-2xl font-bold text-white mx-0 animate-fade-in animate-bounce underline-offset-6">{t('we_are_creativa_poeta')}</h1>
+              <h1 className="laptop:text-5xl tablet:text-3xl text-2xl font-bold text-slate-800 mx-0 animate-fade-in animate-bounce underline-offset-6">{t('we_are_creativa_poeta')}</h1>
             </div>
           </div>
           <div className="flex justify-center mx-auto h-px bg-white animate-bounce w-full">
           </div>
         </div>
         <div className="flex justify-center text-center laptop:px-40 px-4">
-          <h1 className="laptop:text-2xl leading-relaxed	 tablet:text-2xl text-center text-white mx-0 animate-fade-in animate-bounce underline-offset-6">{t('about_us_content')}</h1>
+          <h1 className="laptop:text-2xl leading-relaxed	 tablet:text-2xl text-center text-slate-80 mx-0 animate-fade-in animate-bounce underline-offset-6">{t('about_us_content')}</h1>
         </div>
         <div className="grid animate-bounce p-4 gap-4 laptop:px-[6%] laptop:grid-cols-4 tablet:grid-cols-2 px-20 grid-cols-1">
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 border-b-2 laptop:border-b-0 px-5">
           {/* <AnimatedNumber value={127} /> */}
-          <p className="text-white font-extrabold text-6xl">WIP</p>
+          <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
           <p className="text-black font-bold text-2xl">{t('awards_received')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 laptop:border-b-0 border-b-2 px-5">
           {/* <AnimatedNumber value={1202} /> */}
-          <p className="text-white font-extrabold text-6xl">WIP</p>
+          <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
 
           <p className="text-black font-bold text-2xl">{t('cups_of_coffee')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 border-b-2 tablet:border-b-0 border-r-0 px-5">
           {/* <AnimatedNumber value={201} /> */}
-          <p className="text-white font-extrabold text-6xl">WIP</p>
+          <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
 
           <p className="text-black font-bold text-2xl">{t('happy_clients')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center">
           {/* <AnimatedNumber value={270} /> */}
-          <p className="text-white font-extrabold text-6xl">WIP</p>
+          <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
 
           <p className="text-black font-bold text-2xl">{('completed-projects')}</p>
         </div>
@@ -75,8 +75,8 @@ const About = () => {
       </div>
       <div className="very-buttom laptop:h-[13%] desktop:h-[13%] h-[5%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-white">
   <div className="buttons h-full flex cursor-pointer items-start mt-7 space-x-1">
-    <button className="font-bold w-5 text-md text-white"><AiOutlineDown /></button>
-    <button className="text-white text-xs font-bold"><a href="#contact">SCROLL DOWN</a></button>
+    <button className="font-bold w-5 text-md text-slate-800"><AiOutlineDown /></button>
+    <button className="text-slate-800 text-xs font-bold"><a href="#contact">SCROLL DOWN</a></button>
   </div>
 </div>
     </section>

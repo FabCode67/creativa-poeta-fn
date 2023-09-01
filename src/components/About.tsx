@@ -45,31 +45,31 @@ const About = () => {
         <div className="flex justify-center text-center laptop:px-40 px-4">
           <h1 className="laptop:text-2xl leading-relaxed	 tablet:text-2xl text-center text-slate-80 mx-0 animate-fade-in animate-bounce underline-offset-6">{t('about_us_content')}</h1>
         </div>
-        <div className="grid animate-bounce p-4 gap-4 laptop:px-[6%] laptop:grid-cols-4 tablet:grid-cols-2 px-20 grid-cols-1">
+        {/* <div className="grid animate-bounce p-4 gap-4 laptop:px-[6%] laptop:grid-cols-4 tablet:grid-cols-2 px-20 grid-cols-1">
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 border-b-2 laptop:border-b-0 px-5">
-          {/* <AnimatedNumber value={127} /> */}
+          <AnimatedNumber value={127} />
           <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
           <p className="text-black font-bold text-2xl">{t('awards_received')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 laptop:border-b-0 border-b-2 px-5">
-          {/* <AnimatedNumber value={1202} /> */}
+          <AnimatedNumber value={1202} />
           <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
 
           <p className="text-black font-bold text-2xl">{t('cups_of_coffee')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center laptop:border-r-2 border-b-2 tablet:border-b-0 border-r-0 px-5">
-          {/* <AnimatedNumber value={201} /> */}
+          <AnimatedNumber value={201} />
           <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
 
           <p className="text-black font-bold text-2xl">{t('happy_clients')}</p>
         </div>
         <div className="flex flex-col space-y-8 p-4 justify-center">
-          {/* <AnimatedNumber value={270} /> */}
+          <AnimatedNumber value={270} />
           <p className="text-slate-800 font-extrabold text-6xl">WIP</p>
 
           <p className="text-black font-bold text-2xl">{('completed-projects')}</p>
         </div>
-      </div>
+      </div> */}
       </div>
       <div className="very-top laptop:h-[13%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-neutral-100">
       </div>

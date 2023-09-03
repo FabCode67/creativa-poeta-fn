@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @font-face {
   font-family: "Academy";
   src: url("../assets/fonts/academy.ttf") format("truetype");
-}
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 .logo , .menu{
-  font-family: 'Monoton', cursive;}
+  font-family: 'Black Ops One', cursive;
+}
 
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

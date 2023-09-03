@@ -146,7 +146,7 @@ const Home = () => {
       <source src={currentBackground.video} type="video/mp4" />
     </video>
   )}
-      <div className="logo laptop:top-5 desktop:top-5 tablet:top-4 md:top-4 top-6  text-white laptop:text-4xl desktop:text-4xl text-xl  left-3 absolute laptop:p-1 desktop:p-1">
+      <div className="logo   laptop:top-5 desktop:top-5 tablet:top-4 md:top-4 top-6  text-white laptop:text-4xl desktop:text-4xl text-xl  left-3 absolute laptop:p-1 desktop:p-1">
         Creativa Poeta
       </div>
       <div className="">

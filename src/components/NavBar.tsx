@@ -5,7 +5,7 @@ import LocalizationSwicher from "./Localization";
 import { useTranslation } from "react-i18next";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-
+import burgerlogo from "../assets/flags/burgerlogo.png"
 
 function NavBar() {
   const { t } = useTranslation();
@@ -83,11 +83,16 @@ function NavBar() {
               >
                 {t("contact")}
               </a>
-              <a
+              {/* <a
                 className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
               > <LocalizationSwicher />
-              </a>
-              <p className="text-white pt-12">Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+              </a> */}
+              <p className="text-white pt-12">
+              <img src={burgerlogo}
+              alt="test"
+              className="w-[50%] h-[50%] object-cover"
+              />
+              </p>
               <div className="flex space-x-4 justify-center bottom-0 text-xl pb-4 absolute">
                 <a href="#facebook" className="text-white">
                   <FaFacebook />

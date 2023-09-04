@@ -21,7 +21,7 @@ const Services = () => {
         >
           {blogData.map((blog) => (
           <Link
-            className="bg-slate-200 px-4 py-2 h-[35rem]" to={`/services/${blog.id}`} key={blog.id}>
+            className="border border-yellow-400 rounded-md px-4 py-2 h-[35rem]" to={`/services/${blog.id}`} key={blog.id}>
             <img
               src={blog.image}
               alt="test"

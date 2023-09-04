@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import poeta from '../assets/poeta.jpeg';
+import footer from '../assets/flags/footer.png'
 
 function Footer() {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ function Footer() {
         <div className="flex space-x-10 justify-center items-center basis-full">
           <div className="logo flex flex-row justify-center items-center">
             <img
-              src={poeta}
+              src={footer}
               alt="logo"
               className="w-10 h-10 object-cover rounded-full"
             />

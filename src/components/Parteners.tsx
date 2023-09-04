@@ -5,7 +5,8 @@ import { BiLogoReact } from "react-icons/bi";
 import { SiVirtualbox } from "react-icons/si";
 import {FaFantasyFlightGames} from "react-icons/fa";
 import {SiHiveBlockchain} from "react-icons/si";
-import vid from '../assets/vid.mp4'; // Adjust the file path
+// import vid from '../assets/vid.mp4'; // Adjust the file path÷
+import image4 from "../assets/flags/image4.jpg";
 
 
 
@@ -14,10 +15,6 @@ const Parteners = () => {
   
   return (
     <section id="parteners" className="parteners h-fit min-h-screen wifull flex flex-col justify-center items-center text-center relative">
-    <video autoPlay loop muted className="video-background">
-      <source src={vid} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
       <div className=" w-full laptop:space-y-10 space-y-5">
         <div className="flex justify-center flex-col laptop:space-y-10 space-y-5 laptop:w-[50%] w-[90%] tablet:w-[70%] mx-auto">
           <div className="flex justify-center flex-col laptop:space-y-5 space-x-3">

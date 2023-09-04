@@ -6,7 +6,6 @@ import { SiVirtualbox } from "react-icons/si";
 import {FaFantasyFlightGames} from "react-icons/fa";
 import {SiHiveBlockchain} from "react-icons/si";
 // import vid from '../assets/vid.mp4'; // Adjust the file path÷
-import image4 from "../assets/flags/image4.jpg";
 
 
 

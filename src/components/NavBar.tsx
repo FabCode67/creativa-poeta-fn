@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
-import LocalizationSwicher from "./Localization";
 import { useTranslation } from "react-i18next";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";

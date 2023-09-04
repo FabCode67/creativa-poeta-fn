@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import poeta from '../assets/poeta.jpeg';
 import footer from '../assets/flags/footer.png'
 
 function Footer() {

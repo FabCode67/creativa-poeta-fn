@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import faqData from "../data/faq";
-import { AiOutlineDown } from "react-icons/ai";
 import vid2 from '../assets/vid2.mp4'
 
 

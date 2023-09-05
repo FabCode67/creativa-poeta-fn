@@ -10,7 +10,7 @@ const Faq = () => {
   console.log(faqData);
   
   return (
-    <section id="faq" className="faq h-fit min-h-screen w-full backdrop-blur-sm flex flex-col justify-center items-center text-center relative">
+    <section id="faq" className="faq h-fit min-h-screen w-full  flex flex-col justify-center items-center text-center relative">
       <video autoPlay loop muted className="video-background">
       <source src={vid2} type="video/mp4" />
       Your browser does not support the video tag.
@@ -24,10 +24,10 @@ const Faq = () => {
         >
           {faqData.map((faq) => (
           <Link
-            className=" backdrop-blur-md px-4 py-2 h-fit" to={`/faq/${faq.id}`} key={""} style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
-            <h3 className="font-bold text-slate-100 laptop:text-xl desktop:text-xl text-md mt-2">
+            className=" backdrop-blur-md border px-0  h-fit" to={`/faq/${faq.id}`} key={""}>
+            <h3 className="font-bold text-slate-900 py-4 laptop:text-xl desktop:text-xl border-b text-md  " style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
             {faq.title} </h3>
-            <p className="laptop:mt-8 desktop:mt-12 mt4 text-md flex justify-start text-start">
+            <p className="laptop:mt-1 desktop:mt-12 p-2 mt-1 text-md flex justify-start text-start">
               {faq.description}
             </p>
 

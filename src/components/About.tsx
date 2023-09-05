@@ -7,7 +7,7 @@ const About = () => {
   
   return (
     <section id="about" className="about   h-fit min-h-screen  flex flex-col justify-center items-center text-center relative"> 
-<div className="main_about h-fit min-h-screen backdrop-blur-sm flex flex-col justify-center items-center text-center relative" style={{ backgroundColor: 'rgba(238, 186, 43, 0.1)' }}>
+<div className="main_about h-fit min-h-screen backdrop-blur-sm flex flex-col justify-center items-center text-center relative" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
       <div className="laptop:mt-[6%] tablet:mt-[6%] laptop:space-y-10 space-y-5 mt-[7rem]">
         <div className="flex justify-center flex-col laptop:space-y-10 space-y-5 laptop:w-[50%] w-[90%] tablet:w-[70%] mx-auto">
           <div className="flex justify-center flex-col laptop:space-y-5 space-x-3">

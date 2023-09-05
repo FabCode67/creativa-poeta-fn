@@ -58,14 +58,14 @@ body{
     animation-iteration-count: 2;
   }
 
-  .faq{
+  /* .faq{
     background-image: url('./assets/flags/image4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  } */
   .parteners {
     position: relative;
     overflow: hidden;
@@ -204,10 +204,26 @@ body{
 }
 
 .about {
-  background-image: url('./assets/image5.jpg');
+  background-image: url('./assets/flags/image4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq {
+  position: relative;
+  overflow: hidden;
+  /* Add any other styles you need */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }

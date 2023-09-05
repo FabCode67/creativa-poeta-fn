@@ -24,8 +24,8 @@ const Faq = () => {
         >
           {faqData.map((faq) => (
           <Link
-            className=" backdrop-blur-md border px-0  h-fit" to={`/faq/${faq.id}`} key={""}>
-            <h3 className="font-bold text-slate-900 py-4 laptop:text-xl desktop:text-xl border-b text-md  " style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
+            className="  border px-0  h-fit" to={`/faq/${faq.id}`} key={""}>
+            <h3 className="font-bold backdrop-blur-md text-slate-900 py-4 laptop:text-xl desktop:text-xl border-b text-md  " style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
             {faq.title} </h3>
             <p className="laptop:mt-1 desktop:mt-12 p-2 mt-1 text-md flex justify-start text-start">
               {faq.description}

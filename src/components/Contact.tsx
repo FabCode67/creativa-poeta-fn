@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
     return (
@@ -18,38 +20,52 @@ const Contact = () => {
               <div className="forms py-9 px-6">
                 <form className="form">
                   <div className="flex flex-col">
-                    <label className="bg-gre text-lg font-bold">Name</label>
-                    <input className="border-b-2 bg-inherit outline-none hover:border-b-amber-500 py-2" type="text" placeholder="enter your name" />
-                    <label className="  text-lg font-bold mt-8">Email</label>
-                    <input className=" bg-inherit border-b-2 outline-none hover:border-b-amber-500  py-2" type="email" placeholder="enter your email" />
-                    <label className="bg-gre  text-lg font-bold mt-8">Message</label>
-                    <textarea className=" outline-none hover:border-b-amber-500 py-2 bg-inherit border-b-2 h-20" placeholder="write your message here" />
+                    <label className="bg-gre text-md text-gray-500">Name</label>
+                    <input className="border-b-2 border-b-gray-700 bg-inherit outline-none text-[#EEBA2B]  hover:border-white py-2" type="text"  />
+                    <label className="  text-md  text-gray-500">Email</label>
+                    <input className=" bg-inherit border-b-2 border-b-gray-700 outline-none text-[#EEBA2B] hover:border-white  py-2" type="email"  />
+                    <label className="bg-gre  text-md  text-gray-500">Message</label>
+                    <textarea className=" outline-none hover:border-white py-2 bg-inherit text-[#EEBA2B] border-b-2 border-b-gray-700 h-20"  />
                     <button className=" rounded-md p-3 mt-8 bg-[#EEBA2B] border text-white font-semibold">Send</button>
                     </div>
                 </form>
               </div>
               </div>
-            <div className="flex flex-col basis-1/4 backdrop-blur-2xl h-full">
-              <div className="contactInfo py-9 px-6 flex flex-col j laptop:justify-normal desktop:justify-normal  space-y-12 ">
+            <div className="flex flex-col basis-1/4 backdrop-blur-2xl h-full text-gray-500">
+              <div className="contactInfo py-9 px-6 flex flex-col j laptop:justify-normal desktop:justify-normal  space-y-10 text-gray-500">
                 <h1 className="text-2xl font-bold text-white ">Contact Info</h1>
                 <div className="contactInfoItem ">
-                  <h2 className="text-xl font-bold text-white ">Address</h2>
-                  <p className="text-white">123 Street, New York, USA</p>
-                  <p className="text-white">123 Street, New York, USA</p>
-                  <p className="text-white">123 Street, New York, USA</p>
+                  <h2 className="text-xl font-bold text-[#FFFF00] ">Address</h2>
+                  <p className="text-gray-500">123 Street, New York, USA</p>
+                  <p className="text-gray-500">123 Street, New York, USA</p>
                   </div>
                   <div className="emailsInformation">
-                    <h2 className="text-xl font-bold text-white">Email</h2>
-                    <p className="text-white">test@gmail.com</p>
-                    <p className="text-white">capital@gmail.com</p>
-                    <p className="text-white">capital@gmail.com</p>
+                    <h2 className="text-xl font-bold text-[#FFFF00]">Email</h2>
+                    <p className="text-gray-500">test@gmail.com</p>
+                    <p className="text-gray-500">capital@gmail.com</p>
                   </div>
                   <div className="callUsinfo">
-                    <h2 className="text-xl font-bold text-white">Call Us</h2>
-                    <p className="text-white">+1 234 56 78</p>
-                    <p className="text-white">+1 234 56 78</p>
-                    <p className="text-white">+1 234 56 78</p>
-                    </div>
+                    <h2 className="text-xl font-bold text-[#FFFF00]">Call Us</h2>
+                    <p className="text-gray-500">+1 234 56 78</p>
+                  </div>
+                  <div className="flex space-x-4  bottom-0 text-xl pb-4">
+                <a href="#facebook" className="text-white">
+                  <FaFacebook />
+                </a>
+                <a href="#twitter" className="text-white">
+                  <FaTwitter />
+                </a>
+                <a href="#instagram" className="text-white">
+                  <FaInstagram />
+                </a>
+                <a href="#linkedin" className="text-white">
+                  <FaLinkedin />
+                </a>
+                <a href="#mail" className="text-white">
+                  <HiOutlineMail />
+                </a>
+
+              </div>
                   </div>
               </div>
               </div>

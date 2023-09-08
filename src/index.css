@@ -227,3 +227,13 @@ body{
   object-fit: cover;
   z-index: -1;
 }
+
+.foote {
+  background-image: url('./assets/flags/favcon.png');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  
+  /* backg÷round-attachment: fixed; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

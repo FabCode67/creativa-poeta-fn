@@ -182,7 +182,7 @@ const Home = () => {
           <div className="laptop:block tablet:block hidden">
             <div className="flex flex-col space-y-5 animate-pulse hover:animate-none py-20">
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Twitter" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-500 text-center items-center flex justify-center text-xl  border-gray-500 cursor-pointer animate-icon ${hoveredIcon === "Twitter" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Twitter")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -190,7 +190,7 @@ const Home = () => {
                 <AiOutlineTwitter />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Facebook" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-500 text-center items-center flex justify-center text-xl  border-gray-500 cursor-pointer animate-icon ${hoveredIcon === "Facebook" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Facebook")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -198,7 +198,7 @@ const Home = () => {
                 <FaFacebookF />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Instagram" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-500 text-center items-center flex justify-center text-xl  border-gray-500 cursor-pointer animate-icon ${hoveredIcon === "Instagram" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Instagram")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -206,7 +206,7 @@ const Home = () => {
                 <FaInstagram />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "LinkedIn" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-500 text-center items-center flex justify-center text-xl  border-gray-500 cursor-pointer animate-icon ${hoveredIcon === "LinkedIn" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("LinkedIn")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -214,7 +214,7 @@ const Home = () => {
                 <FaLinkedinIn />
               </div>
               <div
-                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-100 text-center items-center flex justify-center text-xl border-white cursor-pointer animate-icon ${hoveredIcon === "Mail" ? "animate-icon-active" : ""}`}
+                className={`group rounded-full h-[3rem] w-[3rem] border-4 text-slate-500 text-center items-center flex justify-center text-xl  border-gray-500 cursor-pointer animate-icon ${hoveredIcon === "Mail" ? "animate-icon-active" : ""}`}
                 onMouseEnter={() => handleIconHover("Mail")}
                 onMouseLeave={() => handleIconHover("")}
               >
@@ -225,7 +225,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="very-buttom h-[13%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-yellow-700">
+      <div className="very-buttom h-[10%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#FFE533]">
         <div className="buttons h-full flex cursor-pointer items-start space-x-1">
           <button className="font-bold w-5 text-md text-[#FFFF00]"><AiOutlineDown /></button>
           <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>

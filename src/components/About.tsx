@@ -1,13 +1,12 @@
 // About.tsx
 import { useTranslation } from "react-i18next";
-import { AiOutlineDown } from "react-icons/ai";
 
 const About = () => {
   const { t } = useTranslation();
   
   return (
     <section id="about" className="about   h-fit min-h-screen  flex flex-col justify-center items-center text-center relative"> 
-<div className="main_about h-fit min-h-screen backdrop-blur-sm flex flex-col justify-center items-center text-center relative" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
+<div className="main_about h-fit min-h-screen backdrop-blur-xs flex flex-col justify-center items-center text-center relative" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
       <div className="laptop:mt-[6%] tablet:mt-[6%] laptop:space-y-10 space-y-5 mt-[7rem]">
         <div className="flex justify-center flex-col laptop:space-y-10 space-y-5 laptop:w-[50%] w-[90%] tablet:w-[70%] mx-auto">
           <div className="flex justify-center flex-col laptop:space-y-5 space-x-3">
@@ -27,10 +26,8 @@ const About = () => {
       </div>
       <div className="very-top laptop:h-[13%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-neutral-100">
       </div>
-      <div className="very-buttom laptop:h-[13%] desktop:h-[13%] h-[5%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-white">
+      <div className="very-buttom laptop:h-[13%] desktop:h-[13%] h-[9%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-1/2 bottom-0 border-r-2 border-white">
   <div className="buttons h-full flex cursor-pointer items-start mt- space-x-1">
-    <button className="font-bold w-5 text-md text-slate-800"><AiOutlineDown /></button>
-    <button className="text-slate-800 text-xs font-bold"><a href="#contact">SCROLL DOWN</a></button>
   </div>
 </div>
 </div>

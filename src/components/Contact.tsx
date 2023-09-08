@@ -19,12 +19,12 @@ const Contact = () => {
                 <form className="form">
                   <div className="flex flex-col">
                     <label className="bg-gre text-lg font-bold">Name</label>
-                    <input className="border-b-2 bg-inherit  py-2" type="text" placeholder="enter your name" />
+                    <input className="border-b-2 bg-inherit outline-none hover:border-b-amber-500 py-2" type="text" placeholder="enter your name" />
                     <label className="  text-lg font-bold mt-8">Email</label>
-                    <input className=" bg-inherit border-b-2  py-2" type="email" placeholder="enter your email" />
+                    <input className=" bg-inherit border-b-2 outline-none hover:border-b-amber-500  py-2" type="email" placeholder="enter your email" />
                     <label className="bg-gre  text-lg font-bold mt-8">Message</label>
-                    <textarea className="  py-2 bg-inherit border-b-2 h-20" placeholder="write your message here" />
-                    <button className=" rounded-md p-3 mt-8  border text-white font-semibold">Send</button>
+                    <textarea className=" outline-none hover:border-b-amber-500 py-2 bg-inherit border-b-2 h-20" placeholder="write your message here" />
+                    <button className=" rounded-md p-3 mt-8 bg-[#EEBA2B] border text-white font-semibold">Send</button>
                     </div>
                 </form>
               </div>

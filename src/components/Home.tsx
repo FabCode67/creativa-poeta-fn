@@ -10,6 +10,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import SlideLeft from "./SlideLeft";
 import SlideRight from "./SlideRight";
 import vid from '../assets/vid.mp4'; // Adjust the file path
+import logopoeta1 from '../assets/flags/logopoeta1.png'
 
 
 
@@ -146,8 +147,8 @@ const Home = () => {
       <source src={currentBackground.video} type="video/mp4" />
     </video>
   )}
-      <div className="logo laptop:top-5 desktop:top-5 tablet:top-4 md:top-4 top-6  text-white laptop:text-4xl desktop:text-4xl text-xl  left-8 laptop:ml-11 desktop:ml-11 ml-0 absolute laptop:p-1 desktop:p-1">
-        Creativa Poeta
+      <div className="logo laptop:top-0 desktop:top-0 tablet:top-3 md:top-3 top-5  text-white laptop:text-4xl desktop:text-4xl text-xl  left-8 laptop:ml-11 desktop:ml-11 ml-0 absolute laptop:p-1 desktop:p-1">
+        <img src={logopoeta1} alt="logo" className="laptop:w-[100%] desktop:w-[100%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
       </div>
       <div className="">
         <div className="flex justify-between">

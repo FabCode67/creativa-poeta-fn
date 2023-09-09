@@ -40,12 +40,11 @@ const Services = () => {
         </div>
      
       </div>
-      <div className="laptop:h-[8%] tablet:h-[13%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-1/2 top-0 border-r-2 border-[#FFE533]">
+      <div className="laptop:h-[6%] tablet:h-[13%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">
       </div>
-      <div className="very-buttom h-[5%] laptop:block desktop:block hidden laptop:w-[5%] w-[35%] absolute laptop:right-20 right-1 bottom-0 border-r-2 border-[#FFE533]">
+      <div className="very-buttom h-[1.5%] laptop:block desktop:block  laptop:w-[5%] w-[2%] absolute laptop:left-2 left-2 bottom-0 border-r-2 border-[#FFE533]">
   <div className="buttons h-full flex cursor-pointer items-start space-x-1">
-    <button className="font-bold w-5 text-md text-[#EEBA2B]"><AiOutlineDown /></button>
-    <button className="text-black text-xs font-bold"><a href="#parteners">DOWN</a></button>
+
   </div>
 </div>
     </section>

@@ -26,7 +26,7 @@ const About = () => {
       </div>
       <div className="very-top laptop:h-[13%] tablet:h-[13%] h-[8%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 top-0 border-r-2 border-neutral-100">
       </div>
-      <div className="very-buttom laptop:h-[13%] desktop:h-[13%] h-[9%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-1/2 bottom-0 border-r-2 border-white">
+      <div className="very-buttom laptop:h-[10%] desktop:h-[13%] h-[9%] laptop:w-[10%] w-[35%] absolute laptop:right-1/2 right-1/2 bottom-0 border-r-2 border-white">
   <div className="buttons h-full flex cursor-pointer items-start mt- space-x-1">
   </div>
 </div>

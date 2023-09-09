@@ -10,7 +10,7 @@ const Faq = () => {
   console.log(faqData);
   
   return (
-    <section id="faq" className="faq py-7 h-fit min-h-screen w-full  flex flex-col justify-center items-center text-center relative">
+    <section id="faq" className="faq laptop:py-9 desktop:py-9 py-14 h-fit min-h-screen w-full  flex flex-col justify-center items-center text-center relative">
       <video autoPlay loop muted className="video-background">
       <source src={vid2} type="video/mp4" />
       Your browser does not support the video tag.
@@ -36,10 +36,10 @@ const Faq = () => {
         </div>
      
       </div>
-      <div className="laptop:h-[10%] tablet:h-[13%] h-[4%] laptop:w-[10%] w-[8%] absolute laptop:right-20 left-0 top-0 border-r-2 border-[#EEBA2B]">
+      <div className="laptop:h-[7%] tablet:h-[13%] h-[4%] laptop:w-[10%] w-[8%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-white">
       </div>
 
-      <div className="very-buttom laptop:h-[7%] desktop:h-[7%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-1/2 right-1/2 bottom-0 border-r-2 border-white">
+      <div className="very-buttom laptop:h-[7%] desktop:h-[7%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 bottom-0 border-r-2 border-white">
   
 </div>
     </section>

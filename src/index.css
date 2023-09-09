@@ -231,6 +231,8 @@ body{
 .foote {
   background-image: url('./assets/flags/favcon.png');
   background-repeat: no-repeat;
+  opacity: 2.2;
+
   /* background-size: cover; */
   background-position: center;
   

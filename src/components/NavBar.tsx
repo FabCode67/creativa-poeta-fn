@@ -35,21 +35,22 @@ function NavBar() {
             >
               <div className="flex text-[#EEBA2B] justify-between">
                 <p>Navigation</p>
-                <div className=" flex m-auto justify-center text-center text-white items-center">
+                <div className=" flex mx-auto justify-center text-center text-white items-center">
                   <FaTimes onClick={toggleSidebar} />
                 </div>
               </div>
+              <div className="h-fit flex  space-y-3 flex-col mt-6">
               <a
                 href="#home"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 text-3xl hover:text-[#EEBA2B] ${location.hash === "#home" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white mt-12 text-xl hover:text-[#EEBA2B] ${location.hash === "#home" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("home")}
               </a>
               <a
                 href="#about"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 text-3xl hover:text-[#EEBA2B] ${location.hash === "#about" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#about" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("about")}
               </a>
@@ -57,21 +58,21 @@ function NavBar() {
               <a
                 href="#services"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 text-3xl hover:text-[#EEBA2B] ${location.hash === "#services" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#services" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("services")}
               </a>
               <a
                 href="#parteners"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 text-3xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("Parteners")}
               </a>
               <a
                 href="#faq"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 text-3xl hover:text-[#EEBA2B] ${location.hash === "#faq" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#faq" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("FAQ")}
               </a>
@@ -79,10 +80,11 @@ function NavBar() {
               <a
                 href="#contact"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-red-200 text-3xl hover:text-[#EEBA2B] ${location.hash === "#contact" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#contact" ? "bg-[#EEBA2B]" : ""}`}
               >
                 {t("contact")}
               </a>
+              </div>
               {/* <a
                 className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
               > <LocalizationSwicher />
@@ -93,7 +95,7 @@ function NavBar() {
               className="w-[100%] h-[100%] object-cover"
               />
               </p>
-              <div className="flex space-x-4 justify-center bottom-20 text-xl pb-4 absolute">
+              <div className="flex space-x-4 justify-center bottom-16 text-xl pb-4 absolute">
                 <a href="#facebook" className="text-white">
                   <FaFacebook />
                 </a>

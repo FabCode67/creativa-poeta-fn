@@ -26,12 +26,12 @@ function NavBar() {
           toggleSidebar={toggleSidebar}
         />
       </div>
-      <div className={`mx-auto z-50 fixed w-[55%] laptop:w-[20%] desktop:w-[20%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}>
+      <div className={`mx-auto z-50 fixed w-[65%] laptop:w-[20%] desktop:w-[20%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}>
 
         <div className="container flex justify-between">
           <nav className="flex flex-col  w-full">
             <div
-              className={`navbar flex flex-col  min-h-screen h-fit justify-start p-10 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
+              className={`navbar flex flex-col  min-h-screen h-fit justify-start p-10  space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
             >
               <div className="flex text-[#EEBA2B] justify-between">
                 <p>Navigation</p>

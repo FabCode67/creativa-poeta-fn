@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import blogData from "../data/blog";
-import { AiOutlineDown } from "react-icons/ai";
 
 
 // About.tsx

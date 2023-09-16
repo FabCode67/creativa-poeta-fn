@@ -29,16 +29,16 @@ function Footer() {
           </form>
         </div>
       </div>
-        <div className="flex space-x-10 mt-16 justify-center items-center basis-full text-slate-400">
+        <div className="flex laptop:flex-row desktop:flex-row tablet:flex-row flex-col  space-x-10 mt-16 justify-center items-center basis-full text-slate-400">
           <p>
             {t('copylights')} &copy; {today.getFullYear()} CREATIVA POETA
           </p>
-          <a href='' className='text-xs font-bold'>all right reserved</a>
+          <a href='' className='text-xs font-bold'>all rights reserved</a>
         </div>
-        <div className='powerdby flex flex-row justify-center items-center'>
+        <div className='powerdby flex flex-row justify-center items-center mt-3'>
           <p className='text-xs font-bold text-slate-400'>powered by</p>
           <a href="https://fabcode67.github.io/my-brand-fabrice" target="_blank" rel="noreferrer text-slate-400">
-           <p className='text-xs ml-2 text-gray-300'>fabrice.mwanafunzi@karisimbi.rw</p>
+           <p className='text-xs ml-2 text-gray-300'>fabrice.mwanafunzi@karisimbitech.rw</p>
           </a>
           </div>
     </footer>

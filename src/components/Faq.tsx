@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import faqData from "../data/faq";
-import vid2 from '../assets/vid2.mp4'
+import phonevid from '../assets/phonevid.mp4'
 
 
 // About.tsx
@@ -12,7 +12,7 @@ const Faq = () => {
   return (
     <section id="faq" className="faq laptop:py-9 desktop:py-9 py-14 h-fit min-h-screen w-full  flex flex-col justify-center items-center text-center relative">
       <video autoPlay loop muted className="video-background">
-      <source src={vid2} type="video/mp4" />
+      <source src={phonevid} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
       <div className="mt-[2%] laptop:px-10 mb-16 ">

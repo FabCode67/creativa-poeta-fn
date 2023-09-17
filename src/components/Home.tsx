@@ -225,7 +225,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="very-buttom h-[10%] laptop:w-[10%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#FFE533]">
+      <div className="very-buttom h-[10%] laptop:w-[10%] tablet:w-[17%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#FFE533]">
         <div className="buttons h-full flex cursor-pointer items-start space-x-1">
           <button className="font-bold w-5 text-md text-[#FFFF00]"><AiOutlineDown /></button>
           <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>

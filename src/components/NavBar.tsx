@@ -95,7 +95,7 @@ function NavBar() {
               className="w-[100%] h-[100%] object-cover"
               />
               </p>
-              <div className="flex space-x-4 justify-center bottom-16 text-xl pb-8 absolute">
+              <div className="flex space-x-4 justify-center bottom-16 text-xl pb-4 absolute">
                 <a href="#facebook" className="text-white">
                   <FaFacebook />
                 </a>

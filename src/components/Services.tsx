@@ -9,9 +9,9 @@ const Services = () => {
   console.log(blogData);
   
   return (
-    <section id='services' className=' py-16 justify-center mb-4 h-fit min-h-screen mt-0 flex flex-col bg-white items-center relative'>
+    <section id='services' className=' py-16 justify-center  h-fit min-h-screen mt-0 flex flex-col bg-white items-center relative'>
       
-      <div className="mt-[3%] laptop:px-40 px-2">
+      <div className="mt-[3%] pb-12 laptop:px-40 px-2">
         <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#EEBA2B]">
           {t('our_services')}
         </h1>
@@ -39,9 +39,9 @@ const Services = () => {
         </div>
      
       </div>
-      <div className="laptop:h-[6%] tablet:h-[13%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">
+      <div className="laptop:h-[6%] tablet:h-[4%] h-[2%] laptop:w-[10%] t w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">
       </div>
-      <div className="very-buttom h-[1.5%] laptop:block desktop:block  laptop:w-[5%] w-[2%] absolute laptop:left-2 left-2 bottom-0 border-r-2 border-[#FFE533]">
+      <div className="very-buttom laptop:h-[4%] desktop:h-[4%] tablet:h-[4%] h-[2%] laptop:block desktop:block laptop:w-[5%] w-[2%] absolute laptop:left-2 left-2 bottom-0 border-r-2 border-[#FFE533]">
   <div className="buttons h-full flex cursor-pointer items-start space-x-1">
 
   </div>

@@ -26,7 +26,7 @@ function NavBar() {
           toggleSidebar={toggleSidebar}
         />
       </div>
-      <div className={`mx-auto z-50 fixed w-[65%] laptop:w-[20%] desktop:w-[20%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}>
+      <div className={`mx-auto z-50 fixed w-[65%] laptop:w-[20%] desktop:w-[20%] tablet:w-[45%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}>
 
         <div className="container flex justify-between">
           <nav className="flex flex-col  w-full">
@@ -95,7 +95,7 @@ function NavBar() {
               className="w-[100%] h-[100%] object-cover"
               />
               </p>
-              <div className="flex space-x-4 justify-center bottom-16 text-xl pb-4 absolute">
+              <div className="flex space-x-4 justify-center bottom-16 text-xl pb-8 absolute">
                 <a href="#facebook" className="text-white">
                   <FaFacebook />
                 </a>

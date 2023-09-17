@@ -7,10 +7,10 @@ function Footer() {
   const today = new Date();
   return (
     <footer className="foote py-16 backdrop-blur-lg blur-none  laptop:px-44 desktop:px-44 px-2 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
-      <div className="laptop:flex-row desktop:flex-row flex-col flex justify-center items-center w-full  laptop:space-x-16 desktop:space-x-16 space-x-0">
-        <div className="flex flex-col laptop:w-1/2 desktop:w-1/2 w-full h-fit ">
-          <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 laptop:justify-start text-left laptop:items-start float-left justify-center items-center mx-auto'>
-          <img src={logopoeta1} alt="logo" className="laptop:w-[50%] desktop:w-[50%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
+      <div className="laptop:flex-row desktop:flex-row tablet:flex-row flex-col flex justify-center items-center w-full  laptop:space-x-16 desktop:space-x-16 space-x-0">
+        <div className="flex flex-col laptop:w-1/2 desktop:w-1/2 tablet:w-[70] w-full h-fit ">
+          <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
+          <img src={logopoeta1} alt="logo" className="laptop:w-[50%] tablet:w-[70%] desktop:w-[50%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
           <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
           Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.

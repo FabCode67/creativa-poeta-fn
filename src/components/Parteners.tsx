@@ -35,7 +35,7 @@ const Parteners = () => {
             <SiHiveBlockchain />
         </div>
       </div>
-      <div className="very-top laptop:h-[13%] tablet:h-[13%] h-[8%] laptop:w-[5%] w-[2%] absolute laptop:right-20 left-2 top-0 border-r-2 border-neutral-100">
+      <div className="very-top laptop:h-[10%] tablet:h-[10%] h-[9%] laptop:w-[5%] w-[2%] absolute laptop:right-20 left-2 top-0 border-r-2 border-neutral-100">
       </div>
       <div className="very-buttom h-[7%] laptop:w-[10%] w-[6%] absolute laptop:right-1/2 right-1/2 bottom-0 border-r-2 border-[#EEBA2B]">
   <div className="buttons h-full flex cursor-pointer items-start mt-0 space-x-1">

@@ -152,11 +152,11 @@ const Home = () => {
       </div>
       <div className="">
         <div className="flex justify-between">
-          <div className="flex flex-col laptop:w-[70%] tablet:w-[70%] w-full justify-start laptop:m-0 items-start">
+          <div className="flex flex-col laptop:w-[70%] tablet:w-[80%] w-full justify-start laptop:m-0 items-start">
             
             <div className="space-y-3 laptop:space-y-0 ">
               <h1
-                className={`laptop:text-6xl desktop:text-6xl tablet:text-5xl md:text-5xl text-3xl font-bold laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-6xl desktop:text-6xl tablet:text-2xl md:text-5xl text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title}

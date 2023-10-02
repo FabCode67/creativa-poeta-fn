@@ -26,12 +26,14 @@ function NavBar() {
           toggleSidebar={toggleSidebar}
         />
       </div>
-      <div className={`mx-auto z-50 fixed w-[65%] laptop:w-[20%] desktop:w-[20%] tablet:w-[45%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}>
-
+      <div
+        className={`mx-auto z-50 fixed w-[65%] laptop:w-[20%] desktop:w-[20%] tablet:w-[45%] float-right justify-end bg-black shadow-sm sidebar ${sidebarVisible ? 'visible' : 'sidebar-closing'}`}
+      >
         <div className="container flex justify-between">
-          <nav className="flex flex-col  w-full">
+          <nav className="flex flex-col w-full">
             <div
-              className={`navbar flex flex-col  min-h-screen h-fit justify-start p-10  space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
+              className={`navbar flex flex-col min-h-screen h-fit justify-start p-10 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
+              style={{ maxHeight: "80vh", overflowY: "auto" }}
             >
               <div className="flex text-[#EEBA2B] justify-between">
                 <p>Navigation</p>
@@ -43,14 +45,14 @@ function NavBar() {
               <a
                 href="#home"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white mt-12 text-xl hover:text-[#EEBA2B] ${location.hash === "#home" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white mt-12 text-xl hover:text-[#EEBA2B] ${location.hash === "#home" ? "text-[#EEBA2B]" : ""}`}
               >
                 {t("home")}
               </a>
               <a
                 href="#about"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#about" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#about" ? "text-[#EEBA2B]" : ""}`}
               >
                 {t("about")}
               </a>
@@ -58,21 +60,21 @@ function NavBar() {
               <a
                 href="#services"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#services" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#services" ? "text-[#EEBA2B]" : ""}`}
               >
                 {t("services")}
               </a>
               <a
                 href="#parteners"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "text-[#EEBA2B]" : ""}`}
               >
                 {t("Parteners")}
               </a>
               <a
                 href="#faq"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#faq" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#faq" ? "text-[#EEBA2B]" : ""}`}
               >
                 {t("FAQ")}
               </a>
@@ -80,7 +82,7 @@ function NavBar() {
               <a
                 href="#contact"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#contact" ? "bg-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#contact" ? "text-[#EEBA2B]" : ""}`}
               >
                 {t("contact")}
               </a>
@@ -89,13 +91,13 @@ function NavBar() {
                 className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
               > <LocalizationSwicher />
               </a> */}
-              <p className="text-white pt-12">
+              <p className="text-white">
               <img src={logoBurger}
               alt="test"
-              className="w-[100%] h-[100%] object-cover"
+              className="w-[100%] h-[100%] object-cover mt-2 mb-12"
               />
               </p>
-              <div className="flex space-x-4 justify-center bottom-16 text-xl pb-4 absolute">
+              <div className="flex space-x-4 top-12 justify-center text-xl ">
                 <a href="#facebook" className="text-white">
                   <FaFacebook />
                 </a>

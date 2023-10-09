@@ -1,8 +1,6 @@
 // About.tsx
-import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const { t } = useTranslation();
   
   return (
     <section id="about" className="about   h-fit min-h-screen  flex flex-col justify-center items-center text-center relative"> 

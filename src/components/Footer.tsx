@@ -29,6 +29,14 @@ function Footer() {
           </form>
         </div>
       </div>
+      <div className='flex w-full bg-white h-[1px] mt-5'></div>
+      <div className="grid laptop:grid-cols-5 desktop:grid-cols-5 tablet:grid-cols-3 grid-cols-2  mt-5 justify-center items-center basis-full text-slate-400">
+          <a href='' className='text-xs font-bold'>Clause de non-responsabilité</a>
+          <a href='' className='text-xs font-bold'>Politique de confidentialité</a>
+          <a href='' className='text-xs font-bold'>Mentions legalès </a>
+          <a href='' className='text-xs font-bold'>Conditions gèneralès  </a>
+          <a href='' className='text-xs font-bold'>Cookes policy</a>
+        </div>
         <div className="flex laptop:flex-row desktop:flex-row tablet:flex-row flex-col  space-x-10 mt-16 justify-center items-center basis-full text-slate-400">
           <p>
             {t('copylights')} &copy; {today.getFullYear()} CREATIVA POETA

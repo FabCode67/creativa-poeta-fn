@@ -4,13 +4,13 @@ const Services = () => {
   console.log(blogData);
   
   return (
-    <section id='services' className=' py-16 justify-center  h-fit min-h-screen mt-0 flex flex-col bg-slate-800 items-center relative'>
+    <section id='services' className=' mainn py-16 justify-center  h-fit min-h-screen mt-0 flex flex-col bg-slate-800 items-center relative'>
       
-      <div className="mt-[2%] pb-12 bg-slate-800  w-full flex felx-col flex-col space-y-7">
+      <div className="mt-[2%] pb-12   w-full flex felx-col flex-col space-y-7">
         <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#EEBA2B]">
           NOS SERVICE
         </h1>
-        <div className="w-full bg-black mt-5 flex flex-col space-y-7 py-5 ">
+        <div className="w-full mainn bg-black mt-5 flex flex-col space-y-7 py-5 ">
         {blogData.map((blog) => (
           <div className="flex laptop:text-base desktop:text-base tablet:text-base text-sm p-1 mx-auto flex-col h-fit   laptop:w-[60%] desktop:w-[60%] tablet:w-[80%] w-[98%]">
             <div className="w-[70%] flex justify-self-start  h-[6rem] mt-0">
@@ -26,7 +26,7 @@ const Services = () => {
               </div>
             </div>
             <div className="w-full flex justify-self-start mt-0 p-3">
-              <p className="text-white"> {blog.description} </p>
+              <p className="text-white pl-[17%]"> {blog.description} </p>
             </div>
           </div>
            ))}
@@ -47,7 +47,7 @@ const Services = () => {
       
       </div>
       </div>
-      <div className="laptop:h-[6%] tablet:h-[4%] h-[2%] laptop:w-[10%] t w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">
+      <div className="laptop:h-[4%] desktop:[h-4%] tablet:h-[4%] h-[2%] laptop:w-[10%] t w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">
       </div>
       <div className="very-buttom laptop:h-[4%] desktop:h-[4%] tablet:h-[4%] h-[2%] laptop:block desktop:block laptop:w-[5%] w-[2%] absolute laptop:left-2 left-2 bottom-0 border-r-2 border-[#FFE533]">
   <div className="buttons h-full flex cursor-pointer items-start space-x-1">

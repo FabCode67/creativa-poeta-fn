@@ -87,6 +87,10 @@ body{
   transform: translateX(+100%);
 }
 
+.mainn {
+  background-image: url('./assets/noss.png');
+}
+
 .sidebar.visible {
   transform: translateX(0);
 }

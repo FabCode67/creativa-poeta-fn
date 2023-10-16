@@ -171,8 +171,8 @@ const Home = () => {
               </p>
             </div>
             <div className="flex animate-bounce laptop:flex-row tablet:flex-row flex-col laptop:space-x-5 tablet:space-x-5 mt-12 mx-auto laptop:mx-0 w-full space-y-4 laptop:space-y-0 tablet:space-y-0">
-              <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('start_a_project')}</button>
-              <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">{t('more_about_us')}</button>
+              <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">COMMENCER UN PROJET</button>
+              <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">A PROPOS DE NOUS</button>
             </div>
             <SlideLeft backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
             <SlideRight backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>

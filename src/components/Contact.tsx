@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="mt-[6%] items-center flex justify-center">
           <div className="w-full flex flex-col laptop:space-y-8 desktop:space-y-8  basis basis-full space-y-0 laptop:px-[12%] desktop:px-[12%] px-1">
             <div className="contuctus-text flex-center flex justify-center text-center p-6">
-              <h1 className="laptop:text-4xl desktop:text-4xl text-lg font-bold">Contact Us</h1>
+              <h1 className="laptop:text-4xl desktop:text-4xl text-lg font-bold">CONTACTEZ NOTRE EQUIPE</h1>
             </div>
             <div className="contuctus-text flex-center flex justify-center text-center">
               <p className="laptop:text-2xl desktop:test-2xl texr-xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>

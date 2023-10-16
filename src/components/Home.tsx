@@ -8,7 +8,6 @@ import image2 from '../assets/flags/image2.jpg'
 import BackgroundCircles from "./BackgroundCircles";
 import SlideLeft from "./SlideLeft";
 import SlideRight from "./SlideRight";
-import vid from '../assets/vid.mp4'; // Adjust the file path
 import logopoeta1 from '../assets/flags/logopoeta1.png'
 
 
@@ -24,17 +23,17 @@ const backgrounds = [
   {
     image: image2,
     content: {
-      title: "WELCOME TO CREATIVA POETA",
-      description: "We are a creative group of people who design influential brands and digital experiences.",
-    },
-  },
-  {
-    video: vid, 
-    content: {
       title: "CREATIVE MODERN DESIGN",
       description: "Une créativité sans limites qui donne vie à vos idées, une approche qui intègre les dernières technologies, un design esthétique et fonctionnel qui reflète votre identité unique.",
     },
   },
+  // {
+  //   video: vid, 
+  //   content: {
+  //     title: "CREATIVE MODERN DESIGN",
+  //     description: "Une créativité sans limites qui donne vie à vos idées, une approche qui intègre les dernières technologies, un design esthétique et fonctionnel qui reflète votre identité unique.",
+  //   },
+  // },
 ];
 
 
@@ -126,7 +125,7 @@ const Home = () => {
   }}
 >
 
-{currentBackground.video && (
+{/* {currentBackground.video && (
     <video
       autoPlay
       loop
@@ -144,9 +143,9 @@ const Home = () => {
     >
       <source src={currentBackground.video} type="video/mp4" />
     </video>
-  )}
+  )} */}
       <div className="logo laptop:top-0 desktop:top-0 tablet:top-3 md:top-3 top-5  text-white laptop:text-4xl desktop:text-4xl text-xl  left-8 laptop:ml-11 desktop:ml-11 ml-0 absolute laptop:p-1 desktop:p-1">
-        <img src={logopoeta1} alt="logo" className="laptop:w-[100%] desktop:w-[100%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
+        <img src={logopoeta1} alt="logo" className="laptop:w-[90%] desktop:w-[90%] laptop:h-[90%] desktop:h-[90%] h-[100%] w-[50%]"/>
       </div>
       <div className="">
         <div className="flex justify-between">
@@ -154,7 +153,7 @@ const Home = () => {
             
             <div className="space-y-3 laptop:space-y-0 ">
               <h1
-                className={`laptop:text-6xl desktop:text-6xl tablet:text-2xl md:text-5xl text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-5xl desktop:text-5xl pb-7 tablet:text-4xl md:text-4xl text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title}

@@ -10,7 +10,7 @@ const Services = () => {
         <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#EEBA2B]">
           NOS SERVICE
         </h1>
-        <div className="w-full mainn bg-black mt-5 flex flex-col space-y-7 py-5 ">
+        <div className="w-full mainn bg-black mt-5 grid laptop:grid-cols-2 desktop:grid-cols-2 tablet:grid-cols-1 grid-cols-1 ">
         {blogData.map((blog) => (
           <div className="flex laptop:text-base desktop:text-base tablet:text-base text-sm p-1 mx-auto flex-col h-fit   laptop:w-[60%] desktop:w-[60%] tablet:w-[80%] w-[98%]">
             <div className="w-[70%] flex justify-self-start  h-[6rem] mt-0">
@@ -18,7 +18,7 @@ const Services = () => {
                 <img src={blog.image} alt="" height={100} width={100} className="object-contain"></img>
               </div>
               <div className="flex flex-col icon w-fit p-3 h-[6rem]  space-y-2 self-end">
-                <div className="flex w-full text-white flex-col justify-end  self-end  content">  
+                <div className="flex w-full text-lg desktop:text-xl tablet:text-xl laptop:text-xl text-white flex-col justify-end  self-end  content">  
                   <p className="">{blog.h1}</p>
                   <p className="font-bold">{blog.h2}</p>
                 </div>

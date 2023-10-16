@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { useTranslation } from "react-i18next";
 import image8 from '../assets/flags/image8.jpg'
 import image2 from '../assets/flags/image2.jpg'
 // import image3 from '../assets/flags/image3.jpg'
@@ -41,7 +40,6 @@ const backgrounds = [
 
 
 const Home = () => {
-  const { t } = useTranslation();
   const [hoveredIcon, setHoveredIcon] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showTitle, setShowTitle] = useState(false);

@@ -14,7 +14,6 @@ const translationEn = {
     we_are_creativa_poeta: 'WE ARE CREATIVA POETA',
     about_us_content: 'Passionate about artistic expression and inspiring creation, we are a company of experienced designers, copywriters and web developers who offer you unique creative solutions. Our primary goal is to understand your needs in order to create exceptional results. With our approach of creativity and excellence, we capture attention and leave a lasting impression. Please contact us today to discuss your projects and find out how we can help you achieve your creative goals.',
     awards_received: 'Awards Received',
-    cups_of_coffee: 'Cups of Coffee',
     happy_clients: 'Happy Clients',
     complited_projects: 'Complited Projects',
     our_services: 'Our Services',

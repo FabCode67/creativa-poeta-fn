@@ -10,28 +10,28 @@ const Services = () => {
         <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#EEBA2B]">
           NOS SERVICE
         </h1>
-        <div className="w-full mainn bg-black mt-5 grid laptop:grid-cols-2 desktop:grid-cols-2 tablet:grid-cols-1 grid-cols-1 ">
+        <div className="w-full  grid laptop:grid-cols-2 gap-20 desktop:grid-cols-2 tablet:grid-cols-1 grid-cols-1 laptop:p-28 desktop:p-28 tablet:p-8 p-4 ">
         {blogData.map((blog) => (
-          <div className="flex laptop:text-base desktop:text-base tablet:text-base text-sm p-1 mx-auto flex-col h-fit   laptop:w-[60%] desktop:w-[60%] tablet:w-[80%] w-[98%]">
-            <div className="w-[70%] flex justify-self-start  h-[6rem] mt-0">
-              <div className="flex object-contain icon w-[25%] my-auto justify-center">
+          <div className="flex  laptop:text-base desktop:text-base tablet:text-base text-sm p-1 mx-auto flex-col h-fit   laptop:w-[100%] desktop:w-[100%] tablet:w-[80%] w-[98%]">
+            <div className="w-[100%] flex justify-self-start  h-[6rem] mt-0">
+              <div className="flex object-contain icon w-[20%] my-auto justify-center">
                 <img src={blog.image} alt="" height={100} width={100} className="object-contain"></img>
               </div>
-              <div className="flex flex-col icon w-fit p-3 h-[6rem]  space-y-2 self-end">
-                <div className="flex w-full text-lg desktop:text-xl tablet:text-xl laptop:text-xl text-white flex-col justify-end  self-end  content">  
+              <div className="flex flex-col icon w-fit p-3 laptop:h-[7rem] desktop:h-[7rem] tablet:h-[7rem] h-[6rem] space-y-2 self-end">
+                <div className="flex w-full text-lg desktop:text-3xl tablet:text-xl laptop:text-3xl text-white flex-col justify-end  self-end  content">  
                   <p className="">{blog.h1}</p>
                   <p className="font-bold">{blog.h2}</p>
                 </div>
-                <div className="flex w-full bg-yellow-400  h-[0.5rem] content"></div>
+                <div className="flex w-full bg-yellow-400  h-[.5rem] content"></div>
               </div>
             </div>
-            <div className="w-full flex justify-self-start mt-0 p-3">
-              <p className="text-white pl-[17%]"> {blog.description} </p>
+            <div className="w-full flex justify-self-start mt-0 p-1">
+              <p className="text-white pl-[22%] laptop:text-xl desktop:text-xl text-base"> {blog.description} </p>
             </div>
           </div>
            ))}
-        {/* {blogData.map((blog) => (
 
+        {/* {blogData.map((blog) => (
         <div className="flex justify-center mx-auto  h-fit min-h-32 self-center laptop:w-[60%] desktop:w-[60%] tablet:w-[80%] w-[98%] text-white">
           <div className="icon w-[20%] h-32   my-auto flex flex-col justify-center text-center mt-5">
             <img src={blog.image} alt="line" className="o object-fill laptop:h-32 tablet:h-28 desktop:h-32 h-20 w-full  m-auto flex flex-col justify-center text-center"/>

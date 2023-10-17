@@ -46,7 +46,7 @@ const Services = () => {
         ))}  */}
       
       </div>
-      <div className="absolute h-[4rem] w-[33rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 right-[6rem] top-[40rem] -rotate-12">
+      <div className="absolute laptop:h-[4rem] desktop:h-[4rem] w-full tablet:w-[33rem] h-fit laptop:w-[33rem] desktop:w-[33rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[6rem] tablet:right-[2rem] desktop:right-[6rem] laptop:top-[40rem] desktop:top-[40rem]  top-[58rem] -rotate-12">
         <p className="text-[#fa1138] text-base">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
         <p className="text-[#fa1138]">ETU/OU CREATEUR DE CONTENU</p>
       </div>

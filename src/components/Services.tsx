@@ -11,7 +11,7 @@ const Services = () => {
           NOS SERVICE
         </h1>
         <div className="w-full  grid laptop:grid-cols-2 gap-20 desktop:grid-cols-2 tablet:grid-cols-1 grid-cols-1 laptop:p-28 desktop:p-28 tablet:p-8 p-4 ">
-        {blogData.map((blog) => (
+        {/* {blogData.map((blog) => (
           <div className="flex  laptop:text-base desktop:text-base tablet:text-base text-sm p-1 mx-auto flex-col h-fit   laptop:w-[100%] desktop:w-[100%] tablet:w-[80%] w-[98%]">
             <div className="w-[100%] flex justify-self-start  h-[6rem] mt-0">
               <div className="flex object-contain icon w-[20%] my-auto justify-center">
@@ -29,21 +29,21 @@ const Services = () => {
               <p className="text-white pl-[22%] laptop:text-xl desktop:text-xl text-base"> {blog.description} </p>
             </div>
           </div>
-           ))}
+           ))} */}
 
-        {/* {blogData.map((blog) => (
+         {blogData.map((blog) => (
         <div className="flex justify-center mx-auto  h-fit min-h-32 self-center laptop:w-[60%] desktop:w-[60%] tablet:w-[80%] w-[98%] text-white">
-          <div className="icon w-[20%] h-32   my-auto flex flex-col justify-center text-center mt-5">
+          <div className="icon w-[10%] h-8   my-auto flex flex-col justify-center text-center mt-15">
             <img src={blog.image} alt="line" className="o object-fill laptop:h-32 tablet:h-28 desktop:h-32 h-20 w-full  m-auto flex flex-col justify-center text-center"/>
            </div>
-          <div className="icon w-[20%] h-32  m-auto flex flex-col justify-center laptop:px-4 tablet:px-3 desktop:pax-4 px-2">
+          <div className="icon w-[20%] h-32  m-auto flex flex-col justify-center laptop:px-4 tablet:px-3 desktop:pax-4 px-0">
             <p className="te laptop:text-2xl desktop:text-2xl tablet:text-xl text-base font-thin">{blog.h1}</p>
             <p className="te laptop:text-2xl desktop:text-2xl tablet:text-xl text-base font-thin">{blog.h2}</p>
           </div>
           <div className="w-[2%] bg-[#EEBA2B]"></div> 
           <div className="icon w-[58%] h-fit min-h-32  justify-center my-auto flex items-center pl-3 laptop:text-base tablet:text-base desktop:text-base text-sm"><p className=" flex justify-center items-center  my-auto ">{blog.description}</p></div>
         </div>
-        ))} */}
+        ))} 
       
       </div>
       </div>

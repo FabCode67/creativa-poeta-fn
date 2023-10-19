@@ -61,12 +61,12 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
           <form onSubmit={handleSubmit} className='flex justify-start items-start float-left space-x-6 mt-4'>
       <input
         type="email"
-        placeholder='Enter your email'
+        placeholder='Entrer votre email'
         value={email}
         onChange={handleEmailChange}
         className='w-full h-10 px-3 bg-black rounded-md'
       />
-      <button type='submit' className='w-fit laptop:px-10 desktop:px-10 tablet:px-8 px-2 h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'> {!isLoading? 'Subscribe': 'Waiting...'} </button>
+      <button type='submit' className='w-fit laptop:px-10 desktop:px-10 tablet:px-8 px-2 h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'> {!isLoading? "s'abonner": 'attendez...'} </button>
     </form>
         </div>
       </div>

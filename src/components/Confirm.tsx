@@ -71,7 +71,7 @@ const Confirm: React.FC<PopupProps> = ({ message, isSuccess, onClose }) => {
                   className="text-lg leading-6 font-medium text-gray-900"
                   id="modal-headline"
                 >
-                  {isSuccess ? "Success!" : "Error!"}
+                  {isSuccess ? "Succès!" : "Erreur!"}
                 </h3>
                 <div className="mt-8">
                   <p className="text-sm leading-5 text-gray-500">{message}</p>

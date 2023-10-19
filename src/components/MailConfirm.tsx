@@ -10,8 +10,8 @@ const Popup: React.FC<PopupProps> = ({ message, isSuccess, onClose }) => {
     const openGmailApp = () => {
         window.open('https://mail.google.com/', '_blank');
 
-      };
-      
+    };
+
 
     return (
         <div className="fixed z-50 w-full inset-0 overflow-y-auto">
@@ -86,7 +86,7 @@ const Popup: React.FC<PopupProps> = ({ message, isSuccess, onClose }) => {
                                     className="text-lg leading-6 font-medium text-gray-900"
                                     id="modal-headline"
                                 >
-                                    {isSuccess ? "Success!" : "Error!"}
+                                    {isSuccess ? "Succès!" : "Erreur!"}
                                 </h3>
                                 <div className="mt-8">
                                     <p className="text-sm leading-5 text-gray-500">{message}</p>
@@ -98,12 +98,11 @@ const Popup: React.FC<PopupProps> = ({ message, isSuccess, onClose }) => {
                         <span className="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto">
                             <button
                                 type="button"
-                                className={`inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 text-base leading-6 font-medium focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150 sm:text-sm sm:leading-5 ${
-                                    isSuccess ? "bg-black text-white" : "bg-red-600 text-white"
-                                } hover:bg-opacity-75`}
+                                className={`inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 text-base leading-6 font-medium focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150 sm:text-sm sm:leading-5 ${isSuccess ? "bg-black text-white" : "bg-red-600 text-white"
+                                    } hover:bg-opacity-75`}
                                 onClick={openGmailApp}
                             >
-                                Open your email App to confirm
+                                Ouvrez app de e-mail pour confirmer
                             </button>
                         </span>
                     </div>

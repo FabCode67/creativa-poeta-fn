@@ -10,7 +10,6 @@ import SlideLeft from "./SlideLeft";
 import SlideRight from "./SlideRight";
 import logopoeta1 from '../assets/flags/logopoeta1.png'
 import Confirm from "./Confirm";
-
 import { useLocation } from 'react-router-dom';
 
 
@@ -46,6 +45,7 @@ const Home = () => {
   const [showTitle, setShowTitle] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [istToken, setToken] = useState(false);
+  const [isTokenValid, setTokenValid] = useState(true);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const token = queryParams.get('token');
@@ -55,6 +55,24 @@ const Home = () => {
     }
   }, [token]);
  
+  useEffect(() => {
+    const confirmToken = async () => {
+      console.log("tokensss",token)
+      const res = await fetch('http://localhost:3000/confirm', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ token: token })
+      });
+      const data = await res.json();
+      if(data.error) setTokenValid(true);
+      else setTokenValid(false);
+      console.log("data",data)
+    }
+    confirmToken();
+  }, [token]);
+
 const handleCloseConfitm = () => {
   setToken(false);
 }
@@ -112,6 +130,8 @@ const handleCloseConfitm = () => {
       setTouchStartX(null);
     }
   };
+
+  
 
   const handleTouchEnd = () => {
     setTouchStartX(null);
@@ -240,7 +260,14 @@ const handleCloseConfitm = () => {
           <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
         </div>
       </div>
-      {istToken && <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={true} onClose={handleCloseConfitm} />}
+
+      {istToken&&!isTokenValid &&(
+         <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={true} onClose={handleCloseConfitm} />
+      )}
+      {istToken&&isTokenValid &&(
+         <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={false} onClose={handleCloseConfitm} />
+      )}
+
     </section>
   );
 };

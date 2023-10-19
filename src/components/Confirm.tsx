@@ -1,5 +1,6 @@
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface PopupProps {
   message: string;
@@ -8,11 +9,11 @@ interface PopupProps {
 }
 
 const Confirm: React.FC<PopupProps> = ({ message, isSuccess, onClose }) => {
+  const navigate = useNavigate();
   const handleContiue = () => {
-    window.open('https://creativa-poeta-8u8aj1qhg-fabcode67.vercel.app/');
+    navigate("/");
     onClose();
   };
-
 
   return (
     <div className="fixed z-50 w-full inset-0 overflow-y-auto">

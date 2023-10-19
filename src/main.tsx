@@ -10,8 +10,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path='/confirm/:id' element={<Confirm />}/>
-        {/* <Route path="/services/:id" element={<SingleServicePage />} /> */}
+        <Route path="/confirm" element={<Confirm />} />
       </Routes>
     </Router>
   </React.StrictMode>,

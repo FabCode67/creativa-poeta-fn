@@ -49,6 +49,8 @@ const Home = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const token = queryParams.get('token');
+  const [successMessage, setsuccessMessage] = useState('' as any);
+  const [errorMessage, setErrorMessage] = useState('' as any)  
   useEffect(() => {
     if (token) {
       setToken(true);
@@ -69,9 +71,16 @@ const Home = () => {
       if(data.error) setTokenValid(true);
       else setTokenValid(false);
       console.log("data",data)
+      const message = data?.message
+      const emes = data?.error
+      setErrorMessage(emes);
+      setsuccessMessage(message);
+      console.log("message",message)
     }
     confirmToken();
   }, [token]);
+
+
 
 const handleCloseConfitm = () => {
   setToken(false);
@@ -262,10 +271,10 @@ const handleCloseConfitm = () => {
       </div>
 
       {istToken&&!isTokenValid &&(
-         <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={true} onClose={handleCloseConfitm} />
+         <Confirm message={successMessage} isSuccess={true} onClose={handleCloseConfitm} />
       )}
       {istToken&&isTokenValid &&(
-         <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={false} onClose={handleCloseConfitm} />
+         <Confirm message={errorMessage} isSuccess={false} onClose={handleCloseConfitm} />
       )}
 
     </section>

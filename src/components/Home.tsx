@@ -58,7 +58,7 @@ const Home = () => {
   useEffect(() => {
     const confirmToken = async () => {
       console.log("tokensss",token)
-      const res = await fetch('http://localhost:3000/confirm', {
+      const res = await fetch('https://blue-angry-gorilla.cyclic.app/confirm', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

@@ -4,7 +4,6 @@ import App from './App.tsx';
 import './index.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Confirm from './components/Confirm.tsx';
-// import SingleServicePage from './components/SingleServicePage.tsx';
 
 ReactDOM.render(
   <React.StrictMode>

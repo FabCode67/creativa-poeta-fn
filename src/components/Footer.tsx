@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import logopoeta1 from '../assets/flags/logopoeta1.png';
 import { SetStateAction, useState } from 'react';
+import { toast } from 'react-toastify';
 
 function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
   const { t } = useTranslation();
@@ -22,10 +23,21 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
       },
       body: JSON.stringify({ email: email })
     });
+
+    const data = await res.json();
+
+    if(data.error){
+      toast.error(data.error, {
+        theme: 'colored'
+      }
+        );
+      setIsLoading(false);
+      return; 
+    }
     setIsLoading(false);
     setShowPopUp(true)
     setEmail('');
-    console.log(res)
+    console.log("",data);
     
   };
   return (
@@ -54,7 +66,7 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
         onChange={handleEmailChange}
         className='w-full h-10 px-3 bg-black rounded-md'
       />
-      <button type='submit' className='w-fit px-10 h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'> {!isLoading? 'Subscribe': 'Waiting...'} </button>
+      <button type='submit' className='w-fit laptop:px-10 desktop:px-10 tablet:px-8 px-2 h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'> {!isLoading? 'Subscribe': 'Waiting...'} </button>
     </form>
         </div>
       </div>

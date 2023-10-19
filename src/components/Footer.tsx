@@ -48,7 +48,7 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
           </p>
           <form onSubmit={handleSubmit} className='flex justify-start items-start float-left space-x-6 mt-4'>
       <input
-        type="text"
+        type="email"
         placeholder='Enter your email'
         value={email}
         onChange={handleEmailChange}

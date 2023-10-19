@@ -1,10 +1,33 @@
 import { useTranslation } from 'react-i18next';
-import logopoeta1 from '../assets/flags/logopoeta1.png'
+import logopoeta1 from '../assets/flags/logopoeta1.png';
+import { SetStateAction, useState } from 'react';
 
-
-function Footer() {
+function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
   const { t } = useTranslation();
   const today = new Date();
+  const[isLoading, setIsLoading] = useState(false);
+  const [email, setEmail] = useState('');
+ 
+  const handleEmailChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    setIsLoading(true);
+    e.preventDefault();
+   const res = await fetch('https://blue-angry-gorilla.cyclic.app/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email: email })
+    });
+    setIsLoading(false);
+    setShowPopUp(true)
+    setEmail('');
+    console.log(res)
+    
+  };
   return (
     <footer className="foote py-16 backdrop-blur-lg blur-none  laptop:px-44 desktop:px-44 px-2 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
       <div className="laptop:flex-row desktop:flex-row tablet:flex-row flex-col flex justify-center items-center w-full  laptop:space-x-16 desktop:space-x-16 space-x-0">
@@ -23,10 +46,16 @@ function Footer() {
           <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
           Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.
           </p>
-          <form className='flex justify-start items-start float-left space-x-6 mt-4'>
-            <input type="text" placeholder='Enter your email' className='w-full h-10 px-3 bg-black rounded-md'/>
-            <button className='w-fit px-10  h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'>Subscribe</button>
-          </form>
+          <form onSubmit={handleSubmit} className='flex justify-start items-start float-left space-x-6 mt-4'>
+      <input
+        type="text"
+        placeholder='Enter your email'
+        value={email}
+        onChange={handleEmailChange}
+        className='w-full h-10 px-3 bg-black rounded-md'
+      />
+      <button type='submit' className='w-fit px-10 h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'> {!isLoading? 'Subscribe': 'Waiting...'} </button>
+    </form>
         </div>
       </div>
       <div className='flex w-full bg-white h-[1px] mt-5'></div>
@@ -49,6 +78,7 @@ function Footer() {
            <p className='text-xs ml-2 text-gray-300'>fabrice.mwanafunzi@karisimbitech.rw</p>
           </a>
           </div>
+          
     </footer>
   );
 }

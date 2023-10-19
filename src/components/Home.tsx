@@ -55,7 +55,9 @@ const Home = () => {
     }
   }, [token]);
  
-
+const handleCloseConfitm = () => {
+  setToken(false);
+}
 
   // const [touchStartX, setTouchStartX] = useState(null); // Add this line
   const [touchStartX, setTouchStartX] = useState<number | null>(null); // Adjust the state type
@@ -238,7 +240,7 @@ const Home = () => {
           <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
         </div>
       </div>
-      {istToken && <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={true} onClose={() => {}} />}
+      {istToken && <Confirm message="Votre abonnement a été confirmé. Merci d'avoir choisi de travailler avec nous" isSuccess={true} onClose={handleCloseConfitm} />}
     </section>
   );
 };

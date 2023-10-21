@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import logopoeta1 from '../assets/flags/logopoeta1.png';
 import { SetStateAction, useState } from 'react';
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
   const { t } = useTranslation();
@@ -16,29 +17,29 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     setIsLoading(true);
     e.preventDefault();
-   const res = await fetch('https://blue-angry-gorilla.cyclic.app/subscribe', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email: email })
-    });
-
-    const data = await res.json();
-
-    if(data.error){
-      toast.error(data.error, {
-        theme: 'colored'
+    try {
+      const response = await axios.post('https://blue-angry-gorilla.cyclic.app/subscribe', { email });
+  
+      const data = response.data;
+  
+      if (data.error) {
+        toast.error(data.error, {
+          theme: 'colored'
+        });
+        setIsLoading(false);
+        return;
       }
-        );
+  
       setIsLoading(false);
-      return; 
+      setShowPopUp(true);
+      setEmail('');
+      console.log('', data);
+    } catch (error) {
+      toast.error('Network error. Please try again later.', {
+        theme: 'colored'
+      });
+      setIsLoading(false);
     }
-    setIsLoading(false);
-    setShowPopUp(true)
-    setEmail('');
-    console.log("",data);
-    
   };
   return (
     <footer className="foote py-16 backdrop-blur-lg blur-none  laptop:px-44 desktop:px-44 px-2 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">

@@ -29,23 +29,9 @@ const Services = () => {
             </div>
           </div>
            ))} 
-
-         {/* {blogData.map((blog) => (
-        <div className="flex justify-center mx-auto  h-fit min-h-32 self-center laptop:w-[60%] desktop:w-[60%] tablet:w-[80%] w-[98%] text-white">
-          <div className="icon w-[10%] h-8   my-auto flex flex-col justify-center text-center mt-15">
-            <img src={blog.image} alt="line" className="o object-fill laptop:h-32 tablet:h-28 desktop:h-32 h-20 w-full  m-auto flex flex-col justify-center text-center"/>
-           </div>
-          <div className="icon w-[20%] h-32  m-auto flex flex-col justify-center laptop:px-4 tablet:px-3 desktop:pax-4 px-0">
-            <p className="te laptop:text-2xl desktop:text-2xl tablet:text-xl text-base font-thin">{blog.h1}</p>
-            <p className="te laptop:text-2xl desktop:text-2xl tablet:text-xl text-base font-thin">{blog.h2}</p>
-          </div>
-          <div className="w-[2%] bg-[#EEBA2B]"></div> 
-          <div className="icon w-[58%] h-fit min-h-32  justify-center my-auto flex items-center pl-3 laptop:text-base tablet:text-base desktop:text-base text-sm"><p className=" flex justify-center items-center  my-auto ">{blog.description}</p></div>
-        </div>
-        ))}  */}
       
       </div>
-      <div className="absolute laptop:h-[4rem] desktop:h-[4rem] w-full tablet:w-[33rem] h-fit laptop:w-[33rem] desktop:w-[33rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[6rem] tablet:right-[2rem] desktop:right-[6rem] laptop:top-[40rem] desktop:top-[40rem]  top-[58rem] -rotate-12">
+      <div className="watermark absolute laptop:h-fit desktop:h-fit w-full tablet:w-[20rem] h-fit laptop:w-[19rem] tablet:rotate-0 desktop:rotate-0 laptop:rotate-0 -rotate-90 rounded-sm desktop:w-[19rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[6rem] tablet:right-[1rem] desktop:right-[1rem] laptop:top-[33rem] desktop:top-[33rem] tablet:top-[55rem]  top-[58rem] px-1">
         <p className="text-[#fa1138] text-base">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
         <p className="text-[#fa1138]">ETU/OU CREATEUR DE CONTENU</p>
       </div>

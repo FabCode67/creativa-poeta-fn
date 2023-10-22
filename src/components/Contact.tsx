@@ -3,10 +3,85 @@ import { HiOutlineMail } from "react-icons/hi";
 import Popup from "./MailConfirm";
 import { useState } from "react";
 import Footer from "./Footer";
+import { toast } from "react-toastify";
 
 const Contact = () => {
 
   const [showPopup, setShowPopup] = useState(false);
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleEmailChange = (e: { target: { value: string; }; }) => {
+    setEmail(e.target.value);
+  };
+
+  const handleNameChange = (e: { target: { value: string; }; }) => {
+    setName(e.target.value);
+  };
+
+  const handleMessageChange = (e: { target: { value: string; }; }) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    setIsLoading(true);
+    e.preventDefault();
+  
+    // Check if any field is empty or if the email is invalid
+    if (!email || !name || !message) {
+      toast.error('Veuillez remplir tous les champs.', {
+        theme: 'colored',
+      });
+      setIsLoading(false);
+      return;
+    }
+  
+    // Email validation using regular expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error('Veuillez saisir une adresse e-mail valide.', {
+        theme: 'colored',
+      });
+      setIsLoading(false);
+      return;
+    }
+  
+    try {
+      const response = await fetch('https://blue-angry-gorilla.cyclic.app/users/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, name, message }),
+      });
+  
+      const data = await response.json();
+  
+      if (data.error) {
+        alert(data.error);
+        setIsLoading(false);
+        return;
+      }
+  
+      setIsLoading(false);
+      setEmail('');
+      setName('');
+      setMessage('');
+      console.log('', data);
+      toast.success(data.message, {
+        theme: 'colored',
+      });
+    } catch (error) {
+      toast.error('Erreur réseau. Veuillez réessayer plus tard.', {
+        theme: 'colored',
+      });
+      setIsLoading(false);
+    }
+  };
+  
+
 
   const handleClosePopup = () => {
     setShowPopup(false);
@@ -28,15 +103,31 @@ const Contact = () => {
                   <h1 className="text-2xl font-bold text-white">Send us Message</h1>
                 </div>
                 <div className="forms py-9 px-6">
-                  <form className="form">
+                  <form className="form" onSubmit={handleSubmit}>
                     <div className="flex flex-col">
                       <label className="bg-gre text-md text-gray-500">Name</label>
-                      <input className="border-b-2 border-b-gray-700 bg-inherit outline-none text-[#EEBA2B]  hover:border-white py-2" type="text" />
+                      <input 
+                      className="border-b-2 border-b-gray-700 bg-inherit outline-none text-[#EEBA2B]  hover:border-white py-2" 
+                      type="text"
+                      value={name}
+                      onChange={handleNameChange}
+                       />
                       <label className="  text-md  text-gray-500">Email</label>
-                      <input className=" bg-inherit border-b-2 border-b-gray-700 outline-none text-[#EEBA2B] hover:border-white  py-2" type="email" />
+                      <input 
+                      className=" bg-inherit border-b-2 border-b-gray-700 outline-none text-[#EEBA2B] hover:border-white  py-2" 
+                      type="email" 
+                      value={email}
+                      onChange={handleEmailChange}
+                      />
                       <label className="bg-gre  text-md  text-gray-500">Message</label>
-                      <textarea className=" outline-none hover:border-white py-2 bg-inherit text-[#EEBA2B] border-b-2 border-b-gray-700 h-20" />
-                      <button className=" rounded-md p-3 mt-8 bg-[#EEBA2B] border text-white font-semibold">Send</button>
+                      <textarea 
+                      className=" outline-none hover:border-white py-2 bg-inherit text-[#EEBA2B] border-b-2 border-b-gray-700 h-20"
+                      value={message}
+                      onChange={handleMessageChange}
+                       />
+                      <button className=" rounded-md p-3 mt-8 bg-[#EEBA2B] border text-white font-semibold">
+                        {!isLoading ? "Envoyer" : 'attendez...'}
+                      </button>
                     </div>
                   </form>
                 </div>

@@ -9,7 +9,7 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
   const today = new Date();
   const[isLoading, setIsLoading] = useState(false);
   const [email, setEmail] = useState('');
-  const apiUrl = process.env.REACT_APP_API_URL; 
+  
  
   const handleEmailChange = (e: { target: { value: SetStateAction<string>; }; }) => {
     setEmail(e.target.value);
@@ -19,18 +19,10 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
     setIsLoading(true);
     e.preventDefault();
     try {
-      if (!apiUrl) {
-        toast.error('API URL is not defined', {
-          theme: 'colored'
-        });
-        setIsLoading(false);
-        return;
-      }
-
-      const response = await axios.post(apiUrl, { email });
-
+      const response = await axios.post('https://blue-angry-gorilla.cyclic.app/subscribe', { email });
+  
       const data = response.data;
-
+  
       if (data.error) {
         toast.error(data.error, {
           theme: 'colored'
@@ -38,7 +30,7 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
         setIsLoading(false);
         return;
       }
-
+  
       setIsLoading(false);
       setShowPopUp(true);
       setEmail('');

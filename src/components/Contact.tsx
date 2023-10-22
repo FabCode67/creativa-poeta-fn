@@ -69,7 +69,6 @@ const Contact = () => {
       setEmail('');
       setName('');
       setMessage('');
-      console.log('', data);
       toast.success(data.message, {
         theme: 'colored',
       });

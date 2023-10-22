@@ -1,7 +1,6 @@
 import blogData from "../data/blog";
 
 const Services = () => {
-  console.log(blogData);
   
   return (
     <section id='services' className=' mainn py-16 justify-center  h-fit min-h-screen mt-0 flex flex-col bg-slate-800 items-center relative'>

@@ -69,7 +69,6 @@ const Contact = () => {
       setEmail('');
       setName('');
       setMessage('');
-      console.log('', data);
       toast.success(data.message, {
         theme: 'colored',
       });
@@ -105,14 +104,14 @@ const Contact = () => {
                 <div className="forms py-9 px-6">
                   <form className="form" onSubmit={handleSubmit}>
                     <div className="flex flex-col">
-                      <label className="bg-gre text-md text-gray-500">Name</label>
+                      <label className="bg-gre text-md text-gray-500">Nom</label>
                       <input 
                       className="border-b-2 border-b-gray-700 bg-inherit outline-none text-[#EEBA2B]  hover:border-white py-2" 
                       type="text"
                       value={name}
                       onChange={handleNameChange}
                        />
-                      <label className="  text-md  text-gray-500">Email</label>
+                      <label className="  text-md  text-gray-500">E-mail</label>
                       <input 
                       className=" bg-inherit border-b-2 border-b-gray-700 outline-none text-[#EEBA2B] hover:border-white  py-2" 
                       type="email" 

@@ -7,7 +7,6 @@ import phonevid from '../assets/phonevid.mp4'
 // About.tsx
 const Faq = () => {
   const { t } = useTranslation();
-  console.log(faqData);
   
   return (
     <section id="faq" className="faq laptop:py-9 desktop:py-9 py-14 h-fit min-h-screen w-full  flex flex-col justify-center items-center text-center relative">

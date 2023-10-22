@@ -59,7 +59,6 @@ const Home = () => {
  
   useEffect(() => {
     const confirmToken = async () => {
-      console.log("tokensss",token)
       const res = await fetch('https://blue-angry-gorilla.cyclic.app/confirm', {
         method: 'PUT',
         headers: {
@@ -70,12 +69,10 @@ const Home = () => {
       const data = await res.json();
       if(data.error) setTokenValid(true);
       else setTokenValid(false);
-      console.log("data",data)
       const message = data?.message
       const emes = data?.error
       setErrorMessage(emes);
       setsuccessMessage(message);
-      console.log("message",message)
     }
     confirmToken();
   }, [token]);

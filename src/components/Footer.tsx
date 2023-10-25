@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import logopoeta1 from '../assets/flags/logopoeta1.png';
 import { SetStateAction, useState } from 'react';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
   const { t } = useTranslation();
@@ -74,7 +75,7 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
           <a href='' className='text-xs font-bold'>Clause de non-responsabilité</a>
           <a href='' className='text-xs font-bold'>Politique de confidentialité</a>
           <a href='' className='text-xs font-bold'>Mentions legalès </a>
-          <a href='/terms-and-conditions' className='text-xs font-bold'>Conditions gèneralès  </a>
+          <Link to='/terms-and-conditions' className='text-xs font-bold'>Conditions gèneralès  </Link>
           <a href='' className='text-xs font-bold'>Cookes policy</a>
         </div>
         <div className="flex laptop:flex-row desktop:flex-row tablet:flex-row flex-col  space-x-10 mt-16 justify-center items-center basis-full text-slate-400">

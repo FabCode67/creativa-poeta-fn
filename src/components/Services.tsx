@@ -32,9 +32,9 @@ const Services = () => {
       
       </div>
       <div className="watermark absolute laptop:h-fit desktop:h-fit w-full tablet:w-[20rem] h-fit laptop:w-[15
-        ;rem] tablet:rotate-0 desktop:rotate-0 laptop:rotate-0 -rotate-90 rounded-sm desktop:w-[13rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[33rem] desktop:top-[31rem] tablet:top-[55rem]  top-[58rem] px-1">
-        <p className="text-[#fa1138] text-base">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
-        <p className="text-[#fa1138]">ETU/OU CREATEUR DE CONTENU</p>
+        ;rem] tablet:rotate-0 desktop:rotate-0 laptop:rotate-0  rounded-sm desktop:w-[13rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[33rem] desktop:top-[31rem] tablet:top-[55rem] w-[6rem] h-[10rem]  top-[55rem] px-1">
+        <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
+        <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">ETU/OU CREATEUR DE CONTENU</p>
       </div>
       </div>
       <div className="laptop:h-[4%] desktop:[h-4%] tablet:h-[3%] h-[2%] laptop:w-[10%] t w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">

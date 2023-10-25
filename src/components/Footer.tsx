@@ -74,7 +74,7 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
           <a href='' className='text-xs font-bold'>Clause de non-responsabilité</a>
           <a href='' className='text-xs font-bold'>Politique de confidentialité</a>
           <a href='' className='text-xs font-bold'>Mentions legalès </a>
-          <a href='' className='text-xs font-bold'>Conditions gèneralès  </a>
+          <a href='/terms-and-conditions' className='text-xs font-bold'>Conditions gèneralès  </a>
           <a href='' className='text-xs font-bold'>Cookes policy</a>
         </div>
         <div className="flex laptop:flex-row desktop:flex-row tablet:flex-row flex-col  space-x-10 mt-16 justify-center items-center basis-full text-slate-400">

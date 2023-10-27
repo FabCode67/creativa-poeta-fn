@@ -94,10 +94,10 @@ function NavBar() {
               <p className="text-white">
               <img src={logoBurger}
               alt="test"
-              className="w-[100%] h-[100%] object-cover mt-2 mb-12"
+              className="w-[100%] h-[100%] object-cover mt-2"
               />
               </p>
-              <div className="flex space-x-4 top-12 justify-center text-xl ">
+              <div className="flex space-x-4 laptop:bottom-8 desktop:bottom-8 tablet:bottom-8 phone:bottom-8 bottom-2 absolute justify-center text-xl ">
                 <a href="#facebook" className="text-white">
                   <FaFacebook />
                 </a>

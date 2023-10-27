@@ -32,7 +32,7 @@ const Services = () => {
       
       </div>
       <div className="watermark absolute laptop:h-fit desktop:h-fit w-full tablet:w-[20rem] h-fit laptop:w-[15
-        ;rem] tablet:rotate-0 desktop:rotate-0 laptop:rotate-0  rounded-sm desktop:w-[13rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[33rem] desktop:top-[31rem] tablet:top-[55rem] w-[6rem] h-[10rem]  top-[55rem] px-1">
+        ;rem]  rounded-sm desktop:w-[13rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[33rem] desktop:top-[31rem] tablet:top-[55rem] w-[6rem] h-[20rem]  phone:top-[55rem] top-[60rem] px-1">
         <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
         <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">ETU/OU CREATEUR DE CONTENU</p>
       </div>

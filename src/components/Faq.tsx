@@ -35,10 +35,10 @@ const Faq = () => {
         </div>
      
       </div>
-      <div className="laptop:h-[7%] tablet:h-[7%] h-[4%] laptop:w-[10%] w-[8%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-white">
+      <div className="laptop:h-[7%] tablet:h-[7%] phone:h-[4%] h-[2%] laptop:w-[10%] w-[8%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-white">
       </div>
 
-      <div className="very-buttom laptop:h-[7%] desktop:h-[7%] tablet:h-[7%] h-[4%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 bottom-0 border-r-2 border-white">
+      <div className="very-buttom laptop:h-[7%] desktop:h-[7%] tablet:h-[7%] phone:h-[4%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 bottom-0 border-r-2 border-white">
   
 </div>
     </section>

@@ -182,32 +182,32 @@ const handleCloseConfitm = () => {
       <source src={currentBackground.video} type="video/mp4" />
     </video>
   )} */}
-      <div className="logo laptop:top-0 desktop:top-0 tablet:top-3 md:top-3 top-5  text-white laptop:text-4xl desktop:text-4xl text-xl  left-8 laptop:ml-11 desktop:ml-11 ml-0 absolute laptop:p-1 desktop:p-1">
-        <img src={logopoeta1} alt="logo" className="laptop:w-[90%] desktop:w-[90%] laptop:h-[90%] desktop:h-[90%] h-[100%] w-[50%]" />
+      <div className="logo laptop:top-0 desktop:top-0 tablet:top-3 md:top-3 top-5  text-white laptop:text-4xl desktop:text-4xl text-xl  phone:left-8 tablet:left-8 desktop:left-8 md:left-8 laptop:left-8 left-4 laptop:ml-11 desktop:ml-11 ml-0 absolute laptop:p-1 desktop:p-1">
+        <img src={logopoeta1} alt="logo" className="laptop:w-[85%] desktop:w-[85%] laptop:h-[95%] desktop:h-[95%] h-[100%] w-[50%]" />
       </div>
       <div className="">
         <div className="flex justify-between">
           <div className="flex flex-col laptop:w-[70%] tablet:w-[80%] w-full justify-start laptop:m-0 items-start">
 
-            <div className="space-y-3 laptop:space-y-0 ">
+            <div className="phone:space-y-3 xs:space-y-1 laptop:space-y-0 ">
               <h1
-                className={`laptop:text-5xl desktop:text-5xl pb-7 tablet:text-4xl md:text-4xl text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-5xl desktop:text-5xl laptop:pb-7 desktop:pb-7 tablet:-bottom-7 pb-7 xs:pb-2 tablet:text-4xl md:text-4xl text-sm phone:text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title}
               </h1>
               <p
                 className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"
-                  ? "laptop:text-3xl text-xl"
-                  : "laptop:text-4xl text-2xl"
+                  ? "laptop:text-3xl desktop:text-3xl phone:text-2xl tablet:text-2xl xs:text-sm "
+                  : "laptop:text-4xl desktop:text-4xl phone:text-2xl tablet:text-2xl xs:text-sm"
                   } ${showDescription ? "visible2" : ""}`}
               >
                 {currentBackground.content.description}
               </p>
             </div>
             <div className="flex animate-bounce laptop:flex-row tablet:flex-row flex-col laptop:space-x-5 tablet:space-x-5 mt-12 mx-auto laptop:mx-0 w-full space-y-4 laptop:space-y-0 tablet:space-y-0">
-              <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">COMMENCER UN PROJET</button>
-              <button className="hover:bg-white hover:text-black text-white px-10 py-3 border-2 border-white animate-fade-in">A PROPOS DE NOUS</button>
+              <button className="hover:bg-white hover:text-black text-white px-10 laptop:py-3 desktop:py-3 phone:py-3 tablet:py-3 xs:py-1 laptop:text-base desktop:text-base tablet:text-base phone:text-base xs:text-sm border-2 border-white animate-fade-in">COMMENCER UN PROJET</button>
+              <button className="hover:bg-white hover:text-black text-white px-10 laptop:py-3 desktop:py-3 phone:py-3 tablet:py-3 xs:py-1 laptop:text-base desktop:text-base tablet:text-base phone:text-base xs:text-sm border-2 border-white animate-fade-in">A PROPOS DE NOUS</button>
             </div>
             <SlideLeft backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
             <SlideRight backgrounds={backgrounds} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
@@ -260,10 +260,10 @@ const handleCloseConfitm = () => {
           </div>
         </div>
       </div>
-      <div className="very-buttom h-[10%] laptop:w-[10%] tablet:w-[17%] w-[35%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#FFE533]">
+      <div className="very-buttom h-[10%] laptop:w-[10%] tablet:w-[17%] phone:w-[35%] w-[38%] absolute laptop:right-20 right-11 bottom-0 border-r-2 border-[#FFE533]">
         <div className="buttons h-full flex cursor-pointer items-start space-x-1">
           <button className="font-bold w-5 text-md text-[#FFFF00]"><AiOutlineDown /></button>
-          <button className="text-white text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
+          <button className="text-white tablet:text-xs desktop:text-xs phone:text-xs laptop:text-xs text-xs font-bold"><a href="#about">SCROLL DOWN</a></button>
         </div>
       </div>
 

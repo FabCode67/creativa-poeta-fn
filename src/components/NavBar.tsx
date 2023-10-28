@@ -32,7 +32,7 @@ function NavBar() {
         <div className="container flex justify-between">
           <nav className="flex flex-col w-full">
             <div
-              className={`navbar flex flex-col min-h-screen h-fit justify-start p-10 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
+              className={`navbar flex flex-col min-h-[98vh] h-fit max-h-[100%] justify-start p-10 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
               style={{ maxHeight: "80vh", overflowY: "auto" }}
             >
               <div className="flex text-[#EEBA2B] justify-between">
@@ -113,7 +113,6 @@ function NavBar() {
                 <a href="#mail" className="text-white">
                   <HiOutlineMail />
                 </a>
-
               </div>
             </div>
           </nav>

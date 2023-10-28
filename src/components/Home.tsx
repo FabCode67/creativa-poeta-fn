@@ -17,15 +17,15 @@ const backgrounds = [
   {
     image: image8,
     content: {
-      title: "TRANSFORMEZ VOS IDEES EN RÉALITÉ",
-      description: "Des solutions sur mesure qui captivent votre public et vous démarquent de la concurrence",
+      title: "inspired innovation",
+      description: "Un souffle de créativité, une touche poétique, voilà Creativa Poeta",
     },
   },
   {
     image: image2,
     content: {
-      title: "CREATIVE MODERN DESIGN",
-      description: "Une créativité sans limites qui donne vie à vos idées, une approche qui intègre les dernières technologies, un design esthétique et fonctionnel qui reflète votre identité unique.",
+      title: "transformez vos idées en réalité",
+      description: "Des solutions sur mesure qui captivent votre public et vous démarquent de la concurrence",
     },
   },
   // {
@@ -194,7 +194,7 @@ const handleCloseConfitm = () => {
                 className={`laptop:text-5xl desktop:text-5xl laptop:pb-7 desktop:pb-7 tablet:-bottom-7 pb-7 xs:pb-2 tablet:text-4xl md:text-4xl text-sm phone:text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
-                {currentBackground.content.title}
+                {currentBackground.content.title.toLocaleUpperCase()}
               </h1>
               <p
                 className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"

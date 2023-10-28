@@ -187,11 +187,11 @@ const handleCloseConfitm = () => {
       </div>
       <div className="">
         <div className="flex justify-between">
-          <div className="flex flex-col laptop:w-[70%] tablet:w-[80%] w-full justify-start laptop:m-0 items-start">
+          <div className="flex flex-col laptop:w-[72%] tablet:w-[80%] w-full justify-start laptop:m-0 items-start">
 
             <div className="phone:space-y-3 xs:space-y-1 laptop:space-y-0 ">
               <h1
-                className={`laptop:text-5xl desktop:text-5xl laptop:pb-7 desktop:pb-7 tablet:-bottom-7 pb-7 xs:pb-2 tablet:text-4xl md:text-4xl text-sm phone:text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
+                className={`laptop:text-4xl desktop:text-4xl laptop:pb-7 desktop:pb-7 tablet:-bottom-7 pb-7 xs:pb-2 tablet:text-4xl md:text-4xl text-sm phone:text-3xl font-bold laptop:px-0 desktop:px-0 tablet:px-0 mdpx0 px-7 text-[#FFFF00] mx-0 animate-fade-in animate-bounce ${showTitle ? "visible2" : ""
                   }`}
               >
                 {currentBackground.content.title.toLocaleUpperCase()}

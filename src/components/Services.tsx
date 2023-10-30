@@ -6,8 +6,9 @@ const Services = () => {
     <section id='services' className=' mainn py-16 justify-center  h-fit min-h-screen mt-0 flex flex-col bg-slate-800 items-center relative'>
       
       <div className="mt-[2%] pb-12   w-full flex felx-col flex-col space-y-7">
-        <h1 className="laptop:text-4xl text-2xl font-bold text-center text-[#EEBA2B]">
-          NOS SERVICE
+        <h1 className="laptop:text-5xl text-3xl font-bold mx-auto  text-[#EEBA2B]">
+         <b className="text-slate-500">NOS</b><br></br>SERVICE
+           
         </h1>
         <div className="w-full  grid laptop:grid-cols-2 laptop:gap-20 desktop:gap-20 tablet:gap-12 gap-10 desktop:grid-cols-2 tablet:grid-cols-1 grid-cols-1 laptop:p-28 desktop:p-28 tablet:p-8 p-4 ">
          {blogData.map((blog) => (
@@ -32,7 +33,7 @@ const Services = () => {
       
       </div>
       <div className="watermark absolute laptop:h-fit desktop:h-fit w-full tablet:w-[20rem] h-fit laptop:w-[15
-        ;rem]  rounded-sm desktop:w-[13rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[33rem] desktop:top-[31rem] tablet:top-[55rem] w-[6rem] h-[20rem]  phone:top-[55rem] top-[60rem] px-1">
+        ;rem]  rounded-sm desktop:w-[13rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[33rem] desktop:top-[31rem] tablet:top-[55rem] w-[3rem] h-[20rem]  phone:top-[69rem] phone:w-[72%] phone:right-2 top-[60rem] px-1">
         <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
         <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">ETU/OU CREATEUR DE CONTENU</p>
       </div>

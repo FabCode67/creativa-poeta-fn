@@ -32,10 +32,10 @@ const Services = () => {
            ))} 
       
       </div>
-      <div className="watermark absolute laptop:h-fit desktop:h-fit w-full tablet:w-[20rem] h-fit laptop:w-[15
-        ;rem]  rounded-sm desktop:w-[17rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[35rem]  desktop:top-[35rem] tablet:top-[55rem] w-[3rem] h-[20rem]  phone:top-[69rem] phone:w-[72%] phone:right-2 xs:top-[75rem] xs:w-[14.5rem] sumsung:top-[66.4rem]  iphone:top-[66.5rem] xs:right-1 px-1">
-        <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
-        <p className="text-[#fa1138] laptop:text-base desktop:text-base tablet:text-base text-xs">ETU/OU CREATEUR DE CONTENU</p>
+      <div className="watermark absolute laptop:h-fit desktop:h-fit w-full tablet:w-[20rem] h-fit laptop:w-[14
+        rem]  rounded-sm desktop:w-[14rem] bg-blue-900  font-extrabold opacity-75 border border-blue-900 laptop:right-[.5rem] tablet:right-[1rem] desktop:right-[.5rem] laptop:top-[35rem]  desktop:top-[36rem] tablet:top-[58rem]  w-[3rem] h-[20rem]  phone:top-[69rem] phone:w-[72%] phone:right-2 xs:top-[75rem] xs:w-[14.5rem] sumsung:top-[66.4rem]  iphone:top-[66.5rem] xs:right-1 px-1">
+        <p className="text-[#fa1138]  text-xs">SPECIALEMENT POUR YOUTUBEUR, TIKTOK, INSTAGRAM, ....</p>
+        <p className="text-[#fa1138]  text-xs">ETU/OU CREATEUR DE CONTENU</p>
       </div>
       </div>
       <div className="laptop:h-[4%] desktop:[h-4%] tablet:h-[3%] h-[2%] laptop:w-[10%] t w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">

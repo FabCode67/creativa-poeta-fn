@@ -17,7 +17,7 @@ const Services = () => {
               <div className="flex object-contain icon w-[20%] my-auto justify-center">
                 <img src={blog.image} alt="" height={100} width={100} className="object-contain"></img>
               </div>
-              <div className="flex flex-col icon w-fit p-3 laptop:h-[7rem] desktop:h-[7rem] tablet:h-[7rem] h-[6rem] space-y-2 self-end">
+              <div className="flex flex-col icon w-fit p-3 laptop:h-[7rem] desktop:h-[7rem] tablet:h-[7rem] h-fit space-y-2 self-end">
                 <div className="flex w-full text-xl desktop:text-3xl tablet:text-xl laptop:text-3xl text-white flex-col justify-end  self-end  content">  
                   <p className="">{blog.h1}</p>
                   <p className="font-bold">{blog.h2}</p>

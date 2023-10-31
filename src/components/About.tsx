@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="about   h-fit min-h-screen  flex flex-col justify-center items-center text-f relative">
       <div className="main_about h-fit  laptop:py-0 desktop:py-0 tablet:py-0 phone:py-0 pb-12 min-h-screen backdrop-blur-xs flex flex-col justify-center items-center text-center relative" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
-        <div className="laptop:mt-[0%] tablet:mt-[0%] laptop:space-y-10 space-y-5 mt-[0rem]">
+        <div className="laptop:mt-[0%]  laptop:py-0 desktop:py-0 phone:py-0 tablet:py-0 iphone:py-0 ipod:py-0 xs:py-20 tablet:mt-[0%] laptop:space-y-10 space-y-5 mt-[0rem]">
           <div className="flex justify-evenly flex-col laptop:space-y-10 space-y-5 laptop:w-[50%] w-[90%] tablet:w-[70%] mx-auto">
             <div className="flex justify-evenly flex-col laptop:space-y-5 space-x-3">
               {/* <div className="flex justify-center">
@@ -29,7 +29,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <a href="#contact" className="contact us bg-black text-white font-bold py-2 px-4 rounded-md absolute bottom-0 left-0 desktop:mb-28 laptop:mb-28 ipod:mb-56 phone:mb-24 tablet:mb-56 laptop:ml-40 desktop:ml-40 ml-3 border-2 border-[#FFE533]">CONTACTEZ NOTRE EQUIPE</a>
+      <a href="#contact" className="contact us bg-black text-white font-bold py-2 px-4 rounded-md absolute bottom-0 left-0 desktop:mb-28 laptop:mb-28 ipod:mb-56 phone:mb-24 tablet:mb-56 xs:mb-16 laptop:ml-40 desktop:ml-40 ml-3 border-2 border-[#FFE533]">CONTACTEZ NOTRE EQUIPE</a>
     </section>
   );
 };

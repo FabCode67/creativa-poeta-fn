@@ -59,7 +59,7 @@ const blogData = [
     },
     {
         id: 8,
-        h1: 'Assistance technologique &',
+        h1: 'Assistance technologique,',
         h2: 'Accompagnement numérique',
         image : tech,
         description: "Maîtrisez les nouvelles technologies en toute confiance avec notre service d'assistance gratuit. Nous vous aidons à naviguer dans l'univers numérique, que ce soit pour vos achats en ligne, vos démarches administratives ou l'utilisation des réseaux sociaux. Notre équipe expérimentée vous accompagne pas à pas, vous offrant la tranquillité d'esprit et la sécurité dont vous avez besoin. Libérez le plein potentiel de la technologie et simplifiez votre vie numérique dès maintenant (gratuit)"

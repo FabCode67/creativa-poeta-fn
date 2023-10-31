@@ -8,6 +8,7 @@ module.exports = {
       phone: "360px",
       tablet: "640px",
       ipod: "768px",
+      sumsung: "412px",
       iphone: "414px",
       laptop: "1024px",
       desktop: "1280px",

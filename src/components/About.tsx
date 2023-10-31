@@ -29,7 +29,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <a href="#contact" className="contact us bg-black text-white font-bold py-2 px-4 rounded-md absolute bottom-0 left-0 desktop:mb-28 laptop:mb-28 ipod:mb-56 phone:mb-24 tablet:mb-56 laptop:ml-40 desktop:ml-40 ml-3 border-2 border-[#FFE533]">CONTACTES NOTRE EQUIPE</a>
+      <a href="#contact" className="contact us bg-black text-white font-bold py-2 px-4 rounded-md absolute bottom-0 left-0 desktop:mb-28 laptop:mb-28 ipod:mb-56 phone:mb-24 tablet:mb-56 laptop:ml-40 desktop:ml-40 ml-3 border-2 border-[#FFE533]">CONTACTEZ NOTRE EQUIPE</a>
     </section>
   );
 };

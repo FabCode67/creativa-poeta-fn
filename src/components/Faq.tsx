@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import faqData from "../data/faq";
 import phonevid from '../assets/phonevid.mp4'

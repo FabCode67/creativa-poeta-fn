@@ -31,7 +31,7 @@ const Faq = () => {
         className="border px-0 h-fit"
         key={index}
       >
-        <h3 className="font-bold backdrop-blur-md text-slate-900 2xl:h-[17rem] laptop:h-[5rem] desktop:h-[7rem] tablet:h-[7rem] h-fit xs:h-[12rem] phone:h-[9rem] m-auto px-2 text-center flex justify-center laptop:text-xl desktop:text-xl border-b text-md" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
+        <h3 className="font-bold backdrop-blur-md text-slate-900 2xl:h-[17rem] laptop:h-[5rem] desktop:h-[7rem] tablet:h-[7rem] h-fit xs:h-[12rem] phone:h-[9rem] m-auto px-2 text-center flex justify-center items-center laptop:text-xl desktop:text-xl border-b text-md" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
           {faq.title}
         </h3>
         <div className={`wi-full p-2 mt-0  ${expandedIndex === index? 'bg-white':''}`}>

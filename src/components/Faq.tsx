@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import faqData from "../data/faq";
 import phonevid from '../assets/phonevid.mp4'
 import { useState } from "react";
-import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { AiOutlineMinus,  AiOutlinePlus } from "react-icons/ai";
 
 
 // About.tsx
@@ -34,16 +34,16 @@ const Faq = () => {
         <h3 className="font-bold backdrop-blur-md text-slate-900 2xl:h-[17rem] laptop:h-[5rem] desktop:h-[7rem] tablet:h-[7rem] h-fit xs:h-[12rem] phone:h-[9rem] m-auto px-2 text-center flex justify-center laptop:text-xl desktop:text-xl border-b text-md" style={{ backgroundColor: 'rgba(245, 233, 66,0.4)' }}>
           {faq.title}
         </h3>
-        <div className="wi-full p-2 mt-0 bg-white">
+        <div className={`wi-full p-2 mt-0  ${expandedIndex === index? 'bg-white':''}`}>
         <p className="text-md flex justify-start text-start">
           {expandedIndex === index ? faq.description : `${faq.description.substring(0, 0)}`}
         </p>
         {faq.description.length > 100 && (
           <button
-            className="text-black bg-white font-bold text-2xl mt-2"
+            className="text-black font-bold text-2xl mt-2"
             onClick={() => handleExpand(index)}
           >
-            {expandedIndex === index ? <AiOutlineMinusCircle /> : <AiOutlinePlusCircle/>}
+            {expandedIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus/>}
           </button>
         )}
         </div>

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import faqData from "../data/faq";
 import phonevid from '../assets/phonevid.mp4'
 import { useState } from "react";
-import { AiOutlineArrowDown, AiOutlineArrowUp, AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 
 
 // About.tsx

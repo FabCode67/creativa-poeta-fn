@@ -40,7 +40,7 @@ const Faq = () => {
         </p>
         {faq.description.length > 100 && (
           <button
-            className="text-black font-bold text-2xl mt-2"
+            className="text-slate-300 font-bold text-2xl mt-2"
             onClick={() => handleExpand(index)}
           >
             {expandedIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus/>}

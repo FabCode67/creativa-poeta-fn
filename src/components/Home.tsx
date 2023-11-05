@@ -198,8 +198,8 @@ const handleCloseConfitm = () => {
               </h1>
               <p
                 className={`animate-bounce leading-tight laptop:text-left tablet:text-left text-center laptop:ox-0 desktop:px-0 tablet:px-0 mdpx0 px-7 font-semibold text-white animate-slide-up ${currentBackground.content.title === "CREATIVE MODERN DESIGN"
-                  ? "laptop:text-2xl desktop:text-2xl phone:text-1xl tablet:text-1xl xs:text-sm "
-                  : "laptop:text-3xl desktop:text-3xl phone:text-2xl tablet:text-1xl xs:text-sm"
+                  ? "laptop:text-xl desktop:text-xl phone:text-1xl tablet:text-1xl xs:text-sm "
+                  : "laptop:text-2xl desktop:text-2xl phone:text-xl tablet:text-1xl xs:text-sm"
                   } ${showDescription ? "visible2" : ""}`}
               >
                 {currentBackground.content.description}

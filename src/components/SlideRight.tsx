@@ -10,7 +10,7 @@ const SlideRight: React.FC<rightSlide> = ({ backgrounds, currentIndex, setCurren
   return (
     <div className="circles-container absolute bottom-1/2 right-[-23px] laptop:right-0 desktop:right-0 md:right-0 tablet:right-0 transform -translate-x-1/2">
           <button onClick={() => setCurrentIndex((currentIndex + 1) % backgrounds.length)}>
-          <FaChevronLeft className="transform hover:bg-slate-900 hover:text-white rotate-180 text-slate-400 text-4xl" />
+          <FaChevronLeft className="transform hover:bg-slate-900 hover:text-white rotate-180 text-slate-600 text-4xl" />
         </button>
 </div>
   )

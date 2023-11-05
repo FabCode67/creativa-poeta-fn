@@ -5,6 +5,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-i
 import { HiOutlineMail } from "react-icons/hi";
 import logoBurger from '../assets/flags/logoBurger.png'
 import { BiChevronRight } from "react-icons/bi";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 function NavBar() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -42,7 +43,7 @@ function NavBar() {
             >
               <div className="flex text-[#EEBA2B] justify-between">
                 <p className="hidden">Navigation</p>
-                <div className=" flex mx-auto justify-center text-center text-white items-center">
+                <div className=" flex mx-auto text-2xl justify-center absolute top-5 right-12 text-center text-white items-center">
                   <FaTimes onClick={toggleSidebar} />
                 </div>
               </div>
@@ -63,7 +64,7 @@ function NavBar() {
         </a>
 
         <div onClick={toggleServicesSubMenu}>
-          <div className="flex my-auto">
+          <div className="flex my-auto justify-between">
           <p
             className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] cursor-pointer ${
               location.hash === "#services" ? "text-[#EEBA2B]" : ""
@@ -71,10 +72,10 @@ function NavBar() {
           >
             Services
           </p>
-          {servicesSubMenuVisible ? <BiChevronRight className="text-white flex justify-center mt-1 text-2xl my-auto items-center text-center" /> : <BiChevronRight className="text-white flex justify-center mt-1 text-2xl my-auto items-center text-center rotate-90" />}
+          {servicesSubMenuVisible ? <AiOutlineMinus className="flex justify-center mt-2 cursor-pointer text-slate-700 text-xl my-auto items-center text-center" /> : <AiOutlinePlus className="text-slate-700 cursor-pointer flex justify-center mt-2 text-xl my-auto items-center text-center rotate-90" />}
           </div>
           {servicesSubMenuVisible && ( 
-            <div className="pl-6 flex text-xs flex-col space-y-2">
+            <div className="pl-6 flex text-xs flex-col mt-3 space-y-2">
               <a
                 href="#services"
                 onClick={toggleSidebar}

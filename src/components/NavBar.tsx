@@ -1,19 +1,23 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
-import { useTranslation } from "react-i18next";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import burgerlogo from "../assets/flags/burgerlogo.png"
 import logoBurger from '../assets/flags/logoBurger.png'
 
 function NavBar() {
-  const { t } = useTranslation();
   const [sidebarVisible, setSidebarVisible] = useState(false);
+  const [servicesSubMenuVisible, setServicesSubMenuVisible] = useState(false); 
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
+
+  const toggleServicesSubMenu = () => {
+    setServicesSubMenuVisible(!servicesSubMenuVisible);
+  };
+
+ 
 
 
   const location = useLocation();
@@ -36,47 +40,133 @@ function NavBar() {
               style={{ maxHeight: "80vh", overflowY: "auto" }}
             >
               <div className="flex text-[#EEBA2B] justify-between">
-                <p>Navigation</p>
+                <p className="hidden">Navigation</p>
                 <div className=" flex mx-auto justify-center text-center text-white items-center">
                   <FaTimes onClick={toggleSidebar} />
                 </div>
               </div>
               <div className="h-fit flex  space-y-3 flex-col mt-6">
-              <a
-                href="#home"
-                onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white mt-12 text-xl hover:text-[#EEBA2B] ${location.hash === "#home" ? "text-[#EEBA2B]" : ""}`}
-              >
-                {t("home")}
-              </a>
-              <a
-                href="#about"
-                onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#about" ? "text-[#EEBA2B]" : ""}`}
-              >
-                {t("about")}
-              </a>
+        <a
+          href="#home"
+          onClick={toggleSidebar}
+          className={` overflow-y-auto rounded text-white mt-12 text-xl hover:text-[#EEBA2B] ${location.hash === "#home" ? "text-[#EEBA2B]" : ""}`}
+        >
+          Accueil
+        </a>
+        <a
+          href="#about"
+          onClick={toggleSidebar}
+          className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#about" ? "text-[#EEBA2B]" : ""}`}
+        >
+          A propos
+        </a>
 
+        <div onClick={toggleServicesSubMenu}>
+          <p
+            className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] cursor-pointer ${
+              location.hash === "#services" ? "text-[#EEBA2B]" : ""
+            }`}
+          >
+            Services
+          </p>
+          {servicesSubMenuVisible && ( 
+            <div className="pl-6 flex text-xs flex-col space-y-2">
               <a
                 href="#services"
                 onClick={toggleSidebar}
-                className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#services" ? "text-[#EEBA2B]" : ""}`}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
               >
-                {t("services")}
+                Design graphique
               </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+               Rédaction de contenu
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+               Développement de projets
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+               Création, édition et montage vidéo
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+               Marketing digital
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+              Conception publicitaire
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+               Développement de projets
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+              Création de site internet
+              </a>
+              <a
+                href="#services"
+                onClick={toggleSidebar}
+                className={` overflow-y-auto rounded text-white  hover:text-[#EEBA2B] ${
+                  location.hash === "#services" ? "text-[#EEBA2B]" : ""
+                }`}
+              >
+Assistance technologique et Accompagnement numérique              </a>  
+            </div>
+          )}
+        </div>
               <a
                 href="#parteners"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "text-[#EEBA2B]" : ""}`}
               >
-                {t("Parteners")}
+                Nos travaux
               </a>
               <a
                 href="#faq"
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#faq" ? "text-[#EEBA2B]" : ""}`}
               >
-                {t("FAQ")}
+                F.A.Q.
               </a>
 
               <a
@@ -84,13 +174,9 @@ function NavBar() {
                 onClick={toggleSidebar}
                 className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#contact" ? "text-[#EEBA2B]" : ""}`}
               >
-                {t("contact")}
+              Contacts
               </a>
               </div>
-              {/* <a
-                className="items-center py-3 px-3 laptop:my-6 my-2 rounded"
-              > <LocalizationSwicher />
-              </a> */}
               <p className="text-white">
               <img src={logoBurger}
               alt="test"

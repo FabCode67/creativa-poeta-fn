@@ -35,7 +35,7 @@ function MoreNavBar() {
               className={`flex flex-col justify-end p-5 space-y-4 float-right ${sidebarVisible ? "" : "hidden"}`}
             >
                           <div className="flex text-[#EEBA2B] justify-between">
-      <p>Navigation</p>
+      <p className="hidden">Navigation</p>
       <div className=" flex m-auto justify-center text-center text-white items-center">
       <FaTimes onClick={toggleSidebar} />
       </div>

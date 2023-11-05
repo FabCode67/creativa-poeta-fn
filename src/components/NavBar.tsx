@@ -4,6 +4,7 @@ import BurgerButton from "./BurgerButton";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import logoBurger from '../assets/flags/logoBurger.png'
+import { BiChevronRight } from "react-icons/bi";
 
 function NavBar() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -62,6 +63,7 @@ function NavBar() {
         </a>
 
         <div onClick={toggleServicesSubMenu}>
+          <div className="flex my-auto">
           <p
             className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] cursor-pointer ${
               location.hash === "#services" ? "text-[#EEBA2B]" : ""
@@ -69,6 +71,8 @@ function NavBar() {
           >
             Services
           </p>
+          {servicesSubMenuVisible ? <BiChevronRight className="text-white flex justify-center mt-1 text-2xl my-auto items-center text-center" /> : <BiChevronRight className="text-white flex justify-center mt-1 text-2xl my-auto items-center text-center rotate-90" />}
+          </div>
           {servicesSubMenuVisible && ( 
             <div className="pl-6 flex text-xs flex-col space-y-2">
               <a

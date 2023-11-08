@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import faqData from "../data/faq";
 import phonevid from '../assets/phonevid.mp4'
 import { useState } from "react";
@@ -7,7 +6,6 @@ import { AiOutlineMinus,  AiOutlinePlus } from "react-icons/ai";
 
 // About.tsx
 const Faq = () => {
-  const { t } = useTranslation();
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleExpand = (index:any) => {
@@ -20,8 +18,11 @@ const Faq = () => {
       Your browser does not support the video tag.
     </video>
       <div className="mt-[2%] laptop:px-10 mb-16 ">
-        <h1 className="laptop:text-4xl text-2xl font-bold text-justfy text-black">
-          {t('FAQ')}
+        <h1 className="laptop:text-4xl text-2xl font-bold text-justfy text-gray-700">
+          F.A.Q.
+        </h1>
+        <h1 className="laptop:text-4xl text-2xl font-bold text-justfy text-gray-700">
+          Questions Fréquentes
         </h1>
         <div
           className={`grid laptop:grid-cols-4 tablet:grid-cols-3 px-1 laptop:gap-8 grid-cols-2 mt-[3%] gap-3 sm:grid-cols-2`}

@@ -1,10 +1,11 @@
 import About from "./components/About"
-import Contact from "./components/Contact"
+// import Contact from "./components/Contact"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import Services from "./components/Services"
 import Faq from "./components/Faq"
 import Parteners from "./components/Parteners"
+import Footer from "./components/Footer"
 function  App() {
   return (
     <div className="App w-full flex flex-col snap-x scroll-smooth">
@@ -17,7 +18,9 @@ function  App() {
         <Services />
         <Parteners />
         <Faq />
-        <Contact />
+        {/* <Contact /> */}
+        <Footer />
+
       </div>
     </div>
   );

@@ -1,58 +1,96 @@
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import logopoeta1 from '../assets/flags/logopoeta1.png';
-import { SetStateAction, useState } from 'react';
-import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import Cont from './Cont';
+// import { SetStateAction, useState } from 'react';
+// import { toast } from 'react-toastify';
+// import { Link } from 'react-router-dom';
 
-function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
-  const { t } = useTranslation();
-  const today = new Date();
-  const[isLoading, setIsLoading] = useState(false);
-  const [email, setEmail] = useState('');
+function Footer() {
+  // const { t } = useTranslation();
+  // const today = new Date();
+  // const[isLoading, setIsLoading] = useState(false);
+  // const [email, setEmail] = useState('');
  
-  const handleEmailChange = (e: { target: { value: SetStateAction<string>; }; }) => {
-    setEmail(e.target.value);
-  };
+  // const handleEmailChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  //   setEmail(e.target.value);
+  // };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    setIsLoading(true);
-    e.preventDefault();
-   const res = await fetch('https://blue-angry-gorilla.cyclic.app/subscribe', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email: email })
-    });
+  // const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  //   setIsLoading(true);
+  //   e.preventDefault();7
+  //  const res = await fetch('https://blue-angry-gorilla.cyclic.app/subscribe', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({ email: email })
+  //   });
 
-    const data = await res.json();
+  //   const data = await res.json();
 
-    if(data.error){
-      toast.error(data.error, {
-        theme: 'colored'
-      }
-        );
-      setIsLoading(false);
-      return; 
-    }
-    setIsLoading(false);
-    setShowPopUp(true)
-    setEmail('');
+  //   if(data.error){
+  //     toast.error(data.error, {
+  //       theme: 'colored'
+  //     }
+  //       );
+  //     setIsLoading(false);
+  //     return; 
+  //   }
+  //   setIsLoading(false);
+  //   setShowPopUp(true)
+  //   setEmail('');
     
-  };
+  // };
   return (
-    <footer className="foote py-16 backdrop-blur-lg blur-none  laptop:px-44 desktop:px-44 px-2 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
-      <div className="laptop:flex-row desktop:flex-row tablet:flex-row flex-col flex justify-center items-center w-full  laptop:space-x-16 desktop:space-x-16 space-x-0">
-        <div className="flex flex-col laptop:w-1/2 desktop:w-1/2 tablet:w-[70] w-full h-fit ">
+    <footer className="foote py-16 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 px-12 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
+      <div className="laptop:flex-row  desktop:flex-row tablet:flex-col flex-col flex  items-center w-full">
+        <div className="flex flex-col laptop:w-[75%] desktop:w-[75%] tablet:w-full w-full h-fit ">
           <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
           <img src={logopoeta1} alt="logo" className="laptop:w-[50%] tablet:w-[70%] desktop:w-[50%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
           <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
           Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
           </p>
+          <div className='flex desktop:flex-row laptop:flex-row flex-col w-full justify-start items-start float-left mt-3 h-fit'>
+          <div className='flex flex-col justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
+              <p className='flex justify-start items-start float-left mt-3 text-[#EEBA2B] text-xl font-bold'>
+                Nos Compétences
+                </p>
+                <p className='flex justify-start items-start float-left mt-3 text-slate-400'>Conception de logos</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Affiches et flyers personnalisés</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Cartes de visite uniques</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Rédaction de contenu web</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Révision et correction de textes</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Rédaction de lettres personnalisées et de documents professionnels</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Création de discours et de poésie</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Assistance en écriture de mémoires et de rapports</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Conception de sites web</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Stratégies de marketing digital</p>
+            </div>
+            <div className='flex flex-col justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
+          
+                <p className='flex justify-start items-start float-left mt-12 text-slate-400'>Gestion des réseaux sociaux </p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Campagnes publicitaires visuelles</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Création de contenu marketing</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Aide à l'utilisation des outils numériques</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Assistance pour les démarches administratives en ligne </p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Conseils en sécurité en ligne</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Assistance pour acheter sur Internet</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Production de vidéos publicitaires</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Podcasts créatifs</p>
+                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Édition et montage de vidéos promotionnelles</p>
+            </div>
+            </div>
+            <div className='flex flex-col w-full justify-start items-start mt-5  h-fit'>
+            <p className='flex justify-start items-start float-left mt- text-slate-400'>Que vous soyez un entrepreneur, un créateur de contenu, une entreprise ou un particulier, nous sommes là pour donner vie à vos idées et pour vous aider à réussir dans votre domaine.</p>
+             <p className='flex justify-start items-start float-left mt-3 text-white text-xl font-bold'>
+             Votre créativité, notre passion.
+             </p>
+             </div>
         </div>
-        <div className="flex flex-col laptop:w-1/2 desktop:w-1/2 w-full h-fit ">
-        <h1 className='flex justify-start text-left items-start float-left font-bold text-xl mt-5 desktop:mt-0 laptop:mt-0'>
+        <div className="flex flex-col laptop:w-[25%] desktop:w-[25%] b w-full h-fit ">
+          <Cont />
+        {/* <h1 className='flex justify-start text-left items-start float-left font-bold text-xl mt-5 desktop:mt-0 laptop:mt-0'>
         Get Notified
           </h1>
           <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
@@ -67,10 +105,10 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
         className='w-full h-10 px-3 bg-black rounded-md'
       />
       <button type='submit' className='w-fit laptop:px-10 desktop:px-10 tablet:px-8 px-2 h-10 bg-[#EEBA2B] text-white font-semibold rounded-md'> {!isLoading? "s'abonner": 'attendez...'} </button>
-    </form>
+    </form> */}
         </div>
-      </div>
-      <div className='flex w-full bg-white h-[1px] mt-5'></div>
+      {/* </div> */}
+      {/* <div className='flex w-full bg-white h-[1px] mt-5'></div>
       <div className="grid laptop:grid-cols-5 desktop:grid-cols-5 tablet:grid-cols-3 grid-cols-2  mt-5 justify-center items-center basis-full text-slate-400">
           <a href='' className='text-xs font-bold'>Clause de non-responsabilité</a>
           <a href='' className='text-xs font-bold'>Politique de confidentialité</a>
@@ -89,8 +127,8 @@ function Footer({setShowPopUp}: {setShowPopUp: (arg0: boolean) => void;}) {
           <a href="https://fabcode67.github.io/my-brand-fabrice" target="_blank" rel="noreferrer text-slate-400">
            <p className='text-xs ml-2 text-gray-300'>fabrice.mwanafunzi@karisimbitech.rw</p>
           </a>
+          </div> */}
           </div>
-          
     </footer>
   );
 }

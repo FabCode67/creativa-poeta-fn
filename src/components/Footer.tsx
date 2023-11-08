@@ -42,11 +42,11 @@ function Footer() {
     
   // };
   return (
-    <footer className="foote py-16 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 px-12 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
+    <footer className="foote py-12 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 px-12 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
       <div className="laptop:flex-row  desktop:flex-row tablet:flex-col flex-col flex  items-center w-full">
-        <div className="flex flex-col laptop:w-[75%] desktop:w-[75%] tablet:w-full w-full h-fit ">
+        <div className="flex flex-col laptop:w-[63%] desktop:w-[63%] tablet:w-full w-full h-fit ">
           <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
-          <img src={logopoeta1} alt="logo" className="laptop:w-[50%] tablet:w-[70%] desktop:w-[50%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
+          <img src={logopoeta1} alt="logo" className="laptop:w-[30%] tablet:w-[70%] desktop:w-[30%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
           <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
           Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
@@ -83,12 +83,12 @@ function Footer() {
             </div>
             <div className='flex flex-col w-full justify-start items-start mt-5  h-fit'>
             <p className='flex justify-start items-start float-left mt- text-slate-400'>Que vous soyez un entrepreneur, un créateur de contenu, une entreprise ou un particulier, nous sommes là pour donner vie à vos idées et pour vous aider à réussir dans votre domaine.</p>
-             <p className='flex justify-start items-start float-left mt-3 text-white text-xl font-bold'>
+             <p className='flex justify-start items-start float-left mt-5 text-white text-xl font-bold'>
              Votre créativité, notre passion.
              </p>
              </div>
         </div>
-        <div className="flex flex-col laptop:w-[25%] desktop:w-[25%] b w-full h-fit ">
+        <div className="flex flex-col laptop:w-[37%] desktop:w-[37%] b w-full h-fit ">
           <Cont />
         {/* <h1 className='flex justify-start text-left items-start float-left font-bold text-xl mt-5 desktop:mt-0 laptop:mt-0'>
         Get Notified
@@ -129,6 +129,8 @@ function Footer() {
           </a>
           </div> */}
           </div>
+          <div className="laptop:h-[8%] tablet:h-[8%] phone:h-[5%] h-[3%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
+        </div>
     </footer>
   );
 }

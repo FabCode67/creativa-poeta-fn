@@ -89,7 +89,7 @@ const Cont = () => {
       <><section id='contact' className='contacnt w-full  justify-center h-fit min-h-screen mt-0 text-white flex flex-col  relative'>
         <div className=" items-center flex justify-center">
           <div className="w-full flex flex-col  basis basis-full space-y-0 laptop:px-[2%] desktop:px-[2%] px-1">
-            <div className="contuctus-text flex-center flex justify-center text-center p-2">
+            <div className="contuctus-text flex-center flex justify-center text-center p-2 mt-10">
               <h1 className="laptop:text-xl desktop:text-xl text-lg font-bold">Nous contacter</h1>
             </div>
             <div className="flex flex-col laptop:flex-col desktop:flex-col laptop:mt-0 desktop:0 mt-2 backdrop-blur-sm">
@@ -137,7 +137,7 @@ const Cont = () => {
                   </div>
                  
                  
-                  <div className="flex space-x-4  bottom-0 mt-14 text-xl pb-4">
+                  <div className="flex space-x-4  bottom-0 mt-32 text-xl pb-4">
                     <a href="#facebook" className="text-white">
                       <FaFacebook />
                     </a>
@@ -160,8 +160,7 @@ const Cont = () => {
             </div>
           </div>
         </div>
-        <div className="laptop:h-[8%] tablet:h-[8%] phone:h-[5%] h-[3%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
-        </div>
+       
         {showPopup && (
           <Popup
             message="Merci pour votre abonnement à creativa poeta. nous vous avons envoyé un e-mail de confirmation."

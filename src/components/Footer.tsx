@@ -42,16 +42,16 @@ function Footer() {
     
   // };
   return (
-    <footer className="foote py-12 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 px-4 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
+    <footer className="foote py-12 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 tablet:px-24 px-4 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
       <div className="laptop:flex-row  desktop:flex-row tablet:flex-col flex-col flex  items-center w-full">
         <div className="flex flex-col laptop:w-[63%] desktop:w-[63%] tablet:w-full w-full h-fit ">
           <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
-          <img src={logopoeta1} alt="logo" className="laptop:w-[30%] tablet:w-[70%] desktop:w-[30%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
+          <img src={logopoeta1} alt="logo" className="laptop:w-[30%] tablet:w-[40%] desktop:w-[30%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
           <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
           Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
           </p>
-          <div className='flex desktop:flex-row laptop:flex-row flex-col w-full justify-start items-start float-left mt-3 h-fit'>
+          <div className='flex desktop:flex-row laptop:flex-row tablet:flex-row flex-col w-full justify-start items-start float-left mt-3 h-fit'>
           <div className='flex flex-col justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
               <p className='flex justify-start items-start float-left mt-3 text-[#EEBA2B] text-xl font-bold'>
                 Nos Compétences

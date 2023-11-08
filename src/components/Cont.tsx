@@ -89,7 +89,7 @@ const Cont = () => {
       <><section id='contact' className='contacnt w-full laptop:px-10 desktop:px-10 px-0 justify-center h-fit min-h-screen mt-0 text-white flex flex-col  relative'>
         <div className=" items-center flex justify-center">
           <div className="w-full flex flex-col  basis basis-full space-y-0">
-            <div className="contuctus-text flex-center flex justify-center text-center p-2 mt-4">
+            <div className="contuctus-text flex-center flex justify-center text-center p-2 desktop:mt-4 laptop:mt-4 tablet:mt-0 mt-4">
               <h1 className="laptop:text-xl desktop:text-xl text-lg font-bold">Nous contacter</h1>
             </div>
             <div className="flex flex-col laptop:flex-col desktop:flex-col laptop:mt-0 desktop:0 mt-2 backdrop-blur-sm">

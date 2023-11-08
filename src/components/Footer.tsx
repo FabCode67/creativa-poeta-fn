@@ -48,11 +48,11 @@ function Footer() {
           <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
           <img src={logopoeta1} alt="logo" className="laptop:w-[30%] tablet:w-[40%] desktop:w-[30%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
-          <p className='flex justify-start text-left items-start float-left mt-3 text-slate-400'>
-          Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+          <p className='flex justify-start text-left items-start pr-7 float-left mt-3 text-slate-400'>
+          La créativité est notre passion et notre métier. Nous sommes animés par elle. Notre mission est de donner vie à vos idées, de renforcer votre présence en ligne et de susciter l'engagement de votre public. Avec une équipe d'experts passionnés, nous offrons une gamme de services adaptés à vos besoins. Contactez-nous pour démarrer votre prochain projet.
           </p>
-          <div className='flex desktop:flex-row laptop:flex-row tablet:flex-row flex-col w-full justify-start items-start float-left mt-3 h-fit'>
-          <div className='flex flex-col justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
+          <div className='flex desktop:flex-row laptop:flex-row tablet:flex-row flex-col w-full justify-start items-start float-left laptop:mt-3 desktop:mt-3 tablet:mt-3 mt-3 h-fit'>
+          <div className='flex flex-col laptop:pr-12 desktop:pr-12 tablet:pr-6 pr-1 justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
               <p className='flex justify-start items-start float-left mt-3 text-[#EEBA2B] text-xl font-bold'>
                 Nos Compétences
                 </p>
@@ -67,9 +67,9 @@ function Footer() {
                 <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Conception de sites web</p>
                 <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Stratégies de marketing digital</p>
             </div>
-            <div className='flex flex-col justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
+            <div className='flex flex-col justify-start items-start pr-5 laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
           
-                <p className='flex justify-start items-start float-left mt-12 text-slate-400'>Gestion des réseaux sociaux </p>
+                <p className='flex justify-start items-start float-left laptop:mt-12 desktop:mt-12 tablet:mt-12 mt-3 text-slate-400'>Gestion des réseaux sociaux </p>
                 <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Campagnes publicitaires visuelles</p>
                 <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Création de contenu marketing</p>
                 <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Aide à l'utilisation des outils numériques</p>
@@ -82,7 +82,7 @@ function Footer() {
             </div>
             </div>
             <div className='flex flex-col w-full justify-start items-start mt-5  h-fit'>
-            <p className='flex justify-start items-start float-left mt- text-slate-400'>Que vous soyez un entrepreneur, un créateur de contenu, une entreprise ou un particulier, nous sommes là pour donner vie à vos idées et pour vous aider à réussir dans votre domaine.</p>
+            <p className='flex justify-start items-start float-left mt- text-slate-400 pr-7'>Que vous soyez un entrepreneur, un créateur de contenu, une entreprise ou un particulier, nous sommes là pour donner vie à vos idées et pour vous aider à réussir dans votre domaine.</p>
              <p className='flex justify-start items-start float-left mt-5 text-white text-xl font-bold'>
              Votre créativité, notre passion.
              </p>

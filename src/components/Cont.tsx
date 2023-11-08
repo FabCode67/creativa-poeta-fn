@@ -88,13 +88,13 @@ const Cont = () => {
     return (
       <><section id='contact' className='contacnt w-full  justify-center h-fit min-h-screen mt-0 text-white flex flex-col  relative'>
         <div className=" items-center flex justify-center">
-          <div className="w-full flex flex-col  basis basis-full space-y-0 laptop:px-[2%] desktop:px-[2%] px-1">
+          <div className="w-full flex flex-col  basis basis-full space-y-0">
             <div className="contuctus-text flex-center flex justify-center text-center p-2 mt-10">
               <h1 className="laptop:text-xl desktop:text-xl text-lg font-bold">Nous contacter</h1>
             </div>
             <div className="flex flex-col laptop:flex-col desktop:flex-col laptop:mt-0 desktop:0 mt-2 backdrop-blur-sm">
               <div className="flex flex-col laptop:basis-full desktop:basis-full basis-full  h-full">
-                <div className="forms py-9 px-6">
+                <div className="forms py-9">
                   <form className="form" onSubmit={handleSubmit}>
                     <div className="flex flex-col">
                       <label className="bg-gre text-md text-gray-500">Nom</label>
@@ -125,10 +125,10 @@ const Cont = () => {
                 </div>
               </div>
               <div className="flex flex-col basis-full backdrop-blur-2xl h-full text-gray-500">
-                <div className="contactInfo px-6 flex flex-col j laptop:justify-normal desktop:justify-normal  text-gray-500">
+                <div className="contactInfo  flex flex-col j laptop:justify-normal desktop:justify-normal  text-gray-500">
                   <div className="text-2xl  text-[#EEBA2B] flex space-x-3">
                     <FiPhone className="text-2xl text  text-[#EEBA2B] flex " />
-                    <h1 className="laptop:text-2xl desktop:text-xl text-xl">078888800</h1>
+                    <h1 className="laptop:text-2xl desktop:text-xl text-xl">+32 479 08 99 25</h1>
                   </div>
                   <div className="text-2xl  text-[#EEBA2B] flex space-x-3 ">
                   <FaRegEnvelope className="text-2xl  text-[#EEBA2B] flex my-auto justify-center text-center items-center " />

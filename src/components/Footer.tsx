@@ -42,7 +42,7 @@ function Footer() {
     
   // };
   return (
-    <footer className="foote py-12 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 px-12 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
+    <footer className="foote py-12 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 px-4 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
       <div className="laptop:flex-row  desktop:flex-row tablet:flex-col flex-col flex  items-center w-full">
         <div className="flex flex-col laptop:w-[63%] desktop:w-[63%] tablet:w-full w-full h-fit ">
           <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
@@ -129,7 +129,7 @@ function Footer() {
           </a>
           </div> */}
           </div>
-          <div className="laptop:h-[8%] tablet:h-[8%] phone:h-[5%] h-[3%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
+          <div className="laptop:h-[8%] tablet:h-[8%] phone:h-[2%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
         </div>
     </footer>
   );

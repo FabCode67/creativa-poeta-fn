@@ -90,7 +90,7 @@ const Cont = () => {
         <div className=" items-center flex justify-center">
           <div className="w-full flex flex-col  basis basis-full space-y-0">
             <div className="contuctus-text flex-center flex justify-center text-center p-2 desktop:mt-4 laptop:mt-4 tablet:mt-0 mt-4">
-              <h1 className="laptop:text-xl desktop:text-xl text-lg font-bold">Nous contacter</h1>
+              <h1 className="laptop:text-4xl desktop:text-4xl text-4xl font-bold">Nous contacter</h1>
             </div>
             <div className="flex flex-col laptop:flex-col desktop:flex-col laptop:mt-0 desktop:0 mt-2 backdrop-blur-sm">
               <div className="flex flex-col laptop:basis-full desktop:basis-full basis-full  h-full">
@@ -132,7 +132,7 @@ const Cont = () => {
                   </div>
                   <div className="text-2xl mt-2  text-[#EEBA2B] flex space-x-4 ">
                   <FaRegEnvelope className="text-2xl  text-[#EEBA2B] flex my-auto justify-center text-center items-center " />
-                  <h1 className="laptop:text-2xl desktop:text-xl text-xl ">contact@creativapoeta</h1>
+                  <h1 className="laptop:text-2xl desktop:text-xl text-xl ">contact@creativapoeta.com</h1>
                   </div>
                  
                  
@@ -166,6 +166,7 @@ const Cont = () => {
             isSuccess={true}
             onClose={handleClosePopup} />
         )}
+
 
       </section>
       {/* <Footer setShowPopUp={setShowPopup} /> */}

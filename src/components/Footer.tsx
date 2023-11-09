@@ -48,11 +48,11 @@ function Footer() {
           <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-start items-start'>
           <img src={logopoeta1} alt="logo" className="laptop:w-[30%] tablet:w-[40%] desktop:w-[30%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
-          <p className='flex justify-start  items-start pr-7 text-start float-left mt-3 text-slate-400'>
+          <p className='flex justify-start text-justify  items-start pr-7 float-left mt-3 text-slate-400'>
           La créativité est notre passion et notre métier. Nous sommes animés par elle. Notre mission est de donner vie à vos idées, de renforcer votre présence en ligne et de susciter l'engagement de votre public. Avec une équipe d'experts passionnés, nous offrons une gamme de services adaptés à vos besoins. Contactez-nous pour démarrer votre prochain projet.
           </p>
           <div className='flex desktop:flex-row laptop:flex-row tablet:flex-row flex-col w-full justify-start items-start float-left laptop:mt-3 desktop:mt-3 tablet:mt-3 mt-3 h-fit'>
-          <div className='flex text-justify flex-col laptop:pr-12 desktop:pr-12 tablet:pr-6 pr-1 justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
+          <div className='flex flex-col laptop:pr-12 desktop:pr-12 tablet:pr-6 pr-1 justify-start items-start laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
               <p className='flex justify-start items-start float-left mt-3 text-[#EEBA2B] text-xl font-bold'>
                 Nos Compétences
                 </p>

@@ -45,7 +45,7 @@ function Footer() {
     <footer className="foote py-12 backdrop-blur-lg blur-none  laptop:px-32 desktop:px-32 tablet:px-24 px-4 bg-slate-900 text-white bottom-0 w-full h-fit flex flex-col">
       <div className="laptop:flex-row  desktop:flex-row tablet:flex-col flex-col flex  items-center w-full">
         <div className="flex flex-col laptop:w-[63%] desktop:w-[63%] tablet:w-full w-full h-fit ">
-          <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-center items-center mx-auto'>
+          <h1 className='logo text-4xl text-[#EEBA2B] flex laptop:mx-0 tablet:mx-0 laptop:justify-start tablet:justify-start text-left laptop:items-start tablet:items-start float-left justify-start items-start'>
           <img src={logopoeta1} alt="logo" className="laptop:w-[30%] tablet:w-[40%] desktop:w-[30%] laptop:h-[100%] desktop:h-[100%] h-[100%] w-[50%]"/>
           </h1>
           <p className='flex justify-start  items-start pr-7 text-justify float-left mt-3 text-slate-400'>

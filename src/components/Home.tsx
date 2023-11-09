@@ -162,26 +162,6 @@ const handleCloseConfitm = () => {
         animationName: "slideAnimation",
       }}
     >
-
-      {/* {currentBackground.video && (
-    <video
-      autoPlay
-      loop
-      muted
-      className="video-background"
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: -1,
-        objectFit: "cover",
-      }}
-    >
-      <source src={currentBackground.video} type="video/mp4" />
-    </video>
-  )} */}
       <div className="logo laptop:top-0 desktop:top-0 tablet:top-3 md:top-3 top-5  text-white laptop:text-4xl desktop:text-4xl text-xl  phone:left-8 tablet:left-8 desktop:left-8 md:left-8 laptop:left-8 left-4 laptop:ml-11 desktop:ml-11 ml-0 absolute laptop:p-1 desktop:p-1">
         <img src={logopoeta1} alt="logo" className="laptop:w-[85%] desktop:w-[85%] laptop:h-[95%] desktop:h-[95%] h-[100%] w-[50%]" />
       </div>

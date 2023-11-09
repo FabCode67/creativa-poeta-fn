@@ -6,6 +6,7 @@ import Services from "./components/Services"
 import Faq from "./components/Faq"
 import Parteners from "./components/Parteners"
 import Footer from "./components/Footer"
+import MainFooter from "./components/MainFooter"
 function  App() {
   return (
     <div className="App w-full flex flex-col snap-x scroll-smooth">
@@ -20,7 +21,7 @@ function  App() {
         <Faq />
         {/* <Contact /> */}
         <Footer />
-
+          <MainFooter />
       </div>
     </div>
   );

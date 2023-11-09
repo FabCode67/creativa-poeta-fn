@@ -56,29 +56,29 @@ function Footer() {
               <p className='flex justify-start items-start float-left mt-3 text-[#EEBA2B] text-xl font-bold'>
                 Nos Compétences
                 </p>
-                <p className='flex justify-start items-start float-left mt-3 text-slate-400'>Conception de logos</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Affiches et flyers personnalisés</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Cartes de visite uniques</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Rédaction de contenu web</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Révision et correction de textes</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Rédaction de lettres personnalisées et de documents professionnels</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Création de discours et de poésie</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Assistance en écriture de mémoires et de rapports</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Conception de sites web</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Stratégies de marketing digital</p>
+                <p className='flex justify-start items-start float-left text-start mt-3 text-slate-400'>Conception de logos</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Affiches et flyers personnalisés</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Cartes de visite uniques</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Rédaction de contenu web</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Révision et correction de textes</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Rédaction de lettres personnalisées et de documents professionnels</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Création de discours et de poésie</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Assistance en écriture de mémoires et de rapports</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Conception de sites web</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Stratégies de marketing digital</p>
             </div>
             <div className='flex flex-col justify-start items-start pr-5 laptop:w-1/2 desktop:w-1/2 w-full h-fit'>
           
-                <p className='flex justify-start items-start float-left laptop:mt-12 desktop:mt-12 tablet:mt-12 mt-1 text-slate-400'>Gestion des réseaux sociaux </p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Campagnes publicitaires visuelles</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Création de contenu marketing</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Aide à l'utilisation des outils numériques</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Assistance pour les démarches administratives en ligne </p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Conseils en sécurité en ligne</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Assistance pour acheter sur Internet</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Production de vidéos publicitaires</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Podcasts créatifs</p>
-                <p className='flex justify-start items-start float-left mt-1 text-slate-400'>Édition et montage de vidéos promotionnelles</p>
+                <p className='flex justify-start items-start float-left text-start laptop:mt-12 desktop:mt-12 tablet:mt-12 mt-1 text-slate-400'>Gestion des réseaux sociaux </p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Campagnes publicitaires visuelles</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Création de contenu marketing</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Aide à l'utilisation des outils numériques</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Assistance pour les démarches administratives en ligne </p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Conseils en sécurité en ligne</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Assistance pour acheter sur Internet</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Production de vidéos publicitaires</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Podcasts créatifs</p>
+                <p className='flex justify-start items-start float-left text-start mt-1 text-slate-400'>Édition et montage de vidéos promotionnelles</p>
             </div>
             </div>
             <div className='flex flex-col w-full justify-start items-start mt-5  h-fit'>
@@ -130,15 +130,6 @@ function Footer() {
           </div> */}
           </div>
           <div className="laptop:h-[8%] tablet:h-[8%] phone:h-[2%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
-        </div>
-        <div className='flex flex-wrap mx-auto text-center items-center justify-center w-full laptop:justify-between desktop:justify-between bg-black h-fit p-2 py-4  mt-5'>
-          <div className='flex flex-row justify-center items-center space-x-2 mr-2'>
-          <p className='text-xs font-bold text-slate-400'>Mentions légale</p>
-          <p className='text-xs font-bold text-slate-400'>|</p>
-          <p className='text-xs font-bold text-slate-400'>Conditions générales</p>
-          </div>
-          <p className='text-xs font-bold text-slate-400  ml-1'> © 2023 Creativa Poeta. Tous droits réservés. </p>
-          <p className='text-xs font-bold text-slate-400 laptop:mt-0 desktop:mt-0 mt-2 ml-2'>Politique de cookies et de confidentialité</p>
         </div>
     </footer>
   );

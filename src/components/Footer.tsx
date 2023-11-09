@@ -83,7 +83,7 @@ function Footer() {
             </div>
             <div className='flex flex-col w-full justify-start items-start mt-5  h-fit'>
             <p className='flex justify-start items-start float-left text-slate-400 pr-7'>Que vous soyez un entrepreneur, un créateur de contenu, une entreprise ou un particulier, nous sommes là pour donner vie à vos idées et pour vous aider à réussir dans votre domaine.</p>
-             <p className='flex justify-start items-start float-left mt-5 text-white text-xl font-bold'>
+             <p className='flex justify-start items-start float-left mt-5 text-white font-bold'>
              Votre créativité, notre passion.
              </p>
              </div>

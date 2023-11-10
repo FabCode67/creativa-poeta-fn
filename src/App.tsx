@@ -7,6 +7,7 @@ import Faq from "./components/Faq"
 import Parteners from "./components/Parteners"
 import Footer from "./components/Footer"
 import MainFooter from "./components/MainFooter"
+import Projects from "./components/Projects"
 function  App() {
   return (
     <div className="App w-full flex flex-col snap-x scroll-smooth">
@@ -17,6 +18,7 @@ function  App() {
         <Home />
         <About />
         <Services />
+        <Projects />
         <Parteners />
         <Faq />
         {/* <Contact /> */}

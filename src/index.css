@@ -255,3 +255,11 @@ body{
   /* backg÷round-attachment: fixed; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.projects {
+  background-image: url('./assets/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

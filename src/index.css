@@ -263,3 +263,22 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
+
+
+.projects {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.projects::-webkit-scrollbar {
+  width: 8px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.projects::-webkit-scrollbar-track {
+  background-color: transparent;
+}

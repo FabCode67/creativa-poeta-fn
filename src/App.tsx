@@ -19,7 +19,7 @@ function  App() {
         <About />
         <Services />
         <Projects />
-        <Parteners />
+        {/* <Parteners /> */}
         <Faq />
         {/* <Contact /> */}
         <Footer />

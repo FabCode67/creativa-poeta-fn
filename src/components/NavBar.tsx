@@ -61,7 +61,13 @@ function NavBar() {
                 >
                   A propos
                 </a>
-
+                <a
+                  href="#projects"
+                  onClick={toggleSidebar}
+                  className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "text-[#EEBA2B]" : ""}`}
+                >
+                  Nos Projects
+                </a>
                 <div onClick={toggleServicesSubMenu}>
                   <div className="flex my-auto justify-between">
                     <p
@@ -148,13 +154,7 @@ function NavBar() {
                     </div>
                   )}
                 </div>
-                <a
-                  href="#parteners"
-                  onClick={toggleSidebar}
-                  className={` overflow-y-auto rounded text-white text-xl hover:text-[#EEBA2B] ${location.hash === "#parteners" ? "text-[#EEBA2B]" : ""}`}
-                >
-                  Nos travaux
-                </a>
+             
                 <a
                   href="#faq"
                   onClick={toggleSidebar}

@@ -1,7 +1,7 @@
 
 const Projects = () => {
   return (
-    <div className="projects desktop:flex flex-col  h-screen  w-full">
+    <section id="projects" className="projects desktop:flex flex-col  h-screen  w-full">
       <div className="p-3 backdrop-blur-xs backdrop-blur-lg w-full flex felx-col flex-col space-y-7">
         <h1 className="laptop:text-5xl desktop:text-5xl tablet:text-5xl text-2xl font-bold mx-auto  text-[#EEBA2B]">
          <b className="text-black">NOS</b><br></br>DERNIERS PROJECTS
@@ -21,7 +21,7 @@ const Projects = () => {
             <div className="w-full h-[45%] border-yellow-400 border-2 rounded-lg"></div>
         </div>
     </div>
-    </div>
+    </section>
   )
 }
 

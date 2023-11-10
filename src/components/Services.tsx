@@ -40,11 +40,7 @@ const Services = () => {
       </div>
       <div className="laptop:h-[4%] desktop:[h-4%] tablet:h-[3%] h-[2%] laptop:w-[10%] t w-[35%] absolute laptop:right-1/2 right-1/2 top-0 border-r-2 border-[#FFE533]">
       </div>
-      <div className="very-buttom laptop:h-[4%] desktop:h-[4%] tablet:h-[4%] h-[2%] laptop:block desktop:block laptop:w-[5%] w-[2%] absolute laptop:left-2 left-2 bottom-0 border-r-2 border-[#FFE533]">
-  <div className="buttons h-full flex cursor-pointer items-start space-x-1">
-
-  </div>
-</div>
+      <div className="very-buttom laptop:h-[3%] desktop:h-[3%] tablet:h-[3%] h-[2%] laptop:block desktop:block laptop:w-[5%] w-[2%] absolute laptop:left-2 left-2 bottom-0 border-r-2 border-[#FFE533]"></div>
     </section>
   );
 };

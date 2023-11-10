@@ -129,7 +129,7 @@ function Footer() {
           </a>
           </div> */}
           </div>
-          <div className="laptop:h-[8%] tablet:h-[8%] phone:h-[2%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
+          <div className="laptop:h-[8%] tablet:h-[4%] phone:h-[2%] h-[2%] laptop:w-[10%] w-[35%] absolute laptop:right-11 right-11 top-0 border-r-2 border-[#EEBA2B]">
         </div>
     </footer>
   );

@@ -16,7 +16,7 @@ const Projects = () => {
                     <div className="w-full h-[47%] border-yellow-400 border-2 rounded-lg"></div>
                     <div className="w-full h-[47%] border-yellow-400 border-2 rounded-lg"></div>
                 </div>
-                <div className="laptop:w-[32%] desktop:w-[32%] w-full flex flex-col laptop:space-y-20 desktop:space-y-20 tablet:space-y-20 space-y-8 h-screen py-5">
+                <div className="laptop:w-[32%] desktop:w-[32%] w-full flex flex-col laptop:space-y-10 desktop:space-y-10 tablet:space-y-20 laptop:mt-7 desktop:mt-7 mt-0 space-y-8 h-screen py-5">
                     <div className="w-full h-[45%] border-yellow-400 border-2 rounded-lg"></div>
                     <div className="w-full h-[45%] border-yellow-400 border-2 rounded-lg"></div>
                 </div>

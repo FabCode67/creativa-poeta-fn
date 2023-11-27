@@ -1,4 +1,4 @@
-import blogData from "../data/blog";
+import blogData from "../../data/blog";
 
 const Services = () => {
   

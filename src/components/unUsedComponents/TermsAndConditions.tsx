@@ -1,4 +1,4 @@
-import NavBar from './NavBar'
+import NavBar from '../NavBars/NavBar'
 
 const TermsAndConditions = () => {
   return (

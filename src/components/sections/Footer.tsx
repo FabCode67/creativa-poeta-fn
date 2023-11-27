@@ -1,6 +1,6 @@
 // import { useTranslation } from 'react-i18next';
-import logopoeta1 from '../assets/flags/logopoeta1.png';
-import Cont from './Cont';
+import logopoeta1 from '../../assets/flags/logopoeta1.png';
+import Cont from '../unUsedComponents/Cont';
 // import { SetStateAction, useState } from 'react';
 // import { toast } from 'react-toastify';
 // import { Link } from 'react-router-dom';

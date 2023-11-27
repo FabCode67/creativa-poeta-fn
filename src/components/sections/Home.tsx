@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { AiOutlineDown, AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import image8 from '../assets/flags/image8.jpg'
-import image2 from '../assets/flags/image2.jpg'
+import image8 from '../../assets/flags/image8.jpg'
+import image2 from '../../assets/flags/image2.jpg'
 // import image3 from '../assets/flags/image3.jpg'
-import BackgroundCircles from "./BackgroundCircles";
-import SlideLeft from "./SlideLeft";
-import SlideRight from "./SlideRight";
-import logopoeta1 from '../assets/flags/logopoeta1.png'
-import Confirm from "./Confirm";
+import BackgroundCircles from "../buttons/BackgroundCircles";
+import SlideLeft from "../buttons/SlideLeft";
+import SlideRight from "../buttons/SlideRight";
+import logopoeta1 from '../../assets/flags/logopoeta1.png'
+import Confirm from "../unUsedComponents/Confirm";
 import { useLocation } from 'react-router-dom';
 
 

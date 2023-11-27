@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
-import LocalizationSwicher from "./Localization";
+import LocalizationSwicher from "../unUsedComponents/Localization";
 import { useTranslation } from "react-i18next";
 import {  FaTimes } from "react-icons/fa";
 

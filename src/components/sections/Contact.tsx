@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import Popup from "./MailConfirm";
+import Popup from "../unUsedComponents/MailConfirm";
 import { useState } from "react";
 // import Footer from "./Footer";
 import { toast } from "react-toastify";

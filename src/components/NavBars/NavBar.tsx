@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import BurgerButton from "./BurgerButton";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import logoBurger from '../assets/flags/logoBurger.png'
+import logoBurger from '../../assets/flags/logoBurger.png'
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 function NavBar() {

@@ -2,7 +2,7 @@ import  { useState } from 'react';
 import Image from './Image';
 import FrLog from '../assets/flags/fr.svg';
 import EngLog from '../assets/flags/eng.svg';
-import i18n from '../i18n/locale';
+import i18n from '../../i18n/locale';
 
 interface Language {
   name: string;

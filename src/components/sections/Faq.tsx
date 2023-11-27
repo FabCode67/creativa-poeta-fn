@@ -1,5 +1,5 @@
-import faqData from "../data/faq";
-import phonevid from '../assets/phonevid.mp4'
+import faqData from "../../data/faq";
+import phonevid from '../../assets/phonevid.mp4'
 import { useState } from "react";
 import { AiOutlineMinus,  AiOutlinePlus } from "react-icons/ai";
 
